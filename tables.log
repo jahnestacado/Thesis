@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2012.10.30)  9 JUN 2013 23:25
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2012.10.30)  10 JUN 2013 14:05
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -129,39 +129,62 @@ Package graphics Info: Driver file: pdftex.def on input line 91.
 \Gin@req@height=\dimen115
 \Gin@req@width=\dimen116
 )
-(./tables.aux)
+(./arydshln.sty
+Package: arydshln 2004/08/31 v1.71 
+\dashlinedash=\dimen117
+\dashlinegap=\dimen118
+\adl@box=\box28
+\adl@height=\dimen119
+\adl@heightsave=\dimen120
+\adl@depth=\dimen121
+\adl@depthsave=\dimen122
+\adl@finaldepth=\dimen123
+\adl@columns=\count98
+\adl@ncol=\count99
+\adl@currentcolumn=\count100
+\adl@currentcolumnsave=\count101
+\adl@totalheight=\count102
+\adl@totalheightsave=\count103
+\adl@dash=\count104
+\adl@gap=\count105
+\adl@cla=\count106
+\adl@clb=\count107
+\adl@everyvbox=\toks18
+\adl@LTpagetotal=\dimen124
+) (./tables.aux)
 \openout1 = `tables.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
- (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+
+(/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count98
-\scratchdimen=\dimen117
-\scratchbox=\box28
-\nofMPsegments=\count99
-\nofMParguments=\count100
-\everyMPshowfont=\toks18
-\MPscratchCnt=\count101
-\MPscratchDim=\dimen118
-\MPnumerator=\count102
-\makeMPintoPDFobject=\count103
-\everyMPtoPDFconversion=\toks19
+\scratchcounter=\count108
+\scratchdimen=\dimen125
+\scratchbox=\box29
+\nofMPsegments=\count109
+\nofMParguments=\count110
+\everyMPshowfont=\toks19
+\MPscratchCnt=\count111
+\MPscratchDim=\dimen126
+\MPnumerator=\count112
+\makeMPintoPDFobject=\count113
+\everyMPtoPDFconversion=\toks20
 )
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: listings package is loaded.
 Package caption Info: End \AtBeginDocument code.
-\c@lstlisting=\count104
+\c@lstlisting=\count114
  (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
 Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
 )
@@ -211,39 +234,55 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 45.
+(Font)              <7> on input line 46.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 45.
+(Font)              <5> on input line 46.
 
-Overfull \hbox (68.81337pt too wide) in paragraph at lines 45--46
+Overfull \hbox (71.31337pt too wide) in paragraph at lines 46--47
  [][][][][][][] 
  []
 
 
-Overfull \hbox (68.81337pt too wide) in paragraph at lines 108--109
+Overfull \hbox (71.31337pt too wide) in paragraph at lines 116--117
  [][][][][][][] 
  []
 
 
-Overfull \hbox (66.31334pt too wide) in paragraph at lines 140--141
+Overfull \hbox (68.81334pt too wide) in paragraph at lines 150--151
  [][][][][][][] 
  []
 
-[1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2] [3] (./tables.aux) )
- 
+
+Overfull \hbox (105.00098pt too wide) in paragraph at lines 184--185
+ [][][][][][][] 
+ []
+
+
+Overfull \hbox (17.9796pt too wide) in paragraph at lines 253--254
+ [][][][][][][] 
+ []
+
+
+Overfull \hbox (66.72997pt too wide) in paragraph at lines 317--318
+ [][][][][][][] 
+ []
+
+[1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2] [3] [4]
+(./tables.aux) ) 
 Here is how much of TeX's memory you used:
- 4200 strings out of 495059
- 62769 string characters out of 3182029
- 172574 words of memory out of 3000000
- 7373 multiletter control sequences out of 15000+200000
+ 4423 strings out of 495059
+ 65678 string characters out of 3182029
+ 216944 words of memory out of 3000000
+ 7593 multiletter control sequences out of 15000+200000
  3640 words of font info for 14 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
- 41i,11n,38p,232b,275s stack positions out of 5000i,500n,10000p,200000b,50000s
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb>
-Output written on tables.pdf (3 pages, 25671 bytes).
+ 41i,11n,38p,232b,287s stack positions out of 5000i,500n,10000p,200000b,50000s
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/c
+mr10.pfb>
+Output written on tables.pdf (4 pages, 29962 bytes).
 PDF statistics:
- 18 PDF objects out of 1000 (max. 8388607)
- 11 compressed objects within 1 object stream
+ 21 PDF objects out of 1000 (max. 8388607)
+ 13 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
