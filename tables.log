@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2012.10.30)  10 JUN 2013 14:05
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2012.10.30)  10 JUN 2013 15:54
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -151,40 +151,51 @@ Package: arydshln 2004/08/31 v1.71
 \adl@clb=\count107
 \adl@everyvbox=\toks18
 \adl@LTpagetotal=\dimen124
-) (./tables.aux)
+) (/usr/share/texlive/texmf-dist/tex/generic/ulem/ulem.sty
+\UL@box=\box29
+\UL@hyphenbox=\box30
+\UL@skip=\skip46
+\UL@hook=\toks19
+\UL@height=\dimen125
+\UL@pe=\count108
+\UL@pixel=\dimen126
+\ULC@box=\box31
+Package: ulem 2012/05/18
+\ULdepth=\dimen127
+)
+(./tables.aux)
 \openout1 = `tables.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-
-(/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+ (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count108
-\scratchdimen=\dimen125
-\scratchbox=\box29
-\nofMPsegments=\count109
-\nofMParguments=\count110
-\everyMPshowfont=\toks19
-\MPscratchCnt=\count111
-\MPscratchDim=\dimen126
-\MPnumerator=\count112
-\makeMPintoPDFobject=\count113
-\everyMPtoPDFconversion=\toks20
+\scratchcounter=\count109
+\scratchdimen=\dimen128
+\scratchbox=\box32
+\nofMPsegments=\count110
+\nofMParguments=\count111
+\everyMPshowfont=\toks20
+\MPscratchCnt=\count112
+\MPscratchDim=\dimen129
+\MPnumerator=\count113
+\makeMPintoPDFobject=\count114
+\everyMPtoPDFconversion=\toks21
 )
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: listings package is loaded.
 Package caption Info: End \AtBeginDocument code.
-\c@lstlisting=\count114
+\c@lstlisting=\count115
  (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
 Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
 )
@@ -234,55 +245,55 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 46.
+(Font)              <7> on input line 47.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 46.
+(Font)              <5> on input line 47.
 
-Overfull \hbox (71.31337pt too wide) in paragraph at lines 46--47
+Overfull \hbox (71.31337pt too wide) in paragraph at lines 47--48
  [][][][][][][] 
  []
 
 
-Overfull \hbox (71.31337pt too wide) in paragraph at lines 116--117
+Overfull \hbox (71.31337pt too wide) in paragraph at lines 117--118
  [][][][][][][] 
  []
 
 
-Overfull \hbox (68.81334pt too wide) in paragraph at lines 150--151
+Overfull \hbox (68.81334pt too wide) in paragraph at lines 151--152
  [][][][][][][] 
  []
 
 
-Overfull \hbox (105.00098pt too wide) in paragraph at lines 184--185
+Overfull \hbox (105.00098pt too wide) in paragraph at lines 185--186
  [][][][][][][] 
  []
 
 
-Overfull \hbox (17.9796pt too wide) in paragraph at lines 253--254
+Overfull \hbox (17.9796pt too wide) in paragraph at lines 254--255
  [][][][][][][] 
  []
 
 
-Overfull \hbox (66.72997pt too wide) in paragraph at lines 317--318
+Overfull \hbox (66.72997pt too wide) in paragraph at lines 318--319
  [][][][][][][] 
  []
 
-[1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2] [3] [4]
+[1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2] [3] [4] [5]
 (./tables.aux) ) 
 Here is how much of TeX's memory you used:
- 4423 strings out of 495059
- 65678 string characters out of 3182029
- 216944 words of memory out of 3000000
- 7593 multiletter control sequences out of 15000+200000
- 3640 words of font info for 14 fonts, out of 3000000 for 9000
+ 4504 strings out of 495059
+ 66463 string characters out of 3182029
+ 233006 words of memory out of 3000000
+ 7669 multiletter control sequences out of 15000+200000
+ 3746 words of font info for 15 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
- 41i,11n,38p,232b,287s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 41i,12n,38p,232b,287s stack positions out of 5000i,500n,10000p,200000b,50000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/c
 mr10.pfb>
-Output written on tables.pdf (4 pages, 29962 bytes).
+Output written on tables.pdf (5 pages, 31321 bytes).
 PDF statistics:
- 21 PDF objects out of 1000 (max. 8388607)
- 13 compressed objects within 1 object stream
+ 24 PDF objects out of 1000 (max. 8388607)
+ 15 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
