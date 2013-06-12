@@ -1,9 +1,15 @@
 % This is the root file of your thesis: thesis.tex
 % A line starting with % is a comment. In some cases, I have included a command preceded by a %. You may activate the command by removing the %.
 
-%%===================================
+%%===================================  packages
 \documentclass[12pt]{report}
 \usepackage{ramsstyle}
+\usepackage[table]{xcolor}
+\usepackage{caption}
+\usepackage{listings}
+\usepackage{graphicx}
+\usepackage[normalem]{ulem}
+
 %%===================================
 %Write the various parts of your thesis as separate files and include them into the main file by the command \include{name of included file}. When you compile the LaTeX file, you may choose which subfiles to include by the command
 
@@ -11,6 +17,7 @@
 
 %%===================================
 \begin{document}
+%%===================================
 \include{front} % This is the titlepage
 \setcounter{page}{0}
 \pagenumbering{roman}
@@ -21,7 +28,9 @@
 \setcounter{page}{0}
 \pagenumbering{arabic}
 \include{chapter01}
-\include{chapter02}
+\include{chap2}
+\include{chap3}
+\include{chap4}
 \include{chapter0n}
 % Include more chapters as required.
 %%=========================================

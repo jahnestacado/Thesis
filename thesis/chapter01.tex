@@ -15,92 +15,91 @@ tal forensic community that an alternative, more realistic approach must be
 used.
 
 %%=========================================
-\section{Background}
+\section{File Carving}
 File carving is a forensics technique that recovers files based on their content,
 without relying on their meta-data. File carving process involves two steps.
 File validation and file reconstruction.[1]. During the recovery procedure,
 we must first validate the type of the file and then apply the appropriate
 reconstruction technique. In this thesis, only the validation techniques are
 of our interest.
-By examining the content (the actual byte-code) and/or the structure of
+By examining the byte-content and/or the structure of
 a file [22], file validation techniques are used to classify its type. Several file
 types contain common structures like headers, footers (named Magic Number
 Matching) [7][3], fields that specify file attributes like color or size etc.(Data
 Dependency Resolving [3]), that can be used to identify the type of the file.
 Additionally, another approach is to apply statistical analysis techniques and
-algorithms, which use the complete byte code of a file, creating a fileprint for
+algorithms, which use the complete byte set of a file, creating a fileprint for
 every file type. Some examples are the n-Gram Analysis [9], the Byte fre-
 quency analysis (BFA) algorithm and the Byte frequency cross-correlation
 (BFC)[4].
 The aforementioned techniques have some profound weaknesses. The Magic
 Number Matching and the Data Dependency Resolving approaches make
 general type classification infeasible. This is due to the fact that not every
-2file type contains such structures. Furthermore, n-Gram Analysis and both
+file-type contain such structures. Furthermore, n-Gram Analysis and both
 BFA and BFC were designed to be applied in a complete file or a pre-defined
-part of it, which retains all of its content. Hence, they depend on files inter-
-nal structure and characteristics.
+part of it, which retains all of its content. Hence, they depend on files internal structure and characteristics.
 %%=========================================
-\subsection*{Problem Formulation}
+\section{Problem Formulation}
 So why this is a problem? The answer lies in file systems behaviour and
 file fragmentation. When we delete a file from a media storage, the data are
-not actually removed. The clusters in which the file was stored still contain
-the same data, although the file system mark them as unallocated [2]. Which
+not actually removed. The sectors in which the file was stored still contain
+the same data, although the file system marks them as unallocated [2]. Which
 means that the next time a new file is created, the file system is free to use
-these clusters, which are marked as unallocated, to store the new file. But
+these sectors, which are marked as unallocated, to store the new file. But
 if the new file is bigger than the old one, and the file system tries to store it
-starting from the same cluster entry as the deleted one, it wont have enough
-space to store it. So the file system will allocate all the clusters of the previ-
-ous deleted file, while the remaining data which do not fit, will be stored to
-other unallocated clusters. This results to file fragmentation. In a forensic
+starting from the same sector entry as the deleted one, it wont have enough
+space to store it. So the file system will allocate all the sectors of the previous deleted file, while the remaining data which do not fit, will be stored to
+other unallocated sectors. This results to file fragmentation. In a forensic
 file recovery case, it is more probable that the files that must be recovered are
 fragmented. Validation techniques which use the complete file content
 are high unlikely to provide aid to forensic examiners. Hence, an alternative
-approach to file type validation must be taken.
+approach to file type classification must be taken.
 File fragment classification is a technique that uses only a small fragment
 of a file, in order to determine its type. Ergo, file fragmentation is not a
-problem any more as this approach is independent from files overall struc-
-ture. Although in theory file fragment classification looks like an ideal so-
-lution, in practice current solutions that use this approach could not yield
+problem any more as this approach is independent from files overall structure. Although in theory file fragment classification looks like an ideal approach, in practice current solutions that use this approach could not yield
 good results[6][22]. One reason that file fragment classification is difficult, is
 due to the complex container files. Complex container files like TAR, ZIP,
 RAR, PDF etc. contain other primitive file types, making general fragment
 classification difficult. Moreover, a fragment might contain more data which
-are strongly related to the files content than the files structure
+are strongly related to the files content than the files structure.
 %%=========================================
 
 %%=========================================
 \section{Objectives}
-Although general fragment classification is difficult (due to lots of file formats containing large blocks of highly compressed data that look similar to a classifier), a large amount of file types consist of or at least contain, (plain) text data. In this project our main objectives are
+The main objectives in this project are:
 \begin{enumerate}
-\item This is the first objective
-\item This is the second objective
-\item This is the third objective
-\item More objectives
+\item Test the hypothesis that by analysing only the printable ASCII characters plus the tab, newline and carriage return  character, accuracy of classification algorithms can be enhanced for document-type fragments.
+\item Create a more accurate algorithm for identifying document-type fragments than the available ones. In particular text, xls, doc and pdf files are of our interest and we try to improve their classification accuracy.
+
 \end{enumerate}
 
+%%=========================================
+\section{Algorithms Requirements}
+The design requirements for our classifying algorithm are as follows:
+\begin{enumerate}
+\item Speed - Relatively fast compared to current techniques
+\item Accuracy - Algorithm should be as accurate as possible by minimizing false positives in classification of file fragments
+\item Operate in 512 bytes, same as the sector size of a hard drive
 
+\end{enumerate}
 
 
 %%=========================================
 \section{Approach}
- It has been observed that BFA, although extremely inaccurate, classifies a big amount of fragments that belong to a document file as text. We will make use of the classic BFA among with some variations of it and try to enhance its accuracy on classifying document-file fragments as text. Then we will isolate all the fragments classified as text and analyse them in order to find patterns which will help us to design our algorithm. The BFA that we are going to use is the same as [McDaniled] with the only difference that we wont train our fingerprints with the complete byte set of the fragments. Due to the fact that many file types contain partially plain text, in this
-project we will analyse the byte set that corresponds to printable ASCII
-characters ( 32  b  126 ) of every fragment. Additionally, some more bytes
-that could reveal a documents nature as the newline (10), tab (9), carriage re-
-turn (13) characters are being used. Until now, almost
-every approach, for both file and fragment classification, analyses the complete ASCII byte set (0..255). We will try to discover if by ignoring
-almost half of the ASCII byte set, we can acquire more reliable results and create an algorithm which will be able to classify document-type file fragments with better accuracy. Moreover, after the design and implementation of our algorithm, we are going to use
-the same corpus as Shahi did in [XX] in order to test effectively the accuracy of our algorithm. 
+Most of the current techniques on fragment classification use the full byte content of a file for both the training and classification procedures. Since we intend to create an algorithm which would be able to yield better accuracy results for fragments that originate from a document file type, we want to test the hypothesis that by using only the printable ASCII characters (32 >= b <= 126) plus the tab, newline and carriage return of a fragment we could achieve better results regarding text fragment classification. The aforementioned special characters are a behavioural trait of a document so we expect that their occurrence in conjunction with all the other printable characters will be more frequent in a document file.
+
+In order to test our hypothesis and our results we have to use one of the current classification algorithms. Additionally, since our main goal is to design a classification algorithm  which will satisfy the previously mentioned requirements, we should carefully choose a currently available algorithm with the potential of modifying and creating a custom more effective version of it.
+
+Our algorithm of choice is the Byte Frequency Analysis algorithm. More about the reasons of this choice can be found in the next chapter.
 
 
+ It has been observed that BFA, although extremely inaccurate, classifies a big amount of fragments that belong to a document file as text. We will make use of the BFA which will take under account only our special subset of ASCII characters among with 3 more variations of it and try to enhance its accuracy on classifying document-file fragments as text.  We used 4 different variations of the BFA mainly for 2 reason.  The first one is to compare the results with the results of the BFA that Shahi used for file fragment classification and find out if our hypothesis is correct. The second one is to choose the variation of it that yields the best results regarding text fragment classification. Literally this is going to be the first step of our algorithm so accuracy of the BFA will affect the accuracy of our final algorithm.
 
-%%=========================================
-\section{Structure of the Report}
-The rest of the report is structured as follows. Chapter 2 gives an introduction to \ldots
+ 
+ 
+  Next we will isolate all fragments classified as text and analyse them in order to find patterns which will eventually result in special metrics that could help us to design our algorithm.
+ 
+ % Moreover, we are going to use
+ % the same corpus as Shahi did in [XX] , a subset of the training set that he used and the exact same testing set, in order to test    e          ffectively the accuracy of our algorithm. %
 
-\begin{remark}
-Notice that chapter and section headings shall be written in lowercase, but that all main words should start with a capital letter.
-\end{remark}
 
-
-The report should be no longer than \underline{60 pages} in this format (+ the CV).

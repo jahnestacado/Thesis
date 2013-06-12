@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2012.10.30)  10 JUN 2013 23:51
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2012.10.30)  12 JUN 2013 22:40
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -786,73 +786,159 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 \Hy@SectionHShift=\skip50
 ))
-(./thesis.aux (./front.aux) (./chapter01.aux) (./chapter02.aux)
+(/usr/share/texmf/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2007/01/21 v2.11 LaTeX color extensions (UK)
+
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/color.cfg
+File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
+)
+Package xcolor Info: Driver file: pdftex.def on input line 225.
+
+(/usr/share/texlive/texmf-dist/tex/latex/colortbl/colortbl.sty
+Package: colortbl 2012/02/13 v1.0a Color table columns (DPC)
+
+(/usr/share/texlive/texmf-dist/tex/latex/tools/array.sty
+Package: array 2008/09/09 v2.4c Tabular extension package (FMi)
+\col@sep=\dimen138
+\extrarowheight=\dimen139
+\NC@list=\toks24
+\extratabsurround=\skip51
+\backup@length=\skip52
+)
+\everycr=\toks25
+\minrowclearance=\skip53
+)
+\rownum=\count120
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1337.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1341.
+Package xcolor Info: Model `RGB' extended on input line 1353.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1355.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1356.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1357.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1358.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1359.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1360.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2012/02/19 v3.2f Customizing captions (AR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2012/01/12 v1.4b caption3 kernel (AR)
+\captionmargin=\dimen140
+\captionmargin@=\dimen141
+\captionwidth=\dimen142
+\caption@indent=\dimen143
+\caption@parindent=\dimen144
+\caption@hangindent=\dimen145
+)
+\c@ContinuedFloat=\count121
+Package caption Info: hyperref package is loaded.
+Package caption Info: rotating package is loaded.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/listings/listings.sty
+\lst@mode=\count122
+\lst@gtempboxa=\box29
+\lst@token=\toks26
+\lst@length=\count123
+\lst@currlwidth=\dimen146
+\lst@column=\count124
+\lst@pos=\count125
+\lst@lostspace=\dimen147
+\lst@width=\dimen148
+\lst@newlines=\count126
+\lst@lineno=\count127
+\lst@maxwidth=\dimen149
+
+(/usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2007/02/22 1.4 (Carsten Heinz)
+\c@lstnumber=\count128
+\lst@skipnumbers=\count129
+\lst@framebox=\box30
+)
+(/usr/share/texlive/texmf-dist/tex/latex/listings/listings.cfg
+File: listings.cfg 2007/02/22 1.4 listings configuration
+))
+Package: listings 2007/02/22 1.4 (Carsten Heinz)
+
+(/usr/share/texlive/texmf-dist/tex/generic/ulem/ulem.sty
+\UL@box=\box31
+\UL@hyphenbox=\box32
+\UL@skip=\skip54
+\UL@hook=\toks27
+\UL@height=\dimen150
+\UL@pe=\count130
+\UL@pixel=\dimen151
+\ULC@box=\box33
+Package: ulem 2012/05/18
+\ULdepth=\dimen152
+) (./thesis.aux
+(./front.aux) (./chapter01.aux) (./chap2.aux) (./chap3.aux) (./chap4.aux)
 (./chapter0n.aux) (./acronyms.aux) (./appendix-b.aux) (./vitae.aux))
 \openout1 = `thesis.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for FML/futm/m/it on input line 13.
-LaTeX Font Info:    Try loading font information for FML+futm on input line 13.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for FML/futm/m/it on input line 19.
+LaTeX Font Info:    Try loading font information for FML+futm on input line 19.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/fourier/fmlfutm.fd
 File: fmlfutm.fd 2004/10/30 Fontinst v1.926 font definitions for FML/futm.
 )
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for FMS/futm/m/n on input line 13.
-LaTeX Font Info:    Try loading font information for FMS+futm on input line 13.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for FMS/futm/m/n on input line 19.
+LaTeX Font Info:    Try loading font information for FMS+futm on input line 19.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/fourier/fmsfutm.fd
 File: fmsfutm.fd 2004/10/30 Fontinst v1.926 font definitions for FMS/futm.
 )
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for FMX/futm/m/n on input line 13.
-LaTeX Font Info:    Try loading font information for FMX+futm on input line 13.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for FMX/futm/m/n on input line 19.
+LaTeX Font Info:    Try loading font information for FMX+futm on input line 19.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/fourier/fmxfutm.fd
 File: fmxfutm.fd futm-extension
 )
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 13.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 13.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 19.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 19.
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Try loading font information for T1+futs on input line 13.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Try loading font information for T1+futs on input line 19.
 
 (/usr/share/texlive/texmf-dist/tex/latex/fourier/t1futs.fd
 File: t1futs.fd 2004/03/02 Fontinst v1.926 font definitions for T1/futs.
 )
 (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count120
-\scratchdimen=\dimen138
-\scratchbox=\box29
-\nofMPsegments=\count121
-\nofMParguments=\count122
-\everyMPshowfont=\toks24
-\MPscratchCnt=\count123
-\MPscratchDim=\dimen139
-\MPnumerator=\count124
-\makeMPintoPDFobject=\count125
-\everyMPtoPDFconversion=\toks25
+\scratchcounter=\count131
+\scratchdimen=\dimen153
+\scratchbox=\box34
+\nofMPsegments=\count132
+\nofMParguments=\count133
+\everyMPshowfont=\toks28
+\MPscratchCnt=\count134
+\MPscratchDim=\dimen154
+\MPnumerator=\count135
+\makeMPintoPDFobject=\count136
+\everyMPtoPDFconversion=\toks29
 ) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
 
@@ -902,37 +988,32 @@ e
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-\AtBeginShipoutBox=\box30
-(/usr/share/texlive/texmf-dist/tex/latex/graphics/color.sty
-Package: color 2005/11/14 v1.0j Standard LaTeX Color (DPC)
-
-(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/color.cfg
-File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
-)
-Package color Info: Driver file: pdftex.def on input line 130.
-)
-Package hyperref Info: Link coloring ON on input line 13.
-
+\AtBeginShipoutBox=\box35
+Package hyperref Info: Link coloring ON on input line 19.
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2010/04/30 v2.40 Cross-referencing by name of section
 
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
-\c@section@level=\count126
+\c@section@level=\count137
 )
-LaTeX Info: Redefining \ref on input line 13.
-LaTeX Info: Redefining \pageref on input line 13.
-LaTeX Info: Redefining \nameref on input line 13.
+LaTeX Info: Redefining \ref on input line 19.
+LaTeX Info: Redefining \pageref on input line 19.
+LaTeX Info: Redefining \nameref on input line 19.
 
 (./thesis.out) (./thesis.out)
 \@outlinefile=\write3
 \openout3 = `thesis.out'.
 
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: listings package is loaded.
+Package caption Info: End \AtBeginDocument code.
+\c@lstlisting=\count138
 \openout2 = `front.aux'.
 
  (./front.tex
-<fig/rams.pdf, id=95, 97.80238pt x 44.8345pt>
+<fig/rams.pdf, id=99, 97.80238pt x 44.8345pt>
 File: fig/rams.pdf Graphic file (type pdf)
  <use fig/rams.pdf>
 Package pdftex.def Info: fig/rams.pdf used on input line 4.
@@ -947,7 +1028,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 4--6
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./fig/rams.pdf>]
 LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <24.88> not available
-(Font)              Font shape `T1/futs/b/n' tried instead on input line 20.
+(Font)              Font shape `T1/futs/b/n' tried instead on input line 27.
 
 (./thesis.toc
 LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <12> not available
@@ -981,7 +1062,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.23 \include{chapter01}
+l.30 \include{chapter01}
                          [1]
 \openout2 = `chapter01.aux'.
 
@@ -992,94 +1073,59 @@ LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <17.28> not available
 [2
 
 
-]
-LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <14.4> not available
-(Font)              Font shape `T1/futs/b/n' tried instead on input line 43.
- [3] [4]
-LaTeX Font Info:    Font shape `T1/futs/bx/it' in size <12> not available
-(Font)              Font shape `T1/futs/b/it' tried instead on input line 101.
-) [5]
-\openout2 = `chapter02.aux'.
+] [3] [4]) [5]
+\openout2 = `chap2.aux'.
 
- (./chapter02.tex
+ (./chap2.tex
 Chapter 2.
-[6
+) [6
 
 
 
 ]
-LaTeX Font Info:    Try loading font information for T1+cmtt on input line 28.
- (/usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd
-File: t1cmtt.fd 1999/05/25 v2.5h Standard LaTeX font definitions
-)
-LaTeX Font Info:    Try loading font information for U+mvs on input line 29.
+\openout2 = `chap3.aux'.
 
-(/usr/share/texlive/texmf-dist/tex/latex/marvosym/umvs.fd)
-<fig/NTNU.pdf, id=176, 241.90375pt x 53.19875pt>
-File: fig/NTNU.pdf Graphic file (type pdf)
- <use fig/NTNU.pdf>
-Package pdftex.def Info: fig/NTNU.pdf used on input line 38.
-(pdftex.def)             Requested size: 145.14336pt x 31.91948pt.
+ (./chap3.tex
+Chapter 3.
+[7
 
-Overfull \hbox (2.83617pt too wide) in paragraph at lines 46--47
-\T1/futs/m/n/12 de-clare the fig-ure, you may in-clude the com-mand \T1/cmtt/m/
-n/12 [h] \T1/futs/m/n/12 (here) im-me-di-ately af-ter $\FMS/futm/m/n/12 n$\T1/c
-mtt/m/n/12 begin{figure}\T1/futs/m/n/12 .
+
+
+]) [8]
+\openout2 = `chap4.aux'.
+
+ (./chap4.tex
+Chapter 4.
+(./bfa_results_var1.tex) [9
+
+
+
+] (./bfa_ratio_analysis.tex
+Overfull \hbox (24.54895pt too wide) in paragraph at lines 25--26
+ [][][][][][][] 
  []
 
-[7 <./fig/NTNU.pdf>]
-LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 9.19998pt on input line 48.
-LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 6.99199pt on input line 48.
-LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 5.51999pt on input line 48.
-LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 9.19998pt on input line 48.
-LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 6.99199pt on input line 48.
-LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 5.51999pt on input line 48.
-File: fig/NTNU.pdf Graphic file (type pdf)
- <use fig/NTNU.pdf>
-Package pdftex.def Info: fig/NTNU.pdf used on input line 51.
-(pdftex.def)             Requested size: 435.4264pt x 95.75764pt.
-LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 10.07397pt on input line 64.
-LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 7.63599pt on input line 64.
-LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 10.07397pt on input line 64.
-LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 7.63599pt on input line 64.
-
-Overfull \hbox (5.74524pt too wide) in paragraph at lines 79--81
-\T1/futs/m/n/12 neath the com-mand $\FMS/futm/m/n/12 n$\T1/cmtt/m/n/12 includeg
-raphics \T1/futs/m/n/12 for fig-ures, and above the com-mand $\FMS/futm/m/n/12 
-n$\T1/cmtt/m/n/12 begin{tabular*}
- []
-
-[8] [9] [10]
-LaTeX Font Info:    Try loading font information for TS1+futs on input line 106
-.
- (/usr/share/texlive/texmf-dist/tex/latex/fourier/ts1futs.fd
-File: ts1futs.fd 2004/03/26 Fontinst v1.926 font definitions for TS1/futs.
-))
-[11]
+)) [10]
 \openout2 = `chapter0n.aux'.
 
  (./chapter0n.tex
-Chapter 3.
-[12
+Chapter 5.
+[11
 
 
 
-]) [13]
+]
+LaTeX Font Info:    Try loading font information for TS1+futs on input line 22.
+
+ (/usr/share/texlive/texmf-dist/tex/latex/fourier/ts1futs.fd
+File: ts1futs.fd 2004/03/26 Fontinst v1.926 font definitions for TS1/futs.
+)) [12]
 \openout2 = `acronyms.aux'.
 
- (./acronyms.tex
+
+(./acronyms.tex
 Appendix A.
-) [14
+) [13
 
 
 
@@ -1088,58 +1134,56 @@ Appendix A.
 
  (./appendix-b.tex
 Appendix B.
-) [15
+LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <14.4> not available
+(Font)              Font shape `T1/futs/b/n' tried instead on input line 11.
+) [14
 
 
 
-] (./thesis.bbl) [16
+] (./thesis.bbl) [15
 
 
 ]
 \openout2 = `vitae.aux'.
 
  (./vitae.tex
-<fig/me.pdf, id=248, 238.8925pt x 283.0575pt>
+<fig/me.pdf, id=215, 238.8925pt x 283.0575pt>
 File: fig/me.pdf Graphic file (type pdf)
  <use fig/me.pdf>
 Package pdftex.def Info: fig/me.pdf used on input line 20.
 (pdftex.def)             Requested size: 71.66829pt x 84.9179pt.
- [17
+ [16
 
 
- <./fig/me.pdf>]) [18]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 40.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 40.
- (./thesis.aux (./front.aux) (./chapter01.aux) (./chapter02.aux)
-(./chapter0n.aux) (./acronyms.aux) (./appendix-b.aux) (./vitae.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 40.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 40.
+ <./fig/me.pdf>]) [17]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 49.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 49.
+ (./thesis.aux (./front.aux) (./chapter01.aux) (./chap2.aux)
+(./chap3.aux) (./chap4.aux) (./chapter0n.aux) (./acronyms.aux)
+(./appendix-b.aux) (./vitae.aux))
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 49.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 49.
 Package rerunfilecheck Info: File `thesis.out' has not changed.
-(rerunfilecheck)             Checksum: 5BFC17CD2D4E171B83771FF9A7D7C221;1388.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 40.
+(rerunfilecheck)             Checksum: AC94B2411172959839247D519CABF54D;1493.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 49.
  ) 
 Here is how much of TeX's memory you used:
- 8278 strings out of 495059
- 114547 string characters out of 3182029
- 202009 words of memory out of 3000000
- 11164 multiletter control sequences out of 15000+200000
- 113883 words of font info for 117 fonts, out of 3000000 for 9000
+ 11049 strings out of 495059
+ 155634 string characters out of 3182029
+ 275864 words of memory out of 3000000
+ 13916 multiletter control sequences out of 15000+200000
+ 68644 words of font info for 66 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
- 36i,10n,34p,846b,387s stack positions out of 5000i,500n,10000p,200000b,50000s
- </home/jahn/.texmf-var/fonts/pk/ljfour/jknappen/ec/ectt1200.600pk>{/usr/shar
-e/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/texmf-dist
-/fonts/type1/public/fourier/fourier-mex.pfb></usr/share/texlive/texmf-dist/font
-s/type1/public/fourier/fourier-mlit.pfb></usr/share/texlive/texmf-dist/fonts/ty
-pe1/public/fourier/fourier-ms.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
-blic/marvosym/marvosym.pfb></usr/share/texlive/texmf-dist/fonts/type1/adobe/uto
-pia/putb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/adobe/utopia/putbi8a.
-pfb></usr/share/texlive/texmf-dist/fonts/type1/adobe/utopia/putr8a.pfb></usr/sh
-are/texlive/texmf-dist/fonts/type1/adobe/utopia/putr8a.pfb></usr/share/texlive/
-texmf-dist/fonts/type1/adobe/utopia/putri8a.pfb>
-Output written on thesis.pdf (20 pages, 151792 bytes).
+ 41i,11n,38p,1233b,387s stack positions out of 5000i,500n,10000p,200000b,50000s
+{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
+e/texmf-dist/fonts/type1/adobe/utopia/putb8a.pfb></usr/share/texlive/texmf-dist
+/fonts/type1/adobe/utopia/putr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1
+/adobe/utopia/putr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/adobe/utopi
+a/putri8a.pfb>
+Output written on thesis.pdf (19 pages, 100036 bytes).
 PDF statistics:
- 353 PDF objects out of 1000 (max. 8388607)
- 282 compressed objects within 3 object streams
- 63 named destinations out of 1000 (max. 500000)
- 200 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 269 PDF objects out of 1000 (max. 8388607)
+ 238 compressed objects within 3 object streams
+ 58 named destinations out of 1000 (max. 500000)
+ 203 words of extra memory for PDF output out of 10000 (max. 10000000)
 
