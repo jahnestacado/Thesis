@@ -10,15 +10,17 @@
 \BOOKMARK [1][-]{section.3.1}{Data Set}{chapter.3}% 10
 \BOOKMARK [1][-]{section.3.2}{Byte Frequency Analysis\(BFA\) Algorithm}{chapter.3}% 11
 \BOOKMARK [0][-]{chapter.4}{BFA Variations}{}% 12
-\BOOKMARK [1][-]{section.4.1}{Variation 1 - Training with our special ASCII subset}{chapter.4}% 13
+\BOOKMARK [1][-]{section.4.1}{Variation 1 - Special ASCII subset fingerprint training}{chapter.4}% 13
 \BOOKMARK [1][-]{section.4.2}{Variation 2 - 4-Ratio categories of our special ASCII subset}{chapter.4}% 14
-\BOOKMARK [0][-]{chapter.5}{Summary}{}% 15
-\BOOKMARK [1][-]{section.5.1}{Summary and Conclusions}{chapter.5}% 16
-\BOOKMARK [1][-]{section.5.2}{Discussion}{chapter.5}% 17
-\BOOKMARK [1][-]{section.5.3}{Recommendations for Further Work}{chapter.5}% 18
-\BOOKMARK [0][-]{appendix.A}{Acronyms}{}% 19
-\BOOKMARK [0][-]{appendix.B}{Additional Information}{}% 20
-\BOOKMARK [1][-]{section.B.1}{Introduction}{appendix.B}% 21
-\BOOKMARK [2][-]{subsection.B.1.1}{More Details}{section.B.1}% 22
-\BOOKMARK [0][-]{subsection.B.1.1}{Bibliography}{}% 23
-\BOOKMARK [0][-]{appendix*.4}{Curriculum Vitae}{}% 24
+\BOOKMARK [1][-]{section.4.3}{Variation 3 - Dominant Category Fingerprints}{chapter.4}% 15
+\BOOKMARK [1][-]{section.4.4}{Variation 4 - Every fragment with ratio above 75\045 of our special ASCII subset classified as text }{chapter.4}% 16
+\BOOKMARK [0][-]{chapter.5}{Summary}{}% 17
+\BOOKMARK [1][-]{section.5.1}{Summary and Conclusions}{chapter.5}% 18
+\BOOKMARK [1][-]{section.5.2}{Discussion}{chapter.5}% 19
+\BOOKMARK [1][-]{section.5.3}{Recommendations for Further Work}{chapter.5}% 20
+\BOOKMARK [0][-]{appendix.A}{Acronyms}{}% 21
+\BOOKMARK [0][-]{appendix.B}{Additional Information}{}% 22
+\BOOKMARK [1][-]{section.B.1}{Introduction}{appendix.B}% 23
+\BOOKMARK [2][-]{subsection.B.1.1}{More Details}{section.B.1}% 24
+\BOOKMARK [0][-]{subsection.B.1.1}{Bibliography}{}% 25
+\BOOKMARK [0][-]{appendix*.4}{Curriculum Vitae}{}% 26

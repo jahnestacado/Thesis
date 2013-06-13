@@ -10,15 +10,17 @@
 \contentsline {section}{\numberline {3.1}Data Set}{7}{section.3.1}
 \contentsline {section}{\numberline {3.2}Byte Frequency Analysis(BFA) Algorithm}{7}{section.3.2}
 \contentsline {chapter}{\numberline {4}BFA Variations}{9}{chapter.4}
-\contentsline {section}{\numberline {4.1}Variation 1 - Training with our special ASCII subset}{9}{section.4.1}
+\contentsline {section}{\numberline {4.1}Variation 1 - Special ASCII subset fingerprint training}{9}{section.4.1}
 \contentsline {section}{\numberline {4.2}Variation 2 - 4-Ratio categories of our special ASCII subset}{9}{section.4.2}
-\contentsline {chapter}{\numberline {5}Summary}{11}{chapter.5}
-\contentsline {section}{\numberline {5.1}Summary and Conclusions}{11}{section.5.1}
-\contentsline {section}{\numberline {5.2}Discussion}{11}{section.5.2}
-\contentsline {section}{\numberline {5.3}Recommendations for Further Work}{12}{section.5.3}
-\contentsline {chapter}{\numberline {A}Acronyms}{13}{appendix.A}
-\contentsline {chapter}{\numberline {B}Additional Information}{14}{appendix.B}
-\contentsline {section}{\numberline {B.1}Introduction}{14}{section.B.1}
-\contentsline {subsection}{\numberline {B.1.1}More Details}{14}{subsection.B.1.1}
-\contentsline {chapter}{Bibliography}{15}{subsection.B.1.1}
-\contentsline {chapter}{Curriculum Vitae}{16}{appendix*.4}
+\contentsline {section}{\numberline {4.3}Variation 3 - Dominant Category Fingerprints}{11}{section.4.3}
+\contentsline {section}{\numberline {4.4}Variation 4 - Every fragment with ratio above 75\% of our special ASCII subset classified as text }{12}{section.4.4}
+\contentsline {chapter}{\numberline {5}Summary}{13}{chapter.5}
+\contentsline {section}{\numberline {5.1}Summary and Conclusions}{13}{section.5.1}
+\contentsline {section}{\numberline {5.2}Discussion}{13}{section.5.2}
+\contentsline {section}{\numberline {5.3}Recommendations for Further Work}{14}{section.5.3}
+\contentsline {chapter}{\numberline {A}Acronyms}{15}{appendix.A}
+\contentsline {chapter}{\numberline {B}Additional Information}{16}{appendix.B}
+\contentsline {section}{\numberline {B.1}Introduction}{16}{section.B.1}
+\contentsline {subsection}{\numberline {B.1.1}More Details}{16}{subsection.B.1.1}
+\contentsline {chapter}{Bibliography}{17}{subsection.B.1.1}
+\contentsline {chapter}{Curriculum Vitae}{18}{appendix*.4}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2012.10.30)  12 JUN 2013 22:40
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2012.10.30)  13 JUN 2013 15:05
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1013,7 +1013,7 @@ Package caption Info: End \AtBeginDocument code.
 \openout2 = `front.aux'.
 
  (./front.tex
-<fig/rams.pdf, id=99, 97.80238pt x 44.8345pt>
+<fig/rams.pdf, id=107, 97.80238pt x 44.8345pt>
 File: fig/rams.pdf Graphic file (type pdf)
  <use fig/rams.pdf>
 Package pdftex.def Info: fig/rams.pdf used on input line 4.
@@ -1105,12 +1105,12 @@ Overfull \hbox (24.54895pt too wide) in paragraph at lines 25--26
  [][][][][][][] 
  []
 
-)) [10]
+) [10]) [11] [12]
 \openout2 = `chapter0n.aux'.
 
  (./chapter0n.tex
 Chapter 5.
-[11
+[13
 
 
 
@@ -1119,13 +1119,13 @@ LaTeX Font Info:    Try loading font information for TS1+futs on input line 22.
 
  (/usr/share/texlive/texmf-dist/tex/latex/fourier/ts1futs.fd
 File: ts1futs.fd 2004/03/26 Fontinst v1.926 font definitions for TS1/futs.
-)) [12]
+)) [14]
 \openout2 = `acronyms.aux'.
 
 
 (./acronyms.tex
 Appendix A.
-) [13
+) [15
 
 
 
@@ -1136,26 +1136,26 @@ Appendix A.
 Appendix B.
 LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <14.4> not available
 (Font)              Font shape `T1/futs/b/n' tried instead on input line 11.
-) [14
+) [16
 
 
 
-] (./thesis.bbl) [15
+] (./thesis.bbl) [17
 
 
 ]
 \openout2 = `vitae.aux'.
 
  (./vitae.tex
-<fig/me.pdf, id=215, 238.8925pt x 283.0575pt>
+<fig/me.pdf, id=235, 238.8925pt x 283.0575pt>
 File: fig/me.pdf Graphic file (type pdf)
  <use fig/me.pdf>
 Package pdftex.def Info: fig/me.pdf used on input line 20.
 (pdftex.def)             Requested size: 71.66829pt x 84.9179pt.
- [16
+ [18
 
 
- <./fig/me.pdf>]) [17]
+ <./fig/me.pdf>]) [19]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 49.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 49.
  (./thesis.aux (./front.aux) (./chapter01.aux) (./chap2.aux)
@@ -1164,26 +1164,26 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 49.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 49.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 49.
 Package rerunfilecheck Info: File `thesis.out' has not changed.
-(rerunfilecheck)             Checksum: AC94B2411172959839247D519CABF54D;1493.
+(rerunfilecheck)             Checksum: AE799653388A12CFEE9979C233E6828A;1734.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 49.
  ) 
 Here is how much of TeX's memory you used:
- 11049 strings out of 495059
- 155634 string characters out of 3182029
- 275864 words of memory out of 3000000
- 13916 multiletter control sequences out of 15000+200000
+ 11055 strings out of 495059
+ 155696 string characters out of 3182029
+ 276864 words of memory out of 3000000
+ 13918 multiletter control sequences out of 15000+200000
  68644 words of font info for 66 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
- 41i,11n,38p,1233b,387s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 41i,11n,38p,1585b,387s stack positions out of 5000i,500n,10000p,200000b,50000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
 e/texmf-dist/fonts/type1/adobe/utopia/putb8a.pfb></usr/share/texlive/texmf-dist
 /fonts/type1/adobe/utopia/putr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1
 /adobe/utopia/putr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/adobe/utopi
 a/putri8a.pfb>
-Output written on thesis.pdf (19 pages, 100036 bytes).
+Output written on thesis.pdf (21 pages, 106082 bytes).
 PDF statistics:
- 269 PDF objects out of 1000 (max. 8388607)
- 238 compressed objects within 3 object streams
- 58 named destinations out of 1000 (max. 500000)
- 203 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 289 PDF objects out of 1000 (max. 8388607)
+ 256 compressed objects within 3 object streams
+ 62 named destinations out of 1000 (max. 500000)
+ 219 words of extra memory for PDF output out of 10000 (max. 10000000)
 
