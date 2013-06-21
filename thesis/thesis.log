@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2012.10.30)  18 JUN 2013 15:17
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2012.10.30)  21 JUN 2013 23:22
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -875,7 +875,8 @@ Package: ulem 2012/05/18
 (/usr/share/texlive/texmf-dist/tex/latex/placeins/placeins.sty
 Package: placeins 2005/04/18  v 2.2
 ) (./thesis.aux
-(./chapter01.aux) (./chap2.aux) (./chap3.aux) (./chap4.aux))
+(./front.aux) (./chapter01.aux) (./chap2.aux) (./chap3.aux) (./chap4.aux)
+(./chapter0n.aux) (./acronyms.aux) (./appendix-b.aux) (./vitae.aux))
 \openout1 = `thesis.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 20.
@@ -1015,7 +1016,7 @@ Package caption Info: End \AtBeginDocument code.
 \openout2 = `front.aux'.
 
  (./front.tex
-<fig/rams.pdf, id=76, 97.80238pt x 44.8345pt>
+<fig/rams.pdf, id=115, 97.80238pt x 44.8345pt>
 File: fig/rams.pdf Graphic file (type pdf)
  <use fig/rams.pdf>
 Package pdftex.def Info: fig/rams.pdf used on input line 4.
@@ -1052,7 +1053,11 @@ LaTeX Font Info:    Font shape `U/futm/m/n' will be
 (Font)              scaled to size 8.27998pt on input line 2.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
 (Font)              scaled to size 6.43999pt on input line 2.
-)
+
+[1
+
+
+])
 \tf@toc=\write4
 \openout4 = `thesis.toc'.
 
@@ -1061,10 +1066,7 @@ been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.31 \include{chapter01}
-                         [1
-
-
-]
+                         [1]
 \openout2 = `chapter01.aux'.
 
  (./chapter01.tex
@@ -1141,12 +1143,27 @@ Underfull \hbox (badness 10000) in paragraph at lines 41--43
 
  []
 
-[15]) [16]
+[15] (./bfa_results_ashims.tex
+Underfull \hbox (badness 10000) in paragraph at lines 46--29
+
+ []
+
+)
+Underfull \hbox (badness 10000) in paragraph at lines 48--49
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 48--49
+
+ []
+
+[16]) [17]
 \openout2 = `chapter0n.aux'.
 
  (./chapter0n.tex
 Chapter 5.
-[17
+[18
 
 
 
@@ -1155,13 +1172,13 @@ LaTeX Font Info:    Try loading font information for TS1+futs on input line 22.
 
  (/usr/share/texlive/texmf-dist/tex/latex/fourier/ts1futs.fd
 File: ts1futs.fd 2004/03/26 Fontinst v1.926 font definitions for TS1/futs.
-)) [18]
+)) [19]
 \openout2 = `acronyms.aux'.
 
 
 (./acronyms.tex
 Appendix A.
-) [19
+) [20
 
 
 
@@ -1172,54 +1189,42 @@ Appendix A.
 Appendix B.
 LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <14.4> not available
 (Font)              Font shape `T1/futs/b/n' tried instead on input line 11.
-) [20
+) [21
 
 
 
-] (./thesis.bbl) [21
+] (./thesis.bbl) [22
 
 
 ]
 \openout2 = `vitae.aux'.
 
  (./vitae.tex
-<fig/me.pdf, id=232, 238.8925pt x 283.0575pt>
+<fig/me.pdf, id=283, 238.8925pt x 283.0575pt>
 File: fig/me.pdf Graphic file (type pdf)
  <use fig/me.pdf>
 Package pdftex.def Info: fig/me.pdf used on input line 20.
 (pdftex.def)             Requested size: 71.66829pt x 84.9179pt.
- [22
+ [23
 
 
- <./fig/me.pdf>]) [23]
+ <./fig/me.pdf>]) [24]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 50.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 50.
  (./thesis.aux (./front.aux) (./chapter01.aux) (./chap2.aux)
 (./chap3.aux) (./chap4.aux) (./chapter0n.aux) (./acronyms.aux)
-(./appendix-b.aux)
-
-Package natbib Warning: Citation(s) may have changed.
-(natbib)                Rerun to get citations correct.
-
-(./vitae.aux))
+(./appendix-b.aux) (./vitae.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 50.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 50.
-
-
-Package rerunfilecheck Warning: File `thesis.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `thesis.out':
-(rerunfilecheck)             Before: E7CC5165C9C25A9C2DF8196B10465BE0;1336
-(rerunfilecheck)             After:  009542663967E5C8B1808F57551F2A37;1925.
+Package rerunfilecheck Info: File `thesis.out' has not changed.
+(rerunfilecheck)             Checksum: 3C2234118E0954B8BA4BE134A90403AE;1930.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 50.
  ) 
 Here is how much of TeX's memory you used:
- 11078 strings out of 495059
- 156259 string characters out of 3182029
- 305473 words of memory out of 3000000
- 13925 multiletter control sequences out of 15000+200000
+ 11110 strings out of 495059
+ 156676 string characters out of 3182029
+ 308774 words of memory out of 3000000
+ 13941 multiletter control sequences out of 15000+200000
  69061 words of font info for 68 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
  41i,12n,38p,1291b,385s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1229,10 +1234,10 @@ f-dist/fonts/type1/adobe/utopia/putb8a.pfb></usr/share/texlive/texmf-dist/fonts
 /type1/adobe/utopia/putr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/adobe
 /utopia/putr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/adobe/utopia/putr
 i8a.pfb>
-Output written on thesis.pdf (24 pages, 119367 bytes).
+Output written on thesis.pdf (26 pages, 125821 bytes).
 PDF statistics:
- 292 PDF objects out of 1000 (max. 8388607)
- 255 compressed objects within 3 object streams
- 73 named destinations out of 1000 (max. 500000)
- 155 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 344 PDF objects out of 1000 (max. 8388607)
+ 304 compressed objects within 4 object streams
+ 76 named destinations out of 1000 (max. 500000)
+ 235 words of extra memory for PDF output out of 10000 (max. 10000000)
 
