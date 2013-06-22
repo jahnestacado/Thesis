@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2012.10.30)  13 JUN 2013 11:02
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2012.10.30)  22 JUN 2013 21:28
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -278,22 +278,29 @@ Overfull \hbox (66.72997pt too wide) in paragraph at lines 318--319
  [][][][][][][] 
  []
 
-[1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2] [3] [4] [5]
+
+Overfull \hbox (117.55074pt too wide) in paragraph at lines 419--420
+ [][][][][][][] 
+ []
+
+[1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
+
+] [2] [3] [4] [5] [6]
 (./tables.aux) ) 
 Here is how much of TeX's memory you used:
  4504 strings out of 495059
  66463 string characters out of 3182029
- 233006 words of memory out of 3000000
+ 243359 words of memory out of 3000000
  7669 multiletter control sequences out of 15000+200000
  3746 words of font info for 15 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
- 41i,12n,38p,232b,287s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 41i,13n,38p,232b,288s stack positions out of 5000i,500n,10000p,200000b,50000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/c
 mr10.pfb>
-Output written on tables.pdf (5 pages, 31587 bytes).
+Output written on tables.pdf (6 pages, 32973 bytes).
 PDF statistics:
- 24 PDF objects out of 1000 (max. 8388607)
- 15 compressed objects within 1 object stream
+ 27 PDF objects out of 1000 (max. 8388607)
+ 17 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
