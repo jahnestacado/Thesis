@@ -16,13 +16,14 @@
 \BOOKMARK [1][-]{section.4.4}{Variation 4 - Every fragment with ratio above 75\045 of our special ASCII subset classified as text }{chapter.4}% 16
 \BOOKMARK [1][-]{section.4.5}{Optimal Variation for Text Fragment Classification}{chapter.4}% 17
 \BOOKMARK [1][-]{section.4.6}{BFA Training - complete ASCII set VS plain text }{chapter.4}% 18
-\BOOKMARK [0][-]{chapter.5}{Summary}{}% 19
-\BOOKMARK [1][-]{section.5.1}{Summary and Conclusions}{chapter.5}% 20
-\BOOKMARK [1][-]{section.5.2}{Discussion}{chapter.5}% 21
-\BOOKMARK [1][-]{section.5.3}{Recommendations for Further Work}{chapter.5}% 22
-\BOOKMARK [0][-]{appendix.A}{Acronyms}{}% 23
-\BOOKMARK [0][-]{appendix.B}{Additional Information}{}% 24
-\BOOKMARK [1][-]{section.B.1}{Introduction}{appendix.B}% 25
-\BOOKMARK [2][-]{subsection.B.1.1}{More Details}{section.B.1}% 26
-\BOOKMARK [0][-]{subsection.B.1.1}{Bibliography}{}% 27
-\BOOKMARK [0][-]{appendix*.12}{Curriculum Vitae}{}% 28
+\BOOKMARK [0][-]{chapter.5}{Classification Metrics}{}% 19
+\BOOKMARK [1][-]{section.5.1}{BFA Variation 1 Output}{chapter.5}% 20
+\BOOKMARK [1][-]{section.5.2}{Individual Null Byte Frequency}{chapter.5}% 21
+\BOOKMARK [1][-]{section.5.3}{Plain Text Concentration Categories}{chapter.5}% 22
+\BOOKMARK [1][-]{section.5.4}{Shannon Entropy}{chapter.5}% 23
+\BOOKMARK [0][-]{appendix.A}{Acronyms}{}% 24
+\BOOKMARK [0][-]{appendix.B}{Additional Information}{}% 25
+\BOOKMARK [1][-]{section.B.1}{Introduction}{appendix.B}% 26
+\BOOKMARK [2][-]{subsection.B.1.1}{More Details}{section.B.1}% 27
+\BOOKMARK [0][-]{subsection.B.1.1}{Bibliography}{}% 28
+\BOOKMARK [0][-]{appendix*.12}{Curriculum Vitae}{}% 29
