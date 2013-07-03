@@ -423,8 +423,59 @@ percentage of fragments with no plain text & 7.4    & 4.7    & 4.7    & 13.3   &
 
 
 
+%%------------------------------------------------------------------------------------------------------------------------------
+\begin{table}
+\centering
+\caption{Sample table}
+\colorbox{blue!30}{
+\scalebox{0.75}{
+
+\begin{tabular}{ l c c c c c c c c c c }
+\hline
+\hline
+& $n$ most frequent lcs          & $n=100$	 & $n=500$   & $n=1000$  & $n=1500$       \\[0.6ex]
+\hline
+\\[0.2ex]
+doc vs. xls precision 		        & & 83        & 89.5      & 90.06     & 91.63 \\\\[0.8ex]
+doc lcs representative string length & & 1,007      & 5,763    & 15,225    & 27,070     \\[0.8ex]
+xls lcs representative string length & & 859       & 4,679     & 9,482     & 14,609    \\[0.8ex]
 
 
+\end{tabular}}}
+\end{table}
+%End lcs table
+
+
+
+%%------------------------------------------------------------------------------------------------------------------------------
+\begin{table}
+\centering
+\caption{BFAs Output Plain Text Concentration Analysis }
+\colorbox{blue!30}{
+\scalebox{0.75}{
+\begin{tabular}{ l r r r r r r r r r r r }
+\hline
+\hline
+ratio &\ \ & pdf  &  zip  &  text  &  doc  &  mp4  &  xls  &  ppt  &  jpg  &  ogg  &  png \\ 
+\hline
+
+\\[0.2ex]
+0 - 25\% 		 &\ \ & 5,606      & 75      & 3         & 51,462    & 2,606     & 145,106   & 9,920   & 1,178      & 198      & 7,781    \\[0.6ex]
+25 - 50\% 		&\ \ & 14,008     & 9,901   & 127       & 16,474    & 6,395     & 35,315    & 13,867  & 9,328      & 13,715   & 6,352    \\[0.6ex]
+50 - 75\%		&\ \ & 5,646      & 11      & 263       & 1,416     & 0         & 2,974     & 1,396   & 110        & 53       & 13  \\[0.6ex]
+75 - 100\%		&\ \ & 15,115     & 0       & 185,952   & 20,247    & 0         & 1,298     & 2,373   & 1,025      & 0        & 0 \\[0.8ex]
+Total:	       &\ \  & 40,375     & 9,987   & 186,345   & 89,599    & 9,001     & 184,693   & 27,556  & 11,641     & 13,966   & 14,146 \\[0.6ex]\\
+
+
+0 - 25\% 		&\ \ & 13.9  & 0.8  & 0     & 57.4  & 29    & 78.6   & 36    & 10.1  & 1.4   & 55     \\[0.6ex]
+25 - 50\% 		&\ \ & 34.7  & 99.1 & 0.1   & 18.4  & 71    & 19.1   & 50.3  & 80.1  & 98.2  & 44.9   \\[0.6ex]
+50 - 75\%		&\ \ & 14    & 0.1  & 0.1   & 1.6   & 0     & 1.6    & 5.1   & 0.9   & 0.4   & 0.1  \\[0.6ex]
+75 - 100\%		&\ \ & 37.4  & 0    & 99.8  & 22.6  & 0     & 0.7    & 8.6   & 8.8   & 0     & 0   \\[0.6ex]
+
+\end{tabular}}}
+\end{table}
+
+%End table - Output Analysis
 
 \end{document}
 

@@ -11,6 +11,14 @@
 \usepackage[normalem]{ulem}
 \usepackage[section]{placeins}
 \usepackage{mathtools}
+\usepackage[T1]{fontenc}
+\usepackage[parfill]{parskip}%Begin paragraphs with an empty line rather than an indent
+
+
+\usepackage[nottoc,numbib]{tocbibind}%Dispalay refrences in the table of contents
+
+%\renewcommand{\familydefault}{sans}
+
 
 %%===================================
 %Write the various parts of your thesis as separate files and include them into the main file by the command \include{name of included file}. When you compile the LaTeX file, you may choose which subfiles to include by the command
@@ -34,6 +42,10 @@
 \include{chap3}
 \include{chap4}
 \include{chap5}
+\include{chap6}
+\include{chap7}
+\include{chap8}
+\include{chap9}
 %\include{chapter0n}
 % Include more chapters as required.
 %%=========================================
@@ -42,11 +54,14 @@
 \include{appendix-b}
 % Include more appendices as required.
 %%=========================================
-\bibliographystyle{apa}
-\addcontentsline{toc}{chapter}{\bibname}
-\bibliography{refs}  
+%\bibliographystyle{apa}
+%\addcontentsline{toc}{chapter}{\bibname}
+%\bibliography{refs}  
+\begin{thebibliography}{99}
+\input{ref}
+\end{thebibliography}
 %%=========================================
-\include{vitae}         % Your curriculum Vitae     
+   
 %%=============================================
 
 \end{document}
