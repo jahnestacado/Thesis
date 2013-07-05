@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2012.10.30)  5 JUL 2013 02:33
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2012.10.30)  5 JUL 2013 16:28
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -924,76 +924,109 @@ Package tocbibind Info: The document has chapter divisions on input line 50.
 
 Package tocbibind Note: Using chapter style headings, unless overridden.
 
-) (./thesis.aux (./front.aux) (./chapter01.aux) (./chap2.aux) (./chap3.aux)
-(./chap4.aux) (./chap5.aux) (./chap6.aux) (./chap7.aux) (./chap8.aux)
-(./chap9.aux) (./appendix.aux)
+) (/usr/share/texlive/texmf-dist/tex/latex/caption/subcaption.sty
+Package: subcaption 2012/01/12 v1.1d Sub-captions (AR)
+\c@subfigure=\count135
+\c@subtable=\count136
+)
+(./thesis.aux (./front.aux) (./chapter01.aux) (./chap2.aux) (./chap3.aux)
+(./chap4.aux
+
+LaTeX Warning: Label `fig:1a' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:1a' multiply defined.
+
+
+LaTeX Warning: Label `fig:1b' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:1b' multiply defined.
+
+
+LaTeX Warning: Label `fig:1c' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:1c' multiply defined.
+
+
+LaTeX Warning: Label `fig:1d' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:1d' multiply defined.
+
+) (./chap6.aux) (./chap7.aux) (./chap8.aux
+
+LaTeX Warning: Label `table:lcs' multiply defined.
+
+) (./chap9.aux) (./appendix.aux)
 
 LaTeX Warning: Label `Garfinkel' multiply defined.
 
 )
 \openout1 = `thesis.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 31.
-LaTeX Font Info:    ... okay on input line 31.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 31.
-LaTeX Font Info:    ... okay on input line 31.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 31.
-LaTeX Font Info:    ... okay on input line 31.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 31.
-LaTeX Font Info:    ... okay on input line 31.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 31.
-LaTeX Font Info:    ... okay on input line 31.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 31.
-LaTeX Font Info:    ... okay on input line 31.
-LaTeX Font Info:    Checking defaults for FML/futm/m/it on input line 31.
-LaTeX Font Info:    Try loading font information for FML+futm on input line 31.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for FML/futm/m/it on input line 35.
+LaTeX Font Info:    Try loading font information for FML+futm on input line 35.
 
  (/usr/share/texlive/texmf-dist/tex/latex/fourier/fmlfutm.fd
 File: fmlfutm.fd 2004/10/30 Fontinst v1.926 font definitions for FML/futm.
 )
-LaTeX Font Info:    ... okay on input line 31.
-LaTeX Font Info:    Checking defaults for FMS/futm/m/n on input line 31.
-LaTeX Font Info:    Try loading font information for FMS+futm on input line 31.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for FMS/futm/m/n on input line 35.
+LaTeX Font Info:    Try loading font information for FMS+futm on input line 35.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/fourier/fmsfutm.fd
 File: fmsfutm.fd 2004/10/30 Fontinst v1.926 font definitions for FMS/futm.
 )
-LaTeX Font Info:    ... okay on input line 31.
-LaTeX Font Info:    Checking defaults for FMX/futm/m/n on input line 31.
-LaTeX Font Info:    Try loading font information for FMX+futm on input line 31.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for FMX/futm/m/n on input line 35.
+LaTeX Font Info:    Try loading font information for FMX+futm on input line 35.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/fourier/fmxfutm.fd
 File: fmxfutm.fd futm-extension
 )
-LaTeX Font Info:    ... okay on input line 31.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 31.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 31.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 35.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 35.
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 31.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 31.
-LaTeX Font Info:    ... okay on input line 31.
-LaTeX Font Info:    Try loading font information for T1+futs on input line 31.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Try loading font information for T1+futs on input line 35.
 
 (/usr/share/texlive/texmf-dist/tex/latex/fourier/t1futs.fd
 File: t1futs.fd 2004/03/02 Fontinst v1.926 font definitions for T1/futs.
 )
 (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count135
+\scratchcounter=\count137
 \scratchdimen=\dimen162
 \scratchbox=\box36
-\nofMPsegments=\count136
-\nofMParguments=\count137
+\nofMPsegments=\count138
+\nofMParguments=\count139
 \everyMPshowfont=\toks31
-\MPscratchCnt=\count138
+\MPscratchCnt=\count140
 \MPscratchDim=\dimen163
-\MPnumerator=\count139
-\makeMPintoPDFobject=\count140
+\MPnumerator=\count141
+\makeMPintoPDFobject=\count142
 \everyMPtoPDFconversion=\toks32
 ) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
@@ -1045,18 +1078,18 @@ e
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 \AtBeginShipoutBox=\box37
-Package hyperref Info: Link coloring ON on input line 31.
+Package hyperref Info: Link coloring ON on input line 35.
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2010/04/30 v2.40 Cross-referencing by name of section
 
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
-\c@section@level=\count141
+\c@section@level=\count143
 )
-LaTeX Info: Redefining \ref on input line 31.
-LaTeX Info: Redefining \pageref on input line 31.
-LaTeX Info: Redefining \nameref on input line 31.
+LaTeX Info: Redefining \ref on input line 35.
+LaTeX Info: Redefining \pageref on input line 35.
+LaTeX Info: Redefining \nameref on input line 35.
 
 (./thesis.out) (./thesis.out)
 \@outlinefile=\write3
@@ -1066,7 +1099,7 @@ Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: float package is loaded.
 Package caption Info: listings package is loaded.
 Package caption Info: End \AtBeginDocument code.
-\c@lstlisting=\count142
+\c@lstlisting=\count144
 \openout2 = `front.aux'.
 
  (./front.tex
@@ -1085,7 +1118,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 4--6
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./fig/rams.pdf>]
 LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <24.88> not available
-(Font)              Font shape `T1/futs/b/n' tried instead on input line 39.
+(Font)              Font shape `T1/futs/b/n' tried instead on input line 43.
 
 (./thesis.toc
 LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <12> not available
@@ -1119,7 +1152,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.42 \include{chapter01}
+l.46 \include{chapter01}
                          [1]
 \openout2 = `chapter01.aux'.
 
@@ -1191,21 +1224,98 @@ Overfull \hbox (24.54895pt too wide) in paragraph at lines 25--26
  []
 
 ) [14] (./bfa_results_dominant.tex [15]) (./bfa_results_var4.tex [16]) [17]
-(./bfa_results_ashims.tex) [18] [19]) [20]
-\openout2 = `chap5.aux'.
+(./bfa_results_ashims.tex) [18] [19] [20] (./bfas_output_table.tex) [21]
+[22] (./indi_null_figures.tex
+<figures/null_bytes/Indi_Null_Bytes_pdf.png, id=373, 698.61pt x 473.77pt>
+File: figures/null_bytes/Indi_Null_Bytes_pdf.png Graphic file (type png)
 
- (./chap5.tex
-Chapter 5.
-(./bfas_output_table.tex) [21
+<use figures/null_bytes/Indi_Null_Bytes_pdf.png>
+Package pdftex.def Info: figures/null_bytes/Indi_Null_Bytes_pdf.png used on inp
+ut line 4.
+(pdftex.def)             Requested size: 251.4994pt x 170.55707pt.
 
+Overfull \hbox (15.4838pt too wide) in paragraph at lines 4--5
+ [][]
+ []
 
+<figures/null_bytes/Indi_Null_Bytes_xls.png, id=375, 698.61pt x 473.77pt>
+File: figures/null_bytes/Indi_Null_Bytes_xls.png Graphic file (type png)
 
-] [22] [23]) [24]
+<use figures/null_bytes/Indi_Null_Bytes_xls.png>
+Package pdftex.def Info: figures/null_bytes/Indi_Null_Bytes_xls.png used on inp
+ut line 10.
+(pdftex.def)             Requested size: 251.4994pt x 170.55707pt.
+
+Overfull \hbox (15.4838pt too wide) in paragraph at lines 10--11
+[][]  
+ []
+
+<figures/null_bytes/Indi_Null_Bytes_doc.png, id=376, 698.61pt x 473.77pt>
+File: figures/null_bytes/Indi_Null_Bytes_doc.png Graphic file (type png)
+
+<use figures/null_bytes/Indi_Null_Bytes_doc.png>
+Package pdftex.def Info: figures/null_bytes/Indi_Null_Bytes_doc.png used on inp
+ut line 17.
+(pdftex.def)             Requested size: 251.4994pt x 170.55707pt.
+
+Overfull \hbox (15.4838pt too wide) in paragraph at lines 17--18
+ [][]
+ []
+
+<figures/null_bytes/Indi_Null_Bytes_text.png, id=377, 698.61pt x 473.77pt>
+File: figures/null_bytes/Indi_Null_Bytes_text.png Graphic file (type png)
+
+<use figures/null_bytes/Indi_Null_Bytes_text.png>
+Package pdftex.def Info: figures/null_bytes/Indi_Null_Bytes_text.png used on in
+put line 23.
+(pdftex.def)             Requested size: 251.4994pt x 170.55707pt.
+
+Overfull \hbox (15.4838pt too wide) in paragraph at lines 23--24
+[][]  
+ []
+
+) [23 <./figures/null_bytes/Indi_Null_Bytes_pdf.png> <./figures/null_bytes/Indi
+_Null_Bytes_xls.png> <./figures/null_bytes/Indi_Null_Bytes_doc.png> <./figures/
+null_bytes/Indi_Null_Bytes_text.png>] (./entropy_figures.tex
+<figures/entropy/Entropy_pdf.png, id=392, 698.61pt x 473.77pt>
+File: figures/entropy/Entropy_pdf.png Graphic file (type png)
+
+<use figures/entropy/Entropy_pdf.png>
+Package pdftex.def Info: figures/entropy/Entropy_pdf.png used on input line 4.
+(pdftex.def)             Requested size: 223.55977pt x 151.6095pt.
+
+<figures/entropy/Entropy_xls.png, id=393, 698.61pt x 473.77pt>
+File: figures/entropy/Entropy_xls.png Graphic file (type png)
+
+<use figures/entropy/Entropy_xls.png>
+Package pdftex.def Info: figures/entropy/Entropy_xls.png used on input line 10.
+
+(pdftex.def)             Requested size: 223.55977pt x 151.6095pt.
+
+<figures/entropy/Entropy_doc.png, id=394, 698.61pt x 473.77pt>
+File: figures/entropy/Entropy_doc.png Graphic file (type png)
+
+<use figures/entropy/Entropy_doc.png>
+Package pdftex.def Info: figures/entropy/Entropy_doc.png used on input line 17.
+
+(pdftex.def)             Requested size: 223.55977pt x 151.6095pt.
+
+<figures/entropy/Entropy_text.png, id=395, 698.61pt x 473.77pt>
+File: figures/entropy/Entropy_text.png Graphic file (type png)
+
+<use figures/entropy/Entropy_text.png>
+Package pdftex.def Info: figures/entropy/Entropy_text.png used on input line 23
+.
+(pdftex.def)             Requested size: 223.55977pt x 151.6095pt.
+) [24 <./figures/entropy/Entropy_pdf.png> <./figures/entropy/Entropy_xls.png> <
+./figures/entropy/Entropy_doc.png> <./figures/entropy/Entropy_text.png>] [25] (
+./lcs_results_table.tex)) [26]
 \openout2 = `chap6.aux'.
 
- (./chap6.tex
-Chapter 6.
-) [25
+
+(./chap6.tex
+Chapter 5.
+) [27
 
 
 
@@ -1213,8 +1323,8 @@ Chapter 6.
 \openout2 = `chap7.aux'.
 
  (./chap7.tex
-Chapter 7.
-) [26
+Chapter 6.
+) [28
 
 
 
@@ -1222,7 +1332,7 @@ Chapter 7.
 \openout2 = `chap8.aux'.
 
  (./chap8.tex
-Chapter 8.
+Chapter 7.
 (./lcs_results_table.tex)
 Underfull \hbox (badness 10000) in paragraph at lines 2--6
 
@@ -1233,16 +1343,16 @@ Underfull \hbox (badness 10000) in paragraph at lines 2--6
 
  []
 
-[27
+[29
 
 
 
-] [28]) [29]
+] [30]) [31]
 \openout2 = `chap9.aux'.
 
  (./chap9.tex
-Chapter 9.
-) [30
+Chapter 8.
+) [32
 
 
 
@@ -1250,7 +1360,7 @@ Chapter 9.
 \openout2 = `appendix.aux'.
 
  (./appendix.tex
-Chapter 10.
+Chapter 9.
 (./bfa_results_ratio_categories.tex
 
 LaTeX Warning: No positions in optional float specifier.
@@ -1260,13 +1370,13 @@ LaTeX Warning: No positions in optional float specifier.
 LaTeX Warning: No positions in optional float specifier.
                Default added (so using `!tbp') on input line 92.
 
-)) [31
+)) [33
 
 
 
-] [32] [33]
-Chapter 11.
-(./ref.tex [34
+] [34] [35]
+Chapter 10.
+(./ref.tex [36
 
 
 ]
@@ -1280,17 +1390,17 @@ l}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.50 \bibitem{Garfinkel}
-                         [35])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 69.
- [36]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 69.
+                         [37])
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 73.
+ [38]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 73.
  (./thesis.aux (./front.aux)
-(./chapter01.aux) (./chap2.aux) (./chap3.aux) (./chap4.aux) (./chap5.aux)
-(./chap6.aux) (./chap7.aux) (./chap8.aux) (./chap9.aux) (./appendix.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 69.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 69.
+(./chapter01.aux) (./chap2.aux) (./chap3.aux) (./chap4.aux) (./chap6.aux)
+(./chap7.aux) (./chap8.aux) (./chap9.aux) (./appendix.aux))
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 73.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 73.
 Package rerunfilecheck Info: File `thesis.out' has not changed.
-(rerunfilecheck)             Checksum: 5F10AB7768DF4AC19079555F1372AAF5;2284.
+(rerunfilecheck)             Checksum: C4B359C3E3294D939ADD93ABEEE1EFD4;2315.
 
 
 LaTeX Warning: There were undefined references.
@@ -1298,20 +1408,20 @@ LaTeX Warning: There were undefined references.
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 69.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 73.
  ) 
 Here is how much of TeX's memory you used:
- 11513 strings out of 495059
- 164418 string characters out of 3182029
- 308919 words of memory out of 3000000
- 14270 multiletter control sequences out of 15000+200000
- 66798 words of font info for 73 fonts, out of 3000000 for 9000
+ 11646 strings out of 495059
+ 167495 string characters out of 3182029
+ 310347 words of memory out of 3000000
+ 14383 multiletter control sequences out of 15000+200000
+ 71447 words of font info for 76 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
- 41i,13n,38p,1455b,449s stack positions out of 5000i,500n,10000p,200000b,50000s
-pdfTeX warning (dest): name{table.8.1} has been referenced but does not exist
+ 41i,13n,38p,1490b,490s stack positions out of 5000i,500n,10000p,200000b,50000s
+pdfTeX warning (dest): name{table.7.1} has been referenced but does not exist
 , replaced by a fixed one
 
-pdfTeX warning (dest): name{table.5.1} has been referenced but does not exist, 
+pdfTeX warning (dest): name{table.4.6} has been referenced but does not exist, 
 replaced by a fixed one
 
 pdfTeX warning (dest): name{table.4.5} has been referenced but does not exist, 
@@ -1323,17 +1433,17 @@ replaced by a fixed one
 pdfTeX warning (dest): name{table.4.3} has been referenced but does not exist, 
 replaced by a fixed one
 
-pdfTeX warning (dest): name{table.10.4} has been referenced but does not exist,
- replaced by a fixed one
+pdfTeX warning (dest): name{table.9.4} has been referenced but does not exist, 
+replaced by a fixed one
 
-pdfTeX warning (dest): name{table.10.3} has been referenced but does not exist,
- replaced by a fixed one
+pdfTeX warning (dest): name{table.9.3} has been referenced but does not exist, 
+replaced by a fixed one
 
-pdfTeX warning (dest): name{table.10.2} has been referenced but does not exist,
- replaced by a fixed one
+pdfTeX warning (dest): name{table.9.2} has been referenced but does not exist, 
+replaced by a fixed one
 
-pdfTeX warning (dest): name{table.10.1} has been referenced but does not exist,
- replaced by a fixed one
+pdfTeX warning (dest): name{table.9.1} has been referenced but does not exist, 
+replaced by a fixed one
 
 pdfTeX warning (dest): name{table.4.2} has been referenced but does not exist, 
 replaced by a fixed one
@@ -1351,10 +1461,10 @@ fonts/type1/adobe/utopia/putb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/
 adobe/utopia/putr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/adobe/utopia
 /putr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/adobe/utopia/putri8a.pfb
 >
-Output written on thesis.pdf (38 pages, 152112 bytes).
+Output written on thesis.pdf (40 pages, 217760 bytes).
 PDF statistics:
- 484 PDF objects out of 1000 (max. 8388607)
- 431 compressed objects within 5 object streams
- 107 named destinations out of 1000 (max. 500000)
- 270 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 522 PDF objects out of 1000 (max. 8388607)
+ 452 compressed objects within 5 object streams
+ 112 named destinations out of 1000 (max. 500000)
+ 310 words of extra memory for PDF output out of 10000 (max. 10000000)
 

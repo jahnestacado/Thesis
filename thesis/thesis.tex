@@ -19,6 +19,10 @@
 
 \usepackage[nottoc,numbib]{tocbibind}%Dispalay refrences in the table of contents
 
+\usepackage{subcaption}
+\DeclareCaptionFormat{subfig}{\figurename~#1#2#3}
+\DeclareCaptionSubType*{figure}
+\captionsetup[subfigure]{format=subfig,labelsep=colon,labelformat=simple}
 %\renewcommand{\familydefault}{sans}
 
 
@@ -43,7 +47,7 @@
 \include{chap2}
 \include{chap3}
 \include{chap4}
-\include{chap5}
+%\include{chap5}
 \include{chap6}
 \include{chap7}
 \include{chap8}

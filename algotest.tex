@@ -1,0 +1,41 @@
+
+
+
+
+\documentclass{article}
+
+\catcode`\_=\active
+\usepackage{algpseudocode}
+
+\begin{document}
+\begin{algorithmic}
+\State$\textbf{declare integer} \ numOfIndiNullBytes$
+\State$\textbf{declare float} \ entropy$
+\State$\textbf{declare float} \ plainTextConcentration$\\
+\State$\textbf{declare const integer} \ lowNumOfNullBytes:= 9$
+\State$\textbf{declare const integer} \ highNumOfNullBytes:= 25$
+\State$\textbf{declare const float} \ textMaxEntropy:= 6 $
+\State$\textbf{declare const float} \ xlsMaxPlainTextConcentration:= 50$
+\State$\textbf{declare const integer} \ xlsMinNumOfIndiNullBytes:= 50$
+\State$\textbf{declare const float} \ avgPdfEntropy:= 5.8$
+\State$\textbf{declare const float} \ lowEntropy:= 3.8$
+
+
+
+
+
+\If {$i\geq maxval$}
+    \State $i\gets 0$
+\Else
+    \If {$i+k\leq maxval$}
+        \State $i\gets i+k$
+    \EndIf
+\EndIf
+~\\
+\Function{isXls}{\null}
+   
+    \State \Return $numOfNulls > min_num_nulls \&\& ratio < max_xls_con$
+\EndFunction
+\end{algorithmic}
+
+\end{document}

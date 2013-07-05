@@ -17,17 +17,17 @@
 \BOOKMARK [2][-]{subsection.4.2.3}{Variation 3 - Dominant Plain Text Concentration Categories}{section.4.2}% 17
 \BOOKMARK [2][-]{subsection.4.2.4}{Variation 4 - Fragments above 75\045 Plain Text Concentration classified as text}{section.4.2}% 18
 \BOOKMARK [2][-]{subsection.4.2.5}{Optimal Variation for Text Fragment Classification}{section.4.2}% 19
-\BOOKMARK [2][-]{subsection.4.2.6}{BFA Training - Complete ASCII Set VS Plain Text }{section.4.2}% 20
-\BOOKMARK [1][-]{section.4.3}{Analyzing BFAs Text Fragment Output}{chapter.4}% 21
-\BOOKMARK [0][-]{chapter.5}{Classification Metrics}{}% 22
-\BOOKMARK [1][-]{section.5.1}{BFA Variation 1 Output}{chapter.5}% 23
-\BOOKMARK [1][-]{section.5.2}{Plain Text Concentration Categories}{chapter.5}% 24
-\BOOKMARK [1][-]{section.5.3}{Individual Null Byte Frequency}{chapter.5}% 25
-\BOOKMARK [1][-]{section.5.4}{Shannon Entropy}{chapter.5}% 26
-\BOOKMARK [0][-]{chapter.6}{Algorithm Description}{}% 27
-\BOOKMARK [0][-]{chapter.7}{Results}{}% 28
-\BOOKMARK [0][-]{chapter.8}{Longest Common Subsequence}{}% 29
-\BOOKMARK [0][-]{chapter.9}{Conclusion}{}% 30
-\BOOKMARK [0][-]{chapter.10}{Appendix}{}% 31
-\BOOKMARK [1][-]{section.10.1}{test}{chapter.10}% 32
-\BOOKMARK [0][-]{chapter.11}{Bibliography}{}% 33
+\BOOKMARK [2][-]{subsection.4.2.6}{BFA Training - Complete ASCII Set VS. Plain Text }{section.4.2}% 20
+\BOOKMARK [1][-]{section.4.3}{BFAs Text Output Analysis}{chapter.4}% 21
+\BOOKMARK [2][-]{subsection.4.3.1}{BFA Variation 1 Output}{section.4.3}% 22
+\BOOKMARK [2][-]{subsection.4.3.2}{Plain Text Concentration Categories}{section.4.3}% 23
+\BOOKMARK [2][-]{subsection.4.3.3}{Individual Null Byte Frequency}{section.4.3}% 24
+\BOOKMARK [2][-]{subsection.4.3.4}{Shannon Entropy}{section.4.3}% 25
+\BOOKMARK [1][-]{section.4.4}{Longest Common Subsequence}{chapter.4}% 26
+\BOOKMARK [0][-]{chapter.5}{Algorithm Description}{}% 27
+\BOOKMARK [0][-]{chapter.6}{Results}{}% 28
+\BOOKMARK [0][-]{chapter.7}{Longest Common Subsequence}{}% 29
+\BOOKMARK [0][-]{chapter.8}{Conclusion}{}% 30
+\BOOKMARK [0][-]{chapter.9}{Appendix}{}% 31
+\BOOKMARK [1][-]{section.9.1}{test}{chapter.9}% 32
+\BOOKMARK [0][-]{chapter.10}{Bibliography}{}% 33
