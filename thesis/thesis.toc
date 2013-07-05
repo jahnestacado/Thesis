@@ -6,28 +6,28 @@
 \contentsline {section}{\numberline {1.5}Algorithms Requirements}{5}{section.1.5}
 \contentsline {section}{\numberline {1.6}Methodology}{5}{section.1.6}
 \contentsline {chapter}{\numberline {2}Related Work}{7}{chapter.2}
-\contentsline {section}{\numberline {2.1}Related Work}{7}{section.2.1}
 \contentsline {chapter}{\numberline {3}Experimental Setup}{9}{chapter.3}
-\contentsline {section}{\numberline {3.1}Data Set}{9}{section.3.1}
-\contentsline {section}{\numberline {3.2}Byte Frequency Analysis(BFA) Algorithm}{10}{section.3.2}
-\contentsline {chapter}{\numberline {4}BFA Variations}{12}{chapter.4}
-\contentsline {section}{\numberline {4.1}Variation 1 - Special ASCII subset fingerprint training}{12}{section.4.1}
-\contentsline {section}{\numberline {4.2}Variation 2 - 4-Ratio categories of our special ASCII subset}{13}{section.4.2}
-\contentsline {section}{\numberline {4.3}Variation 3 - Dominant Category Fingerprints}{16}{section.4.3}
-\contentsline {section}{\numberline {4.4}Variation 4 - Every fragment with ratio above 75\% of our special ASCII subset classified as text }{17}{section.4.4}
-\contentsline {section}{\numberline {4.5}Optimal Variation for Text Fragment Classification}{18}{section.4.5}
-\contentsline {section}{\numberline {4.6}BFA Training - complete ASCII set VS plain text }{19}{section.4.6}
-\contentsline {chapter}{\numberline {5}Classification Metrics}{22}{chapter.5}
-\contentsline {section}{\numberline {5.1}BFA Variation 1 Output}{22}{section.5.1}
-\contentsline {section}{\numberline {5.2}Plain Text Concentration Categories}{23}{section.5.2}
-\contentsline {section}{\numberline {5.3}Individual Null Byte Frequency}{24}{section.5.3}
-\contentsline {section}{\numberline {5.4}Shannon Entropy}{24}{section.5.4}
-\contentsline {chapter}{\numberline {6}Algorithm Description}{26}{chapter.6}
-\contentsline {chapter}{\numberline {7}Results}{27}{chapter.7}
-\contentsline {chapter}{\numberline {8}Longest Common Subsequence}{28}{chapter.8}
-\contentsline {chapter}{\numberline {9}Conclusion}{31}{chapter.9}
-\contentsline {chapter}{\numberline {A}Acronyms}{32}{appendix.A}
-\contentsline {chapter}{\numberline {B}Additional Information}{33}{appendix.B}
-\contentsline {section}{\numberline {B.1}Introduction}{33}{section.B.1}
-\contentsline {subsection}{\numberline {B.1.1}More Details}{33}{subsection.B.1.1}
-\contentsline {chapter}{\numberline {C}Bibliography}{34}{appendix.C}
+\contentsline {section}{\numberline {3.1}Byte Frequency Analysis(BFA) Algorithm}{9}{section.3.1}
+\contentsline {section}{\numberline {3.2}Data Set}{10}{section.3.2}
+\contentsline {chapter}{\numberline {4}Algorithm Development}{12}{chapter.4}
+\contentsline {section}{\numberline {4.1}Approach Description}{12}{section.4.1}
+\contentsline {section}{\numberline {4.2}BFA Variations}{13}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1}Variation 1 - Plain Text ASCII Subset}{13}{subsection.4.2.1}
+\contentsline {subsection}{\numberline {4.2.2}Variation 2 - Plain Text Concentration Categories}{14}{subsection.4.2.2}
+\contentsline {subsection}{\numberline {4.2.3}Variation 3 - Dominant Plain Text Concentration Categories}{15}{subsection.4.2.3}
+\contentsline {subsection}{\numberline {4.2.4}Variation 4 - Fragments above 75\% Plain Text Concentration classified as text}{16}{subsection.4.2.4}
+\contentsline {subsection}{\numberline {4.2.5}Optimal Variation for Text Fragment Classification}{17}{subsection.4.2.5}
+\contentsline {subsection}{\numberline {4.2.6}BFA Training - Complete ASCII Set VS Plain Text }{18}{subsection.4.2.6}
+\contentsline {section}{\numberline {4.3}Analyzing BFAs Text Fragment Output}{20}{section.4.3}
+\contentsline {chapter}{\numberline {5}Classification Metrics}{21}{chapter.5}
+\contentsline {section}{\numberline {5.1}BFA Variation 1 Output}{21}{section.5.1}
+\contentsline {section}{\numberline {5.2}Plain Text Concentration Categories}{22}{section.5.2}
+\contentsline {section}{\numberline {5.3}Individual Null Byte Frequency}{23}{section.5.3}
+\contentsline {section}{\numberline {5.4}Shannon Entropy}{23}{section.5.4}
+\contentsline {chapter}{\numberline {6}Algorithm Description}{25}{chapter.6}
+\contentsline {chapter}{\numberline {7}Results}{26}{chapter.7}
+\contentsline {chapter}{\numberline {8}Longest Common Subsequence}{27}{chapter.8}
+\contentsline {chapter}{\numberline {9}Conclusion}{30}{chapter.9}
+\contentsline {chapter}{\numberline {10}Appendix}{31}{chapter.10}
+\contentsline {section}{\numberline {10.1}test}{31}{section.10.1}
+\contentsline {chapter}{\numberline {11}Bibliography}{34}{chapter.11}

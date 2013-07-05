@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2012.10.30)  4 JUL 2013 01:24
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2012.10.30)  5 JUL 2013 02:33
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -907,6 +907,16 @@ LaTeX Font Info:    Redeclaring font encoding T1 on input line 43.
 (/usr/share/texlive/texmf-dist/tex/latex/parskip/parskip.sty
 Package: parskip 2001/04/09 non-zero parskip adjustments
 )
+(/usr/share/texlive/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count134
+\float@exts=\toks28
+\float@box=\box34
+\@float@everytoks=\toks29
+\@floatcapt=\box35
+)
+\@float@every@table=\toks30
+
 (/usr/share/texlive/texmf-dist/tex/latex/tocbibind/tocbibind.sty
 Package: tocbibind 2010/10/13 v1.5k extra ToC listings
 Package tocbibind Info: The document has chapter divisions on input line 50.
@@ -916,72 +926,75 @@ Package tocbibind Note: Using chapter style headings, unless overridden.
 
 ) (./thesis.aux (./front.aux) (./chapter01.aux) (./chap2.aux) (./chap3.aux)
 (./chap4.aux) (./chap5.aux) (./chap6.aux) (./chap7.aux) (./chap8.aux)
-(./chap9.aux) (./acronyms.aux) (./appendix-b.aux))
+(./chap9.aux) (./appendix.aux)
+
+LaTeX Warning: Label `Garfinkel' multiply defined.
+
+)
 \openout1 = `thesis.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for FML/futm/m/it on input line 29.
-LaTeX Font Info:    Try loading font information for FML+futm on input line 29.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for FML/futm/m/it on input line 31.
+LaTeX Font Info:    Try loading font information for FML+futm on input line 31.
 
-
-(/usr/share/texlive/texmf-dist/tex/latex/fourier/fmlfutm.fd
+ (/usr/share/texlive/texmf-dist/tex/latex/fourier/fmlfutm.fd
 File: fmlfutm.fd 2004/10/30 Fontinst v1.926 font definitions for FML/futm.
 )
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for FMS/futm/m/n on input line 29.
-LaTeX Font Info:    Try loading font information for FMS+futm on input line 29.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for FMS/futm/m/n on input line 31.
+LaTeX Font Info:    Try loading font information for FMS+futm on input line 31.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/fourier/fmsfutm.fd
 File: fmsfutm.fd 2004/10/30 Fontinst v1.926 font definitions for FMS/futm.
 )
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for FMX/futm/m/n on input line 29.
-LaTeX Font Info:    Try loading font information for FMX+futm on input line 29.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for FMX/futm/m/n on input line 31.
+LaTeX Font Info:    Try loading font information for FMX+futm on input line 31.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/fourier/fmxfutm.fd
 File: fmxfutm.fd futm-extension
 )
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 29.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 29.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 31.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 31.
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Try loading font information for T1+futs on input line 29.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Try loading font information for T1+futs on input line 31.
 
 (/usr/share/texlive/texmf-dist/tex/latex/fourier/t1futs.fd
 File: t1futs.fd 2004/03/02 Fontinst v1.926 font definitions for T1/futs.
 )
 (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count134
+\scratchcounter=\count135
 \scratchdimen=\dimen162
-\scratchbox=\box34
-\nofMPsegments=\count135
-\nofMParguments=\count136
-\everyMPshowfont=\toks28
-\MPscratchCnt=\count137
+\scratchbox=\box36
+\nofMPsegments=\count136
+\nofMParguments=\count137
+\everyMPshowfont=\toks31
+\MPscratchCnt=\count138
 \MPscratchDim=\dimen163
-\MPnumerator=\count138
-\makeMPintoPDFobject=\count139
-\everyMPtoPDFconversion=\toks29
+\MPnumerator=\count139
+\makeMPintoPDFobject=\count140
+\everyMPtoPDFconversion=\toks32
 ) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
 
@@ -1031,28 +1044,29 @@ e
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-\AtBeginShipoutBox=\box35
-Package hyperref Info: Link coloring ON on input line 29.
+\AtBeginShipoutBox=\box37
+Package hyperref Info: Link coloring ON on input line 31.
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2010/04/30 v2.40 Cross-referencing by name of section
 
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
-\c@section@level=\count140
+\c@section@level=\count141
 )
-LaTeX Info: Redefining \ref on input line 29.
-LaTeX Info: Redefining \pageref on input line 29.
-LaTeX Info: Redefining \nameref on input line 29.
+LaTeX Info: Redefining \ref on input line 31.
+LaTeX Info: Redefining \pageref on input line 31.
+LaTeX Info: Redefining \nameref on input line 31.
 
 (./thesis.out) (./thesis.out)
 \@outlinefile=\write3
 \openout3 = `thesis.out'.
 
 Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: float package is loaded.
 Package caption Info: listings package is loaded.
 Package caption Info: End \AtBeginDocument code.
-\c@lstlisting=\count141
+\c@lstlisting=\count142
 \openout2 = `front.aux'.
 
  (./front.tex
@@ -1071,7 +1085,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 4--6
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./fig/rams.pdf>]
 LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <24.88> not available
-(Font)              Font shape `T1/futs/b/n' tried instead on input line 37.
+(Font)              Font shape `T1/futs/b/n' tried instead on input line 39.
 
 (./thesis.toc
 LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <12> not available
@@ -1105,7 +1119,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.40 \include{chapter01}
+l.42 \include{chapter01}
                          [1]
 \openout2 = `chapter01.aux'.
 
@@ -1135,84 +1149,63 @@ Overfull \hbox (3.0721pt too wide) in paragraph at lines 11--12
 r frag-ments with high en-tropy. 
  []
 
+
+Overfull \hbox (3.90417pt too wide) in paragraph at lines 15--16
+[]\T1/futs/m/n/12 Li et al.[[]] used the N-Gram Anal-y-sis to cre-ate rep-re-se
+n-ta-tive fileprints for file types. The fileprints
+ []
+
 ) [8]
 \openout2 = `chap3.aux'.
 
  (./chap3.tex
 Chapter 3.
-(./data_set_table.tex
+[9
+
+
+
+] (./data_set_table.tex
 Overfull \hbox (40.69398pt too wide) in paragraph at lines 27--28
  [][][][][][][] 
  []
 
-) [9
-
-
-
-]) [10] [11]
+) [10]) [11]
 \openout2 = `chap4.aux'.
 
  (./chap4.tex
 Chapter 4.
+LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <14.4> not available
+(Font)              Font shape `T1/futs/b/n' tried instead on input line 11.
+[12
 
-Underfull \hbox (badness 10000) in paragraph at lines 5--7
+
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 15--16
 
  []
 
-(./bfa_results_var1.tex) [12
-
-
-
-] (./bfa_ratio_analysis.tex
+(./bfa_results_var1.tex) [13] (./bfa_ratio_analysis.tex
 Overfull \hbox (24.54895pt too wide) in paragraph at lines 25--26
  [][][][][][][] 
  []
 
-) (./bfa_results_ratio_categories.tex [13]) [14] [15]
-Underfull \hbox (badness 10000) in paragraph at lines 26--27
-
- []
-
-(./bfa_results_dominant.tex [16]) (./bfa_results_var4.tex
-Underfull \hbox (badness 10000) in paragraph at lines 33--30
-
- []
-
-[17])
-Underfull \hbox (badness 10000) in paragraph at lines 41--43
-
- []
-
-[18] (./bfa_results_ashims.tex
-Underfull \hbox (badness 10000) in paragraph at lines 46--29
-
- []
-
-)
-Underfull \hbox (badness 10000) in paragraph at lines 48--49
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 48--49
-
- []
-
-[19] [20]) [21]
+) [14] (./bfa_results_dominant.tex [15]) (./bfa_results_var4.tex [16]) [17]
+(./bfa_results_ashims.tex) [18] [19]) [20]
 \openout2 = `chap5.aux'.
 
  (./chap5.tex
 Chapter 5.
-(./bfas_output_table.tex) [22
+(./bfas_output_table.tex) [21
 
 
 
-] [23] [24]) [25]
+] [22] [23]) [24]
 \openout2 = `chap6.aux'.
 
  (./chap6.tex
 Chapter 6.
-) [26
+) [25
 
 
 
@@ -1221,7 +1214,7 @@ Chapter 6.
 
  (./chap7.tex
 Chapter 7.
-) [27
+) [26
 
 
 
@@ -1240,86 +1233,128 @@ Underfull \hbox (badness 10000) in paragraph at lines 2--6
 
  []
 
-[28
+[27
 
 
 
-] [29]) [30]
+] [28]) [29]
 \openout2 = `chap9.aux'.
 
  (./chap9.tex
 Chapter 9.
-) [31
+) [30
 
 
 
 ]
-\openout2 = `acronyms.aux'.
+\openout2 = `appendix.aux'.
 
- (./acronyms.tex
-Appendix A.
-) [32
+ (./appendix.tex
+Chapter 10.
+(./bfa_results_ratio_categories.tex
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `!tbp') on input line 61.
 
 
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `!tbp') on input line 92.
 
-]
-\openout2 = `appendix-b.aux'.
-
- (./appendix-b.tex
-Appendix B.
-LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <14.4> not available
-(Font)              Font shape `T1/futs/b/n' tried instead on input line 11.
-) [33
+)) [31
 
 
 
-]
-Appendix C.
+] [32] [33]
+Chapter 11.
 (./ref.tex [34
 
 
 ]
-Underfull \hbox (badness 7704) in paragraph at lines 28--29
+Underfull \hbox (badness 7704) in paragraph at lines 26--27
 []\T1/futs/m/n/12 Shannon CE. The math-e-mat-i-cal the-ory of com-mu-ni-ca-tion
 . Bell Sys-tem Tech J
  []
 
-)
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 67.
- [35]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 67.
- (./thesis.aux (./front.aux) (./chapter01.aux) (./chap2.aux) (./chap3.aux) (./c
-hap4.aux) (./chap5.aux) (./chap6.aux) (./chap7.aux) (./chap8.aux)
-(./chap9.aux) (./acronyms.aux) (./appendix-b.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 67.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 67.
+pdfTeX warning (ext4): destination with the same identifier (name{cite.Garfinke
+l}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.50 \bibitem{Garfinkel}
+                         [35])
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 69.
+ [36]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 69.
+ (./thesis.aux (./front.aux)
+(./chapter01.aux) (./chap2.aux) (./chap3.aux) (./chap4.aux) (./chap5.aux)
+(./chap6.aux) (./chap7.aux) (./chap8.aux) (./chap9.aux) (./appendix.aux))
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 69.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 69.
 Package rerunfilecheck Info: File `thesis.out' has not changed.
-(rerunfilecheck)             Checksum: A79712C2D791212F36BE816BF8C7296F;2251.
+(rerunfilecheck)             Checksum: 5F10AB7768DF4AC19079555F1372AAF5;2284.
 
 
 LaTeX Warning: There were undefined references.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 67.
+
+LaTeX Warning: There were multiply-defined labels.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 69.
  ) 
 Here is how much of TeX's memory you used:
- 11464 strings out of 495059
- 163793 string characters out of 3182029
- 316722 words of memory out of 3000000
- 14220 multiletter control sequences out of 15000+200000
+ 11513 strings out of 495059
+ 164418 string characters out of 3182029
+ 308919 words of memory out of 3000000
+ 14270 multiletter control sequences out of 15000+200000
  66798 words of font info for 73 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
- 41i,13n,38p,1455b,451s stack positions out of 5000i,500n,10000p,200000b,50000s
-{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
-e/texmf-dist/fonts/type1/public/fourier/fourier-mex.pfb></usr/share/texlive/tex
-mf-dist/fonts/type1/public/fourier/fourier-ms.pfb></usr/share/texlive/texmf-dis
-t/fonts/type1/adobe/utopia/putb8a.pfb></usr/share/texlive/texmf-dist/fonts/type
-1/adobe/utopia/putr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/adobe/utop
-ia/putr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/adobe/utopia/putri8a.p
-fb>
-Output written on thesis.pdf (37 pages, 148921 bytes).
+ 41i,13n,38p,1455b,449s stack positions out of 5000i,500n,10000p,200000b,50000s
+pdfTeX warning (dest): name{table.8.1} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{table.5.1} has been referenced but does not exist, 
+replaced by a fixed one
+
+pdfTeX warning (dest): name{table.4.5} has been referenced but does not exist, 
+replaced by a fixed one
+
+pdfTeX warning (dest): name{table.4.4} has been referenced but does not exist, 
+replaced by a fixed one
+
+pdfTeX warning (dest): name{table.4.3} has been referenced but does not exist, 
+replaced by a fixed one
+
+pdfTeX warning (dest): name{table.10.4} has been referenced but does not exist,
+ replaced by a fixed one
+
+pdfTeX warning (dest): name{table.10.3} has been referenced but does not exist,
+ replaced by a fixed one
+
+pdfTeX warning (dest): name{table.10.2} has been referenced but does not exist,
+ replaced by a fixed one
+
+pdfTeX warning (dest): name{table.10.1} has been referenced but does not exist,
+ replaced by a fixed one
+
+pdfTeX warning (dest): name{table.4.2} has been referenced but does not exist, 
+replaced by a fixed one
+
+pdfTeX warning (dest): name{table.4.1} has been referenced but does not exist, 
+replaced by a fixed one
+
+pdfTeX warning (dest): name{table.3.1} has been referenced but does not exist, 
+replaced by a fixed one
+
+{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/
+texmf-dist/fonts/type1/public/fourier/fourier-mex.pfb></usr/share/texlive/texmf
+-dist/fonts/type1/public/fourier/fourier-ms.pfb></usr/share/texlive/texmf-dist/
+fonts/type1/adobe/utopia/putb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/
+adobe/utopia/putr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/adobe/utopia
+/putr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/adobe/utopia/putri8a.pfb
+>
+Output written on thesis.pdf (38 pages, 152112 bytes).
 PDF statistics:
- 465 PDF objects out of 1000 (max. 8388607)
- 413 compressed objects within 5 object streams
- 104 named destinations out of 1000 (max. 500000)
+ 484 PDF objects out of 1000 (max. 8388607)
+ 431 compressed objects within 5 object streams
+ 107 named destinations out of 1000 (max. 500000)
  270 words of extra memory for PDF output out of 10000 (max. 10000000)
 

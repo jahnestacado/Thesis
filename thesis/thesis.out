@@ -6,28 +6,28 @@
 \BOOKMARK [1][-]{section.1.5}{Algorithms Requirements}{chapter.1}% 6
 \BOOKMARK [1][-]{section.1.6}{Methodology}{chapter.1}% 7
 \BOOKMARK [0][-]{chapter.2}{Related Work}{}% 8
-\BOOKMARK [1][-]{section.2.1}{Related Work}{chapter.2}% 9
-\BOOKMARK [0][-]{chapter.3}{Experimental Setup}{}% 10
-\BOOKMARK [1][-]{section.3.1}{Data Set}{chapter.3}% 11
-\BOOKMARK [1][-]{section.3.2}{Byte Frequency Analysis\(BFA\) Algorithm}{chapter.3}% 12
-\BOOKMARK [0][-]{chapter.4}{BFA Variations}{}% 13
-\BOOKMARK [1][-]{section.4.1}{Variation 1 - Special ASCII subset fingerprint training}{chapter.4}% 14
-\BOOKMARK [1][-]{section.4.2}{Variation 2 - 4-Ratio categories of our special ASCII subset}{chapter.4}% 15
-\BOOKMARK [1][-]{section.4.3}{Variation 3 - Dominant Category Fingerprints}{chapter.4}% 16
-\BOOKMARK [1][-]{section.4.4}{Variation 4 - Every fragment with ratio above 75\045 of our special ASCII subset classified as text }{chapter.4}% 17
-\BOOKMARK [1][-]{section.4.5}{Optimal Variation for Text Fragment Classification}{chapter.4}% 18
-\BOOKMARK [1][-]{section.4.6}{BFA Training - complete ASCII set VS plain text }{chapter.4}% 19
-\BOOKMARK [0][-]{chapter.5}{Classification Metrics}{}% 20
-\BOOKMARK [1][-]{section.5.1}{BFA Variation 1 Output}{chapter.5}% 21
-\BOOKMARK [1][-]{section.5.2}{Plain Text Concentration Categories}{chapter.5}% 22
-\BOOKMARK [1][-]{section.5.3}{Individual Null Byte Frequency}{chapter.5}% 23
-\BOOKMARK [1][-]{section.5.4}{Shannon Entropy}{chapter.5}% 24
-\BOOKMARK [0][-]{chapter.6}{Algorithm Description}{}% 25
-\BOOKMARK [0][-]{chapter.7}{Results}{}% 26
-\BOOKMARK [0][-]{chapter.8}{Longest Common Subsequence}{}% 27
-\BOOKMARK [0][-]{chapter.9}{Conclusion}{}% 28
-\BOOKMARK [0][-]{appendix.A}{Acronyms}{}% 29
-\BOOKMARK [0][-]{appendix.B}{Additional Information}{}% 30
-\BOOKMARK [1][-]{section.B.1}{Introduction}{appendix.B}% 31
-\BOOKMARK [2][-]{subsection.B.1.1}{More Details}{section.B.1}% 32
-\BOOKMARK [0][-]{appendix.C}{Bibliography}{}% 33
+\BOOKMARK [0][-]{chapter.3}{Experimental Setup}{}% 9
+\BOOKMARK [1][-]{section.3.1}{Byte Frequency Analysis\(BFA\) Algorithm}{chapter.3}% 10
+\BOOKMARK [1][-]{section.3.2}{Data Set}{chapter.3}% 11
+\BOOKMARK [0][-]{chapter.4}{Algorithm Development}{}% 12
+\BOOKMARK [1][-]{section.4.1}{Approach Description}{chapter.4}% 13
+\BOOKMARK [1][-]{section.4.2}{BFA Variations}{chapter.4}% 14
+\BOOKMARK [2][-]{subsection.4.2.1}{Variation 1 - Plain Text ASCII Subset}{section.4.2}% 15
+\BOOKMARK [2][-]{subsection.4.2.2}{Variation 2 - Plain Text Concentration Categories}{section.4.2}% 16
+\BOOKMARK [2][-]{subsection.4.2.3}{Variation 3 - Dominant Plain Text Concentration Categories}{section.4.2}% 17
+\BOOKMARK [2][-]{subsection.4.2.4}{Variation 4 - Fragments above 75\045 Plain Text Concentration classified as text}{section.4.2}% 18
+\BOOKMARK [2][-]{subsection.4.2.5}{Optimal Variation for Text Fragment Classification}{section.4.2}% 19
+\BOOKMARK [2][-]{subsection.4.2.6}{BFA Training - Complete ASCII Set VS Plain Text }{section.4.2}% 20
+\BOOKMARK [1][-]{section.4.3}{Analyzing BFAs Text Fragment Output}{chapter.4}% 21
+\BOOKMARK [0][-]{chapter.5}{Classification Metrics}{}% 22
+\BOOKMARK [1][-]{section.5.1}{BFA Variation 1 Output}{chapter.5}% 23
+\BOOKMARK [1][-]{section.5.2}{Plain Text Concentration Categories}{chapter.5}% 24
+\BOOKMARK [1][-]{section.5.3}{Individual Null Byte Frequency}{chapter.5}% 25
+\BOOKMARK [1][-]{section.5.4}{Shannon Entropy}{chapter.5}% 26
+\BOOKMARK [0][-]{chapter.6}{Algorithm Description}{}% 27
+\BOOKMARK [0][-]{chapter.7}{Results}{}% 28
+\BOOKMARK [0][-]{chapter.8}{Longest Common Subsequence}{}% 29
+\BOOKMARK [0][-]{chapter.9}{Conclusion}{}% 30
+\BOOKMARK [0][-]{chapter.10}{Appendix}{}% 31
+\BOOKMARK [1][-]{section.10.1}{test}{chapter.10}% 32
+\BOOKMARK [0][-]{chapter.11}{Bibliography}{}% 33
