@@ -25,9 +25,9 @@
 \contentsline {subsection}{\numberline {4.3.4}Shannon Entropy}{24}{subsection.4.3.4}
 \contentsline {section}{\numberline {4.4}Longest Common Subsequence}{25}{section.4.4}
 \contentsline {chapter}{\numberline {5}Algorithm Description}{27}{chapter.5}
-\contentsline {chapter}{\numberline {6}Results}{28}{chapter.6}
-\contentsline {chapter}{\numberline {7}Longest Common Subsequence}{29}{chapter.7}
-\contentsline {chapter}{\numberline {8}Conclusion}{32}{chapter.8}
-\contentsline {chapter}{\numberline {9}Appendix}{33}{chapter.9}
-\contentsline {section}{\numberline {9.1}test}{33}{section.9.1}
-\contentsline {chapter}{\numberline {10}Bibliography}{36}{chapter.10}
+\contentsline {chapter}{\numberline {6}Results}{32}{chapter.6}
+\contentsline {chapter}{\numberline {7}Analysis}{33}{chapter.7}
+\contentsline {chapter}{\numberline {8}Conclusion}{34}{chapter.8}
+\contentsline {chapter}{\numberline {9}Appendix}{35}{chapter.9}
+\contentsline {section}{\numberline {9.1}test}{35}{section.9.1}
+\contentsline {chapter}{\numberline {10}Bibliography}{38}{chapter.10}

@@ -3,39 +3,118 @@
 
 
 \documentclass{article}
-
-\catcode`\_=\active
 \usepackage{algpseudocode}
+\usepackage{algorithm}
+\usepackage{caption}
+
 
 \begin{document}
-\begin{algorithmic}
-\State$\textbf{declare integer} \ numOfIndiNullBytes$
+
+
+\begin{algorithm}
+\caption{Initial state and value declarations (Part I)}
+\begin{algorithmic}[1]
+
+\Require$\newline \textbf{float} \ \ \ pdfConValue, docConValue$ 
+\Comment{BFAs confidence values}
+ $\textbf{byte[]} \   byteStream$
+\Comment{Byte content of fragment}
+\newline
+\Ensure$XLS, PDF, DOC, TEXT$
+\Comment{Classification result}
+\newline
+
+
+
+\State$\textbf{declare integer} \ ninb$
+\Comment{Number of Individual Null Bytes in fragment}
 \State$\textbf{declare float} \ entropy$
-\State$\textbf{declare float} \ plainTextConcentration$\\
-\State$\textbf{declare const integer} \ lowNumOfNullBytes:= 9$
-\State$\textbf{declare const integer} \ highNumOfNullBytes:= 25$
+\Comment{Entropy of the fragment}
+\State$\textbf{declare float} \ ptc$
+\Comment{Plain Text Concentration in fragment}
+\newline
+
+\State$\textbf{declare const integer} \ lowNinb:= 9$
+\State$\textbf{declare const integer} \ highNinb:= 25$
 \State$\textbf{declare const float} \ textMaxEntropy:= 6 $
-\State$\textbf{declare const float} \ xlsMaxPlainTextConcentration:= 50$
-\State$\textbf{declare const integer} \ xlsMinNumOfIndiNullBytes:= 50$
-\State$\textbf{declare const float} \ avgPdfEntropy:= 5.8$
-\State$\textbf{declare const float} \ lowEntropy:= 3.8$
+\State$\textbf{declare const float} \ xlsMaxPtc:= 50$
+\State$\textbf{declare const integer} \ xlsMinNinb:= 50$
+\State$\textbf{declare const float} \ medianPdfEntropy:= 5.8$
+\State$\textbf{declare const float} \ lowEntropy:= 3.9$
 
 
 
+\algstore{bkbreak}
+\end{algorithmic}
+\end{algorithm}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{algorithm}[h]
+\caption*{Auxiliary functions (Part II)}
+\begin{algorithmic}[1]
+\algrestore{bkbreak}
+
+\Function{isXls}{\null}
+    \State \Return $ninb > xlsMinNinb \ \land \ ptc < xlsMaxPtc$
+\EndFunction
+\newline
+
+\Function{isPdf}{\null}
+    \State \Return $pdfConValue > docConValue \ \land \ ninb \leq lowNinb \ \lor$
+     \State $\ \ \ \ \ \ \ \ \  \  entropy \geq medianPdfEntropy$
+\EndFunction
+\newline
+
+\Function{isNotPlainText}{\null}
+    \State \Return $ptc \neq 100$
+\EndFunction
+\newline
+
+\Function{isNotPdf}{\null}
+    \State \Return $entropy \leq lowEntropy \ \land \ ninb \geq highNinb$
+\EndFunction
+
+\algstore{bkbreak}
+\end{algorithmic}
+\end{algorithm}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
-\If {$i\geq maxval$}
-    \State $i\gets 0$
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{algorithm}[h]
+\caption*{Classifier Part(III)}
+\begin{algorithmic}[1]
+\algrestore{bkbreak}
+
+\If {\Call{isNotPlainText} \ }
+		\If{\Call{isXls} \ }
+     		\State{\Return $XLS$}
+     	\ElsIf{\Call{isNotPdf} \ }
+ 			\State{\Return $DOC$}
+        \ElsIf{\Call{isPdf} \ }
+     		\State{\Return $PDF$}
+    	    \Else
+     		\State{\Return $DOC$}
+     \EndIf
+    
+    
 \Else
-    \If {$i+k\leq maxval$}
-        \State $i\gets i+k$
+    \If {$entropy \textless textMaxEntropy$}
+        \State $\Return \  TEXT$
+    \ElsIf {\Call{isPdf} \ }
+        \State $\Return \ PDF$
+    \Else
+        \State{$\Return \ DOC$}
     \EndIf
 \EndIf
-~\\
-\Function{isXls}{\null}
-   
-    \State \Return $numOfNulls > min_num_nulls \&\& ratio < max_xls_con$
-\EndFunction
+
 \end{algorithmic}
+\end{algorithm}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+
 
 \end{document}
