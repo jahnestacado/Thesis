@@ -18,7 +18,7 @@
 \contentsline {subsection}{\numberline {4.2.4}Variation 4 - Fragments above 75\% Plain Text Concentration classified as text}{16}{subsection.4.2.4}
 \contentsline {subsection}{\numberline {4.2.5}Optimal Variation for Text Fragment Classification}{17}{subsection.4.2.5}
 \contentsline {subsection}{\numberline {4.2.6}BFA Training - Complete ASCII Set VS. Plain Text }{18}{subsection.4.2.6}
-\contentsline {section}{\numberline {4.3}BFAs Text Output Analysis}{21}{section.4.3}
+\contentsline {section}{\numberline {4.3}BFA Text Output Analysis}{21}{section.4.3}
 \contentsline {subsection}{\numberline {4.3.1}BFA Variation 1 Output}{21}{subsection.4.3.1}
 \contentsline {subsection}{\numberline {4.3.2}Plain Text Concentration Categories}{22}{subsection.4.3.2}
 \contentsline {subsection}{\numberline {4.3.3}Individual Null Byte Frequency}{22}{subsection.4.3.3}
@@ -26,8 +26,15 @@
 \contentsline {section}{\numberline {4.4}Longest Common Subsequence}{25}{section.4.4}
 \contentsline {chapter}{\numberline {5}Algorithm Description}{27}{chapter.5}
 \contentsline {chapter}{\numberline {6}Results}{32}{chapter.6}
-\contentsline {chapter}{\numberline {7}Analysis}{33}{chapter.7}
-\contentsline {chapter}{\numberline {8}Conclusion}{34}{chapter.8}
-\contentsline {chapter}{\numberline {9}Appendix}{35}{chapter.9}
-\contentsline {section}{\numberline {9.1}test}{35}{section.9.1}
-\contentsline {chapter}{\numberline {10}Bibliography}{38}{chapter.10}
+\contentsline {section}{\numberline {6.1}BFA Scan - Text Fragment Classification}{33}{section.6.1}
+\contentsline {section}{\numberline {6.2}Algorithm Accuracy}{33}{section.6.2}
+\contentsline {chapter}{\numberline {7}Analysis}{34}{chapter.7}
+\contentsline {section}{\numberline {7.1}BFA performance}{34}{section.7.1}
+\contentsline {section}{\numberline {7.2}Overall Algorithm Performance}{35}{section.7.2}
+\contentsline {section}{\numberline {7.3}Algorithm Comparison}{37}{section.7.3}
+\contentsline {subsection}{\numberline {7.3.1}Accuracy Comparison}{38}{subsection.7.3.1}
+\contentsline {subsection}{\numberline {7.3.2}Execution Time Comparison}{38}{subsection.7.3.2}
+\contentsline {chapter}{\numberline {8}Conclusion}{39}{chapter.8}
+\contentsline {chapter}{\numberline {9}Appendix}{40}{chapter.9}
+\contentsline {section}{\numberline {9.1}test}{40}{section.9.1}
+\contentsline {chapter}{\numberline {10}Bibliography}{43}{chapter.10}

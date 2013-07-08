@@ -18,7 +18,7 @@
 \BOOKMARK [2][-]{subsection.4.2.4}{Variation 4 - Fragments above 75\045 Plain Text Concentration classified as text}{section.4.2}% 18
 \BOOKMARK [2][-]{subsection.4.2.5}{Optimal Variation for Text Fragment Classification}{section.4.2}% 19
 \BOOKMARK [2][-]{subsection.4.2.6}{BFA Training - Complete ASCII Set VS. Plain Text }{section.4.2}% 20
-\BOOKMARK [1][-]{section.4.3}{BFAs Text Output Analysis}{chapter.4}% 21
+\BOOKMARK [1][-]{section.4.3}{BFA Text Output Analysis}{chapter.4}% 21
 \BOOKMARK [2][-]{subsection.4.3.1}{BFA Variation 1 Output}{section.4.3}% 22
 \BOOKMARK [2][-]{subsection.4.3.2}{Plain Text Concentration Categories}{section.4.3}% 23
 \BOOKMARK [2][-]{subsection.4.3.3}{Individual Null Byte Frequency}{section.4.3}% 24
@@ -26,8 +26,15 @@
 \BOOKMARK [1][-]{section.4.4}{Longest Common Subsequence}{chapter.4}% 26
 \BOOKMARK [0][-]{chapter.5}{Algorithm Description}{}% 27
 \BOOKMARK [0][-]{chapter.6}{Results}{}% 28
-\BOOKMARK [0][-]{chapter.7}{Analysis}{}% 29
-\BOOKMARK [0][-]{chapter.8}{Conclusion}{}% 30
-\BOOKMARK [0][-]{chapter.9}{Appendix}{}% 31
-\BOOKMARK [1][-]{section.9.1}{test}{chapter.9}% 32
-\BOOKMARK [0][-]{chapter.10}{Bibliography}{}% 33
+\BOOKMARK [1][-]{section.6.1}{BFA Scan - Text Fragment Classification}{chapter.6}% 29
+\BOOKMARK [1][-]{section.6.2}{Algorithm Accuracy}{chapter.6}% 30
+\BOOKMARK [0][-]{chapter.7}{Analysis}{}% 31
+\BOOKMARK [1][-]{section.7.1}{BFA performance}{chapter.7}% 32
+\BOOKMARK [1][-]{section.7.2}{Overall Algorithm Performance}{chapter.7}% 33
+\BOOKMARK [1][-]{section.7.3}{Algorithm Comparison}{chapter.7}% 34
+\BOOKMARK [2][-]{subsection.7.3.1}{Accuracy Comparison}{section.7.3}% 35
+\BOOKMARK [2][-]{subsection.7.3.2}{Execution Time Comparison}{section.7.3}% 36
+\BOOKMARK [0][-]{chapter.8}{Conclusion}{}% 37
+\BOOKMARK [0][-]{chapter.9}{Appendix}{}% 38
+\BOOKMARK [1][-]{section.9.1}{test}{chapter.9}% 39
+\BOOKMARK [0][-]{chapter.10}{Bibliography}{}% 40
