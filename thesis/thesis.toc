@@ -3,7 +3,7 @@
 \contentsline {section}{\numberline {1.2}Problem Formulation}{3}{section.1.2}
 \contentsline {section}{\numberline {1.3}File Fragment Classification}{4}{section.1.3}
 \contentsline {section}{\numberline {1.4}Objectives}{4}{section.1.4}
-\contentsline {section}{\numberline {1.5}Algorithms Requirements}{5}{section.1.5}
+\contentsline {section}{\numberline {1.5}Algorithms Requirements}{4}{section.1.5}
 \contentsline {section}{\numberline {1.6}Methodology}{5}{section.1.6}
 \contentsline {chapter}{\numberline {2}Related Work}{7}{chapter.2}
 \contentsline {chapter}{\numberline {3}Experimental Setup}{9}{chapter.3}
@@ -13,26 +13,27 @@
 \contentsline {section}{\numberline {4.1}Approach Description}{12}{section.4.1}
 \contentsline {section}{\numberline {4.2}BFA Variations}{13}{section.4.2}
 \contentsline {subsection}{\numberline {4.2.1}Variation 1 - Plain Text ASCII Subset}{13}{subsection.4.2.1}
-\contentsline {subsection}{\numberline {4.2.2}Variation 2 - Plain Text Concentration Categories}{14}{subsection.4.2.2}
+\contentsline {subsection}{\numberline {4.2.2}Variation 2 - Plain Text Concentration Categories}{13}{subsection.4.2.2}
 \contentsline {subsection}{\numberline {4.2.3}Variation 3 - Dominant Plain Text Concentration Categories}{15}{subsection.4.2.3}
 \contentsline {subsection}{\numberline {4.2.4}Variation 4 - Fragments above 75\% Plain Text Concentration classified as text}{16}{subsection.4.2.4}
 \contentsline {subsection}{\numberline {4.2.5}Optimal Variation for Text Fragment Classification}{17}{subsection.4.2.5}
-\contentsline {subsection}{\numberline {4.2.6}BFA Training - Complete ASCII Set VS. Plain Text }{18}{subsection.4.2.6}
-\contentsline {section}{\numberline {4.3}BFA Text Output Analysis}{21}{section.4.3}
-\contentsline {subsection}{\numberline {4.3.1}BFA Variation 1 Output}{21}{subsection.4.3.1}
-\contentsline {subsection}{\numberline {4.3.2}Plain Text Concentration Categories}{22}{subsection.4.3.2}
-\contentsline {subsection}{\numberline {4.3.3}Individual Null Byte Frequency}{22}{subsection.4.3.3}
-\contentsline {subsection}{\numberline {4.3.4}Shannon Entropy}{24}{subsection.4.3.4}
-\contentsline {section}{\numberline {4.4}Longest Common Subsequence}{25}{section.4.4}
-\contentsline {chapter}{\numberline {5}Algorithm Description}{27}{chapter.5}
-\contentsline {chapter}{\numberline {6}Results}{32}{chapter.6}
-\contentsline {section}{\numberline {6.1}BFA Scan - Text Fragment Classification}{33}{section.6.1}
-\contentsline {section}{\numberline {6.2}Algorithm Accuracy}{33}{section.6.2}
+\contentsline {subsection}{\numberline {4.2.6}BFA Training - Complete ASCII Set VS. Plain Text }{17}{subsection.4.2.6}
+\contentsline {section}{\numberline {4.3}BFA Text Output Analysis}{20}{section.4.3}
+\contentsline {subsection}{\numberline {4.3.1}BFA Variation 1 Output}{20}{subsection.4.3.1}
+\contentsline {subsection}{\numberline {4.3.2}Plain Text Concentration Categories}{21}{subsection.4.3.2}
+\contentsline {subsection}{\numberline {4.3.3}Individual Null Byte Frequency}{21}{subsection.4.3.3}
+\contentsline {subsection}{\numberline {4.3.4}Shannon Entropy}{22}{subsection.4.3.4}
+\contentsline {section}{\numberline {4.4}Longest Common Subsequence}{23}{section.4.4}
+\contentsline {chapter}{\numberline {5}Algorithm Description}{26}{chapter.5}
+\contentsline {chapter}{\numberline {6}Results}{31}{chapter.6}
+\contentsline {section}{\numberline {6.1}BFA Scan - Text Fragment Classification}{32}{section.6.1}
+\contentsline {section}{\numberline {6.2}BFA Extension Algorithm Accuracy}{32}{section.6.2}
+\contentsline {section}{\numberline {6.3}Complete Algorithm Accuracy}{33}{section.6.3}
 \contentsline {chapter}{\numberline {7}Analysis}{34}{chapter.7}
 \contentsline {section}{\numberline {7.1}BFA performance}{34}{section.7.1}
 \contentsline {section}{\numberline {7.2}Overall Algorithm Performance}{35}{section.7.2}
-\contentsline {section}{\numberline {7.3}Algorithm Comparison}{37}{section.7.3}
-\contentsline {subsection}{\numberline {7.3.1}Accuracy Comparison}{38}{subsection.7.3.1}
+\contentsline {section}{\numberline {7.3}Algorithm Comparison}{36}{section.7.3}
+\contentsline {subsection}{\numberline {7.3.1}Accuracy Comparison}{37}{subsection.7.3.1}
 \contentsline {subsection}{\numberline {7.3.2}Execution Time Comparison}{38}{subsection.7.3.2}
 \contentsline {chapter}{\numberline {8}Conclusion}{39}{chapter.8}
 \contentsline {chapter}{\numberline {9}Appendix}{40}{chapter.9}

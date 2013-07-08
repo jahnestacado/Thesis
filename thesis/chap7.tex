@@ -2,7 +2,7 @@
 In this chapter we are going to present the accuracy results of our classification algorithm. Analysis of the results will be presented in the next chapter.
 Since our algorithms design is based on the analysis we did on the experimental data set(Table ~\ref{table:data set}), the algorithm is biased towards this set. For that reason we used the final testing data set(Table X) for testing our algorithms performance.
 
-Although our final algorithm was implemented in one piece, we divide the results in two parts. In section ~\ref{sec:6.1} we  provide the performance of the first half of our algorithm, which is the BFA, regarding text fragment classification. In section ~\ref{sec:6.2} we provide the final classification results of our complete algorithm. We should note that the final classification results correspond to the data set that is comrpised of fragments that were initially classified as text from the BFA.
+Although our final algorithm was implemented in one piece, we divide the results in three parts. In section ~\ref{sec:6.1} we  provide the performance of the first half of our algorithm, which is the BFA, regarding text fragment classification. In section ~\ref{sec:6.2} we provide the classification results of the algorithm we described in chapter \ref{chap:6}. We should note that the classification results of that part correspond to the data set of fragments that were initially classified as text from the BFA.Finally, in section ~\ref{sec:6.3} we provide the final classification results of our complete algorithm. 
 \pagebreak
 
 \section{BFA Scan - Text Fragment Classification}\label{sec:6.1}
@@ -12,7 +12,11 @@ In Table \ref{table:final_bfa} we present the performance of the first part of o
 
 
 
-\section{Algorithm Accuracy}\label{sec:6.2}
-In Table \ref{table:final} we provide the final accuracy results of our algorithm as a percentage confusion matrix. The columns represent the actual type of the fragments while the rows represent the file type that the fragments was classified as. Since our algorithm was designed to classify fragments of the doc, pdf, xls and text file formats, we only have true positives percentages for these 4 file types. We present the true positive values as shaded cells.
+\section{BFA Extension Algorithm Accuracy}\label{sec:6.2}
+In Table \ref{table:final} we provide the accuracy results of our custom  algorithm as a percentage confusion matrix. The columns represent the actual type of the fragments while the rows represent the file type that the fragments was classified as. Since our algorithm was designed to classify fragments of the doc, pdf, xls and text file formats, we only have true positives percentages for these 4 file types. We present the true positive values as shaded cells.
 
 \input{final_results_table}
+
+\section{Complete Algorithm Accuracy}\label{sec:6.3}
+In Table \ref{table:final} we provide the accuracy results of our complete algorithm as a percentage confusion matrix. The columns represent the actual type of the fragments while the rows represent the file type that the fragments was classified as. Our algorithms can take 5 classification decisions. These decisions can be doc, pdf, xls, text and other. The "other" classification means that a fragment was classified as ppt, ogg, mp4, zip, png or jpg.  We present the true positive values as shaded cells.
+\input{complete_accuracy_table}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2012.10.30)  8 JUL 2013 02:16
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2012.10.30)  8 JUL 2013 14:17
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -9,8 +9,8 @@ Babel <v3.8m> and hyphenation patterns for english, dumylang, nohyphenation, lo
 aded.
 (/usr/share/texlive/texmf-dist/tex/latex/base/report.cls
 Document Class: report 2007/10/19 v1.4h Standard LaTeX document class
-(/usr/share/texlive/texmf-dist/tex/latex/base/size12.clo
-File: size12.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
+(/usr/share/texlive/texmf-dist/tex/latex/base/size11.clo
+File: size11.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
 )
 \c@part=\count79
 \c@chapter=\count80
@@ -1082,12 +1082,12 @@ e
 * \topmargin=-38.1381pt
 * \headheight=12.0pt
 * \headsep=25.0pt
-* \topskip=12.0pt
+* \topskip=11.0pt
 * \footskip=30.0pt
-* \marginparwidth=44.0pt
+* \marginparwidth=59.0pt
 * \marginparsep=10.0pt
 * \columnsep=10.0pt
-* \skip\footins=10.8pt plus 4.0pt minus 2.0pt
+* \skip\footins=10.0pt plus 4.0pt minus 2.0pt
 * \hoffset=0.0pt
 * \voffset=0.0pt
 * \mag=1000
@@ -1123,7 +1123,7 @@ Package caption Info: End \AtBeginDocument code.
 \openout2 = `front.aux'.
 
  (./front.tex
-<fig/rams.pdf, id=164, 97.80238pt x 44.8345pt>
+<fig/rams.pdf, id=168, 97.80238pt x 44.8345pt>
 File: fig/rams.pdf Graphic file (type pdf)
  <use fig/rams.pdf>
 Package pdftex.def Info: fig/rams.pdf used on input line 4.
@@ -1141,7 +1141,7 @@ LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <24.88> not available
 (Font)              Font shape `T1/futs/b/n' tried instead on input line 50.
 
 (./thesis.toc
-LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <12> not available
+LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <10.95> not available
 (Font)              Font shape `T1/futs/b/n' tried instead on input line 1.
 LaTeX Font Info:    Try loading font information for FML+futmi on input line 2.
 
@@ -1149,17 +1149,17 @@ LaTeX Font Info:    Try loading font information for FML+futmi on input line 2.
 File: fmlfutmi.fd 2004/10/30 Fontinst v1.926 font definitions for FML/futmi.
 )
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 11.03998pt on input line 2.
+(Font)              scaled to size 10.07397pt on input line 2.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 8.27998pt on input line 2.
+(Font)              scaled to size 7.63599pt on input line 2.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 6.43999pt on input line 2.
+(Font)              scaled to size 5.51999pt on input line 2.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 11.03998pt on input line 2.
+(Font)              scaled to size 10.07397pt on input line 2.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 8.27998pt on input line 2.
+(Font)              scaled to size 7.63599pt on input line 2.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 6.43999pt on input line 2.
+(Font)              scaled to size 5.51999pt on input line 2.
 
 [1
 
@@ -1178,7 +1178,9 @@ l.53 \include{chapter01}
 
  (./chapter01.tex
 Chapter 1.
-LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <17.28> not available
+LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <20.74> not available
+(Font)              Font shape `T1/futs/b/n' tried instead on input line 3.
+LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <14.4> not available
 (Font)              Font shape `T1/futs/b/n' tried instead on input line 14.
 [2
 
@@ -1196,19 +1198,7 @@ Chapter 2.
 
 
 
-]
-Overfull \hbox (3.0721pt too wide) in paragraph at lines 11--12
-\T1/futs/m/n/12 was ob-served that this ap-proach achieved higher ac-cu-racy fo
-r frag-ments with high en-tropy. 
- []
-
-
-Overfull \hbox (3.90417pt too wide) in paragraph at lines 15--16
-[]\T1/futs/m/n/12 Li et al.[[]] used the N-Gram Anal-y-sis to cre-ate rep-re-se
-n-ta-tive fileprints for file types. The fileprints
- []
-
-) [8]
+]) [8]
 \openout2 = `chap3.aux'.
 
  (./chap3.tex
@@ -1218,16 +1208,16 @@ Chapter 3.
 
 
 ] (./data_set_table.tex
-Overfull \hbox (40.69398pt too wide) in paragraph at lines 27--28
+Overfull \hbox (3.51675pt too wide) in paragraph at lines 27--28
  [][][][][][][] 
  []
 
-) [10]) [11]
+)) [10] [11]
 \openout2 = `chap4.aux'.
 
  (./chap4.tex
 Chapter 4.
-LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <14.4> not available
+LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <12> not available
 (Font)              Font shape `T1/futs/b/n' tried instead on input line 11.
 [12
 
@@ -1238,15 +1228,16 @@ Underfull \hbox (badness 10000) in paragraph at lines 15--16
 
  []
 
-(./bfa_results_var1.tex) [13] (./bfa_ratio_analysis.tex
-Overfull \hbox (24.54895pt too wide) in paragraph at lines 25--26
- [][][][][][][] 
+(./bfa_results_var1.tex) [13] (./bfa_ratio_analysis.tex) [14]
+(./bfa_results_dominant.tex) [15] (./bfa_results_var4.tex) [16]
+(./bfa_results_ashims.tex [17])
+Overfull \hbox (20.69516pt too wide) in paragraph at lines 75--77
+[]\T1/futs/m/n/10.95 Although the ac-cu-racy of Shahis BFA is slightly higher(8
+8.7%) from vari-a-tion 1(85%), the amount of document-
  []
 
-) [14] (./bfa_results_dominant.tex [15]) (./bfa_results_var4.tex [16]) [17]
-(./bfa_results_ashims.tex) [18] [19] [20] (./bfas_output_table.tex) [21]
-[22] (./indi_null_figures.tex
-<figures/null_bytes/Indi_Null_Bytes_pdf.png, id=408, 698.61pt x 473.77pt>
+[18] [19] (./bfas_output_table.tex) [20] (./indi_null_figures.tex
+<figures/null_bytes/Indi_Null_Bytes_pdf.png, id=405, 698.61pt x 473.77pt>
 File: figures/null_bytes/Indi_Null_Bytes_pdf.png Graphic file (type png)
 
 <use figures/null_bytes/Indi_Null_Bytes_pdf.png>
@@ -1258,7 +1249,7 @@ Overfull \hbox (15.4838pt too wide) in paragraph at lines 4--5
  [][]
  []
 
-<figures/null_bytes/Indi_Null_Bytes_xls.png, id=410, 698.61pt x 473.77pt>
+<figures/null_bytes/Indi_Null_Bytes_xls.png, id=407, 698.61pt x 473.77pt>
 File: figures/null_bytes/Indi_Null_Bytes_xls.png Graphic file (type png)
 
 <use figures/null_bytes/Indi_Null_Bytes_xls.png>
@@ -1270,7 +1261,7 @@ Overfull \hbox (15.4838pt too wide) in paragraph at lines 10--11
 [][]  
  []
 
-<figures/null_bytes/Indi_Null_Bytes_doc.png, id=411, 698.61pt x 473.77pt>
+<figures/null_bytes/Indi_Null_Bytes_doc.png, id=408, 698.61pt x 473.77pt>
 File: figures/null_bytes/Indi_Null_Bytes_doc.png Graphic file (type png)
 
 <use figures/null_bytes/Indi_Null_Bytes_doc.png>
@@ -1282,7 +1273,7 @@ Overfull \hbox (15.4838pt too wide) in paragraph at lines 17--18
  [][]
  []
 
-<figures/null_bytes/Indi_Null_Bytes_text.png, id=412, 698.61pt x 473.77pt>
+<figures/null_bytes/Indi_Null_Bytes_text.png, id=409, 698.61pt x 473.77pt>
 File: figures/null_bytes/Indi_Null_Bytes_text.png Graphic file (type png)
 
 <use figures/null_bytes/Indi_Null_Bytes_text.png>
@@ -1294,17 +1285,15 @@ Overfull \hbox (15.4838pt too wide) in paragraph at lines 23--24
 [][]  
  []
 
-) [23 <./figures/null_bytes/Indi_Null_Bytes_pdf.png> <./figures/null_bytes/Indi
-_Null_Bytes_xls.png> <./figures/null_bytes/Indi_Null_Bytes_doc.png> <./figures/
-null_bytes/Indi_Null_Bytes_text.png>] (./entropy_figures.tex
-<figures/entropy/Entropy_pdf.png, id=427, 698.61pt x 473.77pt>
+) [21] (./entropy_figures.tex
+<figures/entropy/Entropy_pdf.png, id=419, 698.61pt x 473.77pt>
 File: figures/entropy/Entropy_pdf.png Graphic file (type png)
 
 <use figures/entropy/Entropy_pdf.png>
 Package pdftex.def Info: figures/entropy/Entropy_pdf.png used on input line 4.
 (pdftex.def)             Requested size: 223.55977pt x 151.6095pt.
 
-<figures/entropy/Entropy_xls.png, id=428, 698.61pt x 473.77pt>
+<figures/entropy/Entropy_xls.png, id=420, 698.61pt x 473.77pt>
 File: figures/entropy/Entropy_xls.png Graphic file (type png)
 
 <use figures/entropy/Entropy_xls.png>
@@ -1312,7 +1301,7 @@ Package pdftex.def Info: figures/entropy/Entropy_xls.png used on input line 10.
 
 (pdftex.def)             Requested size: 223.55977pt x 151.6095pt.
 
-<figures/entropy/Entropy_doc.png, id=429, 698.61pt x 473.77pt>
+<figures/entropy/Entropy_doc.png, id=421, 698.61pt x 473.77pt>
 File: figures/entropy/Entropy_doc.png Graphic file (type png)
 
 <use figures/entropy/Entropy_doc.png>
@@ -1320,42 +1309,40 @@ Package pdftex.def Info: figures/entropy/Entropy_doc.png used on input line 17.
 
 (pdftex.def)             Requested size: 223.55977pt x 151.6095pt.
 
-<figures/entropy/Entropy_text.png, id=430, 698.61pt x 473.77pt>
+<figures/entropy/Entropy_text.png, id=422, 698.61pt x 473.77pt>
 File: figures/entropy/Entropy_text.png Graphic file (type png)
 
 <use figures/entropy/Entropy_text.png>
 Package pdftex.def Info: figures/entropy/Entropy_text.png used on input line 23
 .
 (pdftex.def)             Requested size: 223.55977pt x 151.6095pt.
-) [24 <./figures/entropy/Entropy_pdf.png> <./figures/entropy/Entropy_xls.png> <
-./figures/entropy/Entropy_doc.png> <./figures/entropy/Entropy_text.png>] [25] (
-./lcs_results_table.tex)) [26]
+) [22 <./figures/null_bytes/Indi_Null_Bytes_pdf.png> <./figures/null_bytes/Indi
+_Null_Bytes_xls.png> <./figures/null_bytes/Indi_Null_Bytes_doc.png> <./figures/
+null_bytes/Indi_Null_Bytes_text.png>]
+[23 <./figures/entropy/Entropy_pdf.png> <./figures/entropy/Entropy_xls.png> <./
+figures/entropy/Entropy_doc.png> <./figures/entropy/Entropy_text.png>]
+(./lcs_results_table.tex) [24]) [25]
 \openout2 = `chap6.aux'.
 
-
-(./chap6.tex
+ (./chap6.tex
 Chapter 5.
-[27
+[26
 
 
 
 ]
 Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on in
 put line 19.
-LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <10> not available
+LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <9> not available
 (Font)              Font shape `T1/futs/b/n' tried instead on input line 22.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 9.19998pt on input line 22.
+(Font)              scaled to size 8.27998pt on input line 22.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
 (Font)              scaled to size 6.99199pt on input line 22.
-LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 5.51999pt on input line 22.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 9.19998pt on input line 22.
+(Font)              scaled to size 8.27998pt on input line 22.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
 (Font)              scaled to size 6.99199pt on input line 22.
-LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 5.51999pt on input line 22.
 
 Underfull \hbox (badness 10000) in paragraph at lines 22--27
 
@@ -1371,7 +1358,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 35--38
 
  []
 
-[28]
+[27]
 Underfull \hbox (badness 10000) in paragraph at lines 71--73
 
  []
@@ -1386,12 +1373,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 82--84
 
  []
 
-[29]
+[28]
 
 LaTeX Warning: Command \textless invalid in math mode on input line 112.
 
-[30] (./flowchart_figure.tex
-<figures/flowchart.png, id=481, 576.1525pt x 1061.9675pt>
+[29] (./flowchart_figure.tex
+<figures/flowchart.png, id=482, 576.1525pt x 1061.9675pt>
 File: figures/flowchart.png Graphic file (type png)
 
 <use figures/flowchart.png>
@@ -1399,23 +1386,19 @@ Package pdftex.def Info: figures/flowchart.png used on input line 3.
 (pdftex.def)             Requested size: 374.49467pt x 690.2707pt.
 
 
-LaTeX Warning: Float too large for page by 62.06447pt on input line 5.
+LaTeX Warning: Float too large for page by 61.16447pt on input line 5.
 
-)) [31 <./figures/flowchart.png>]
+)) [30 <./figures/flowchart.png>]
 \openout2 = `chap7.aux'.
 
  (./chap7.tex
 Chapter 6.
-[32
+[31
 
 
 
-] (./bfa_final_text_class.tex
-Overfull \hbox (20.38283pt too wide) in paragraph at lines 24--25
- [][][][][][][] 
- []
-
-) (./final_results_table.tex)) [33]
+] (./bfa_final_text_class.tex) (./final_results_table.tex)
+(./complete_accuracy_table.tex [32])) [33]
 \openout2 = `chap8.aux'.
 
  (./chap8.tex
@@ -1432,20 +1415,21 @@ LaTeX Warning: Citation `Shahi' on page 34 undefined on input line 2.
 
 ]
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 10.07397pt on input line 24.
-LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 7.63599pt on input line 24.
+(Font)              scaled to size 9.19998pt on input line 24.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 10.07397pt on input line 24.
-LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 7.63599pt on input line 24.
+(Font)              scaled to size 9.19998pt on input line 24.
 
 Overfull \hbox (29.99998pt too wide) in paragraph at lines 21--34
 $[]$$[]$ 
  []
 
-[35] (./overall_results_table.tex) [36] [37] (./alg_comparison_table.tex))
-[38]
+[35] (./overall_results_table.tex)
+Overfull \hbox (17.81589pt too wide) in paragraph at lines 64--65
+[]\T1/futs/m/n/10.95 Among the al-go-rithms that we com-pare are the Byte Fre-q
+uency Anal-y-sis algorithm[[]], the n-Gram Analysis[[]],
+ []
+
+[36] (./alg_comparison_table.tex)) [37] [38]
 \openout2 = `chap9.aux'.
 
  (./chap9.tex
@@ -1477,14 +1461,8 @@ Chapter 10.
 (./ref.tex [43
 
 
-]
-Underfull \hbox (badness 7704) in paragraph at lines 26--27
-[]\T1/futs/m/n/12 Shannon CE. The math-e-mat-i-cal the-ory of com-mu-ni-ca-tion
-. Bell Sys-tem Tech J
- []
-
-pdfTeX warning (ext4): destination with the same identifier (name{cite.Garfinke
-l}) has been already used, duplicate ignored
+]pdfTeX warning (ext4): destination with the same identifier (name{cite.Garfink
+el}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.50 \bibitem{Garfinkel}
@@ -1498,7 +1476,7 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 80.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 80.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 80.
 Package rerunfilecheck Info: File `thesis.out' has not changed.
-(rerunfilecheck)             Checksum: CF5B092C628BF06DDFCFB25732CBC0B0;2804.
+(rerunfilecheck)             Checksum: BF1FA7B568E618C98DAF07E7F52503E6;2892.
 
 
 LaTeX Warning: There were undefined references.
@@ -1509,11 +1487,11 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 80.
  ) 
 Here is how much of TeX's memory you used:
- 12312 strings out of 495059
- 176924 string characters out of 3182029
- 320600 words of memory out of 3000000
- 14978 multiletter control sequences out of 15000+200000
- 126472 words of font info for 127 fonts, out of 3000000 for 9000
+ 12309 strings out of 495059
+ 176938 string characters out of 3182029
+ 327740 words of memory out of 3000000
+ 14972 multiletter control sequences out of 15000+200000
+ 120410 words of font info for 117 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
  41i,13n,38p,1490b,490s stack positions out of 5000i,500n,10000p,200000b,50000s
 pdfTeX warning (dest): name{table.7.2} has been referenced but does not exist
@@ -1580,10 +1558,10 @@ fonts/type1/public/fourier/fourier-ms.pfb></usr/share/texlive/texmf-dist/fonts/
 type1/adobe/utopia/putb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/adobe/
 utopia/putr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/adobe/utopia/putr8
 a.pfb></usr/share/texlive/texmf-dist/fonts/type1/adobe/utopia/putri8a.pfb>
-Output written on thesis.pdf (47 pages, 291120 bytes).
+Output written on thesis.pdf (47 pages, 292289 bytes).
 PDF statistics:
- 638 PDF objects out of 1000 (max. 8388607)
- 557 compressed objects within 6 object streams
- 140 named destinations out of 1000 (max. 500000)
- 371 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 647 PDF objects out of 1000 (max. 8388607)
+ 566 compressed objects within 6 object streams
+ 141 named destinations out of 1000 (max. 500000)
+ 379 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -27,14 +27,15 @@
 \BOOKMARK [0][-]{chapter.5}{Algorithm Description}{}% 27
 \BOOKMARK [0][-]{chapter.6}{Results}{}% 28
 \BOOKMARK [1][-]{section.6.1}{BFA Scan - Text Fragment Classification}{chapter.6}% 29
-\BOOKMARK [1][-]{section.6.2}{Algorithm Accuracy}{chapter.6}% 30
-\BOOKMARK [0][-]{chapter.7}{Analysis}{}% 31
-\BOOKMARK [1][-]{section.7.1}{BFA performance}{chapter.7}% 32
-\BOOKMARK [1][-]{section.7.2}{Overall Algorithm Performance}{chapter.7}% 33
-\BOOKMARK [1][-]{section.7.3}{Algorithm Comparison}{chapter.7}% 34
-\BOOKMARK [2][-]{subsection.7.3.1}{Accuracy Comparison}{section.7.3}% 35
-\BOOKMARK [2][-]{subsection.7.3.2}{Execution Time Comparison}{section.7.3}% 36
-\BOOKMARK [0][-]{chapter.8}{Conclusion}{}% 37
-\BOOKMARK [0][-]{chapter.9}{Appendix}{}% 38
-\BOOKMARK [1][-]{section.9.1}{test}{chapter.9}% 39
-\BOOKMARK [0][-]{chapter.10}{Bibliography}{}% 40
+\BOOKMARK [1][-]{section.6.2}{BFA Extension Algorithm Accuracy}{chapter.6}% 30
+\BOOKMARK [1][-]{section.6.3}{Complete Algorithm Accuracy}{chapter.6}% 31
+\BOOKMARK [0][-]{chapter.7}{Analysis}{}% 32
+\BOOKMARK [1][-]{section.7.1}{BFA performance}{chapter.7}% 33
+\BOOKMARK [1][-]{section.7.2}{Overall Algorithm Performance}{chapter.7}% 34
+\BOOKMARK [1][-]{section.7.3}{Algorithm Comparison}{chapter.7}% 35
+\BOOKMARK [2][-]{subsection.7.3.1}{Accuracy Comparison}{section.7.3}% 36
+\BOOKMARK [2][-]{subsection.7.3.2}{Execution Time Comparison}{section.7.3}% 37
+\BOOKMARK [0][-]{chapter.8}{Conclusion}{}% 38
+\BOOKMARK [0][-]{chapter.9}{Appendix}{}% 39
+\BOOKMARK [1][-]{section.9.1}{test}{chapter.9}% 40
+\BOOKMARK [0][-]{chapter.10}{Bibliography}{}% 41
