@@ -12,3 +12,7 @@ Furthermore, we observed that most of the studies upon the file type validation 
 
 Lastly, the availability of a multitude of different file types in combination with the newly introduced file formats along with the accuracy and speed requirements of the forensic cases, render file fragment classification a wicked problem. Although we achieved quite good performance in both accuracy and runtime performance compared to already existing techniques, it still takes days for our unoptimized classifier to analyse 10GB of data. However, fragment classification has received little attention the past couple of years and we are confident that there is plenty of room for improvements. 
 
+
+\section{Future Work}
+Although the results we got are promising, we consider the classification algorithm we developed a proof-of-concept rather than a practical technique. First of all, we want to use more file types in future experiments and train our fingerprints with more data. More specifically, we would like to analyse more document-type file and analyse their Individual Null Byte and the Plain Text Concentration values. Additionally, if our variation of BFA performs the same regarding document-type classification in a corpus of more file types, we can extend our classifier to further classify the non-document type fragments, which currently are being classified in a broad file class.
+
