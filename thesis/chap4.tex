@@ -18,7 +18,7 @@ In this variation we created 10 fingerprints which were trained with fragments f
 
 
 \subsection{Variation 2 - Plain Text Concentration Categories}
-During our research we thought that it would be interesting to analyse the distribution of byte value sthat correspond to the plain text ASCII subset. Depending on the concentration of plain text of a fragment, the fragment was assigned to one of 4 plain text concentration categories. 0-25\%, 25-50\%, 50-75\% and 75-100\%. The results of this analysis can be found in Table ~\ref{table:table 4.2}.
+During our research we thought that it would be interesting to analyse the distribution of byte value sthat correspond to the plain text ASCII subset. Depending on the concentration of plain text of a fragment, the fragment was assigned to one of 4 plain text concentration categories. 0-25\%, 25-50\%, 50-75\% and 75-100\%. The results of this analysis can be found in Table ~\ref{table:table 4.2}. We should note that fragments that do not contain plain text are excluded from this analysis. 
 
 As it seems fragments from certain file types are more likely to belong to certain concentration categories. For example almost all text fragments(99.95\%) contain more than 75\% of our special ASCII subset and almost all xls fragments less than 50\%. Undoubtedly this is completely reasonable. Text files are mostly comprised of plain text and Excel sheets, due to their cell-like structure, contain less printable characters. And this analogy is more obvious in a 512-byte fragment. That finding can be used as a metric to improve current classification techniques and we are going to elaborate more on this later in this chapter.
 

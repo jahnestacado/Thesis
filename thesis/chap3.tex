@@ -12,13 +12,14 @@ The data set we used for our training, experimentation, analysis and testing pro
 
 We use the experimental set to do all of our experimentations, analysis and training,  and the final testing set for testing the performance of our final algorithm.
 At this point we should note that the 10GB that corresponds to the final testing set wont undergone any type of analysis that will affect the design of our algorithm, since we only want to use it for testing our final algorithm. We fully designed our algorithm based only on the experimental set.
-
-In the experimental set, we split these 10GB in two subsets of 9-1 ratio.  90\% of the experimental set is used as our training set and the other 10\% as our experimental testing set. Additionally, we transformed all of our files content, in both the experimentation and the final testing set, into 512-byte blocks, which we refer to them as fragments. Since our algorithm would be able to classify only fragments that contain at least one plain text character, fragments with no plain text were discarded. The percentage of discarded fragments per file type can be found in Table ~\ref{table:data set}. As we can see, the percentage of fragments with no plain text for most of the file types is around 5\%. Surprisingly enough, this percentage is significantly higher(13-17\%) for the doc file type. This is quite interesting since files of the doc type are documents, which are mainly comprised of plain text characters.
+\input{data_set_table}
+In the experimental set, we split these 10GB in two subsets of 9-1 ratio.  90\% of the experimental set is used as our training set and the other 10\% as our experimental testing set. Additionally, we transformed all of our files content, in both the experimentation and the final testing set, into 512-byte blocks, which we refer to them as fragments. Since our algorithm would be able to classify only fragments that contain at least one plain text character, fragments with no plain text were discarded. The percentage of discarded fragments per file type can be found in Table ~\ref{table:data set}. As we can see, the percentage of fragments with no plain text for most of the file types is around 5\%. Surprisingly enough, this percentage is significantly higher(10-17\%) for the doc file type. This is quite interesting since files of the doc type are documents, which are mainly comprised of plain text characters.
 
 Furthermore, we used our training set to train our fingerprints and the experimental testing set to test all 4 variations of our BFA algorithm. Both of the aforementioned sets undergone statistical analysis in order to discover useful patterns. More detailed information about our experimental data set can be found in Table ~\ref{table:data set}.
-\input{data_set_table}
 
-Information regarding the final testing set that we used to test the performance of our final algorithm can be found in Table [final testing set].
+
+Information regarding the final testing set that we used to test the performance of our final algorithm can be found in Table \ref{table:final set}.
+\input{final_testing_dataset}
 
 
 
