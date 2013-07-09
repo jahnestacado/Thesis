@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2012.10.30)  9 JUL 2013 02:31
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2012.10.30)  9 JUL 2013 14:49
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1454,11 +1454,11 @@ uency Anal-y-sis algorithm[[]], the n-Gram Analysis[[]],
 
  (./chap9.tex
 Chapter 8.
-) [39
+[39
 
 
 
-]
+]) [40]
 \openout2 = `appendix.aux'.
 
  (./appendix.tex
@@ -1472,13 +1472,13 @@ LaTeX Warning: No positions in optional float specifier.
 LaTeX Warning: No positions in optional float specifier.
                Default added (so using `!tbp') on input line 92.
 
-)) [40
+)) [41
 
 
 
-] [41] [42]
+] [42] [43]
 Chapter 10.
-(./ref.tex [43
+(./ref.tex [44
 
 
 ]pdfTeX warning (ext4): destination with the same identifier (name{cite.Garfink
@@ -1486,9 +1486,9 @@ el}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.50 \bibitem{Garfinkel}
-                         [44])
+                         [45])
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 80.
- [45]
+ [46]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 80.
  (./thesis.aux (./front.aux)
 (./chapter01.aux) (./chap2.aux) (./chap3.aux) (./chap4.aux) (./chap6.aux)
@@ -1507,8 +1507,8 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 80.
  ) 
 Here is how much of TeX's memory you used:
- 12315 strings out of 495059
- 177047 string characters out of 3182029
+ 12316 strings out of 495059
+ 177054 string characters out of 3182029
  327787 words of memory out of 3000000
  14974 multiletter control sequences out of 15000+200000
  120410 words of font info for 117 fonts, out of 3000000 for 9000
@@ -1581,10 +1581,10 @@ fonts/type1/public/fourier/fourier-ms.pfb></usr/share/texlive/texmf-dist/fonts/
 type1/adobe/utopia/putb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/adobe/
 utopia/putr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/adobe/utopia/putr8
 a.pfb></usr/share/texlive/texmf-dist/fonts/type1/adobe/utopia/putri8a.pfb>
-Output written on thesis.pdf (47 pages, 294845 bytes).
+Output written on thesis.pdf (48 pages, 297182 bytes).
 PDF statistics:
- 650 PDF objects out of 1000 (max. 8388607)
- 569 compressed objects within 6 object streams
- 142 named destinations out of 1000 (max. 500000)
+ 654 PDF objects out of 1000 (max. 8388607)
+ 572 compressed objects within 6 object streams
+ 143 named destinations out of 1000 (max. 500000)
  379 words of extra memory for PDF output out of 10000 (max. 10000000)
 
