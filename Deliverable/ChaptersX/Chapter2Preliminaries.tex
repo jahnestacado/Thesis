@@ -1,0 +1,635 @@
+% Chapter Template
+
+\chapter{Preliminaries} % Main chapter title
+
+\label{Chapter2} % Change X to a consecutive number; for referencing this chapter elsewhere, use \ref{ChapterX}
+
+\lhead{Chapter 2. \emph{Preliminaries}} % Change X to a consecutive number; this is for the header on each page - perhaps a shortened title
+
+%----------------------------------------------------------------------------------------
+%	SECTION 1
+%----------------------------------------------------------------------------------------
+%Rascal
+%Apache POI
+%JAVA data types 
+%java programming paradigm
+%functional programming paradigm
+%functional data types
+%data type missmatch
+%typestore
+%code analysis
+%code generation
+%code visualisation
+%
+%
+%
+
+In this chapter we present the preliminary information required for our research. Our main goal is to capture all the information that we can get from Apache POI for a specific MS Office file and represent this information in RASCAL for future analyses. So we need to understand the structure of Apache POI and its data model. Also we need to understand what are the differences in data representation between the programming languages, RASCAL and Java. We need to examine the type miss-match between those two and investigate a possible mapping technique. Moreover, since RASCAL is a part of our research both as tool and as a target where we are going to apply our mapping theory, we provide a summary overview of RASCAL language and its concepts. 
+
+\section{RASCAL Programming Language}
+
+Rascal, is being developed at CWI, and is a meta-programming language which is specialized both in source code analysis and transformation. Rascal is a functional programming language\cite{SEN-1111} which provides an imperative style. RASCAL comes with a static checked type system, which means that the type check mechanism examines the source code statically\cite{rascalstatic}. This ensures that problems such as type errors and uninitialized variables are spotted and eliminated before the program execution.
+
+\subsection{RASCAL Concepts}
+A RASCAL program is consisted by modules which are saved as .rst files. Modules are organized in packages and they can import other modules to use their functionality. We can define the visibility of module elements as public or private . We can define functions in modules. RASCAL functions are explicitly declared and fully typed but also the language allows parametric polymorphism so generic functions are accepted\cite{rascalOrigin}.
+
+RASCAL provides a lot of usable functionalities which facilitate the software analysis and transformation operations. First of all, RASCAL come with a pattern matching mechanism. Pattern matching given a value and a pattern returns as a result a boolean indicating if the value matches the pattern or not. Pattern matching covers a lot of different cases such as string matching using regular expressions, abstract syntax pattern matching where a pattern is recursively defined from RASCAL primitive types and concrete syntax pattern matching. Pattern matching serves as the case distinction mechanism for RASCAL. Patterns can be used in tree traversal, if conditions, switch statements, comprehensions, exceptions and rewrite rules.
+
+Comprehensions in RASCAL is another powerful feature that facilitates the operation to gather values from a source. Comprehensions are created by a given source of values and an expression that defines the successive values that can be added. RASCAL provides list, set and map comprehensions. Comprehensions can also be used in control structures like for and while statements. In listing \ref{lst:lstComprehension} we can see an example where the result is a list containing all the integers from 1 to 10 that are divisible by 2.
+
+\begin{lstlisting}[caption={List Comprehensions in Rascal},label={lst:lstComprehension}]
+[ x | int x <- [1..10], x % 2 == 0 ]
+\end{lstlisting}
+
+
+Switch statements in RASCAL provide the functionality to switch between different cases if the given value conforms with a pattern. We can see an example of a switch statement in listing \ref{lst:switchStatement} where the variable colour has the value dark(). The switch statement will match with the first case and will print the message inside the println statement. 
+\begin{lstlisting}[caption={Switch statement in RASCAL},label={lst:switchStatement}]
+colour=dark();
+
+switch(x){
+	case dark() : println("The colour is dark.");
+	case white() : println("The colour is white.");
+	default : println("Unknown");
+}
+\end{lstlisting}
+Visiting statements are a powerful tool of RASCAL with which we can visit the elements of a data structure and by defining matching cases we can perform actions like cause side effects or change the visited element. RASCAL provides a lot of features to calibrate the visiting statement to our needs such as top-down or bottom-up visiting or break when a case matched. In listing \ref{lst:visitStatement} we see an example where every node of the tree that is type of red(left, green) is changed to green(left, right).
+
+
+
+
+\begin{lstlisting}[caption={Visit statement with action to change the matching case},label={lst:visitStatement}]
+visit(tree) {
+	case red(left, right) => green(left, right)
+	};
+}	
+\end{lstlisting}
+
+All these concepts are a powerful tool kit for RASCAL and will facilitate our research, since we are going to use RASCAL tools for our solution implementation which we will present in later chapter. Also, the end user of our tool, which will provide him an ADT with facts about an MS Office file, will be also facilitated by extensive use of these concepts while analysing such kind of files.
+
+\subsection{RASCAL Analysis and Transformation Utilities }
+RASCAL as a meta-programming language, provides a set of tools to simplify the process of source code analysis. The significant feature of RASCAL in this area is that we can use RASCAL to define the syntax of any language and then RASCAL will generate the parser. This also makes RASCAL a useful tool in the field of Domain Specific Languages (DSL).
+
+RASCAL comes with an already existing solution for analysing Java programs. The java library in RASCAL is equipped with a set of utilities to extract and analyse facts from Java projects or files. The facts that are extracted from Java source code files are stored in a predefined data model. There are two data models in RASCAL, one for storing facts about a Java program and one for representing the Java program by it's Abstract Syntax Tree(AST).
+
+In \ref{AppendixA} we see the data model that RASCAL uses to represent the source code facts. All the facts are stored in a variable of type Entity which contains a list of Id type data. By using the concepts which we discussed earlier, we can perform a various set of operations to analyse and extract useful information about a Java program. How we used this library will be presented in later chapter.
+
+RASCAL also provides a set of tools to create visualisations with dynamic behaviour. Representing and visualising the facts can be done easily by using these tools since the visualisation framework is been designed to match the needs of information visualization. Information visualization is the area that focuses on visualizing information with shape elements. This helps to understand better the structure of a specific item. By visualizing software elements we can have a different view of the software and understand some aspects of its behaviour, evolution or structure better\cite{visualization}. RASCAL facilitates the visualization process with a specific library which is designed by focusing on information visualization needs.
+
+
+\section{Apache POI}
+
+In order to have better knowledge about our source API we investigated and we experimented with it in order to understand how can we use it and what for what is applicable for. In this section we provide information to the reader focusing on how the Apache POI is organised, how information about MS Office files is stored in the API and how can we access and retrieve this information.
+
+Apache POI \cite{POI} is a Java API, run by Apache Software Foundation under the Apache License 2.0 \cite{POILIC}, which provides useful features to import, manipulate and export MS Office files in Java. It constitutes from some basic subcomponents that implements different functionalities focusing on different MS Office file type, like Word documents, Excel spreadsheets etc. In Table \ref{tab:ApacheTable} we see each subcomponent with a description of its functionality.
+
+\begin{table}
+    \begin{tabular}{l|p{3cm}|p{6cm}}
+    \hline
+    Apache POI Component & Recognises                             & Description                                                                                                                                                                                                                                   \\
+    \hline
+    HSSF and XSSF        & Excel                                  & HSSF (Excel 97-2007) and XSSF (Excel 2007+) are the  components providing functionality for manipulating Excel files. There is also the SS component that provides access to both with the same interface.                                    \\
+    HWPF and XWPF        & Word                                   & HWPF is the component that provides access to Word (97-2003) documents. The component supports reading from files but writing is limited. There is also the XWPF component which supports read and write functionality for Word 2007+ format. \\
+    POIFS                & OLE 2                                  & POIFS supports read and write access to OLE 2 Compound Document format from Java. Most of the components are relying on this component.                                                                                                       \\
+    HSLF and XSLF        & PowerPoint                             & HSLF and XSLF are the components that provide read and write functionality for PowerPoint documents.                                                                                                                                          \\
+    HPSF                 & OLE 2 Document Properties              & HPSF is the component that provides information about the document's properties such as title, author, etc. HPSF supports both reading and writing of properties.                                                                             \\
+    HDGF                 & Visio                                  & HDGF is the component responsible for accessing Visio Documents but it is in an immature level till now and provides only low level functionality.                                                                                            \\
+    HPBF                 & Publisher                              & HPBF is the component responsible for Publisher documents but like HDGF, is still immature.                                                                                                                                                   \\
+    HMEF                 & TNEF (winmail.dat) Outlook Attachments & HMEF is the component for accessing TNEF(Transport Neutral Encoding Format) files but supports only reading at a low level.                                                                                                                   \\
+    HSMF                 & Outlook Messages                       & HSMF is the component responsible for accessing Outlook message files. It provides only text retrieving functionality and some attachments.                                                                                                   \\
+    \hline
+    \end{tabular}
+    \caption{Apache POI subcomponents}\label{tab:ApacheTable}
+    
+\end{table}
+
+In our research we mainly focused on the three subcomponents that provides us the functionality of processing MS Word documents (97-2003), Excel Spreadsheets (97-2003) and Outlook Message files. We focused on these because Word, Excel and Outlook are used heavily to store and exchange information\cite{signifWord}. Below we present some basic information about the corresponding subcomponents.
+
+\subsection{HWPF Package for Word Documents}
+
+HWPF is the package that provides useful functionality to manipulate Microsoft word 97-2007 format from pure Java. HWPF is still in early development, and some subcomponents expose unwanted behaviour. Because of backward-compatibility some APIs in HWPF have references to those subcomponents and they are deprecated and will be removed\cite{POI}. This will impose a threat to validity to our study so we will try to avoid any interaction that will occur with these subcomponents.
+
+\begin{figure}[center]
+\includegraphics[scale=0.355]{Figures/HWPFAbstractUML}
+\caption{Abstract UML Class Diagram of HWPF Package}
+\label{fig:HWPFUML}
+\end{figure}
+
+In figure \ref{fig:HWPFUML}, we present an UML class diagram that represents some of the basic components that constitute the HWPF package. We have hidden the parameters and methods in order to make it more readable. Our main point here is to give the reader a first impression of how the information about a Word document is stored and organised in HWPF package.
+
+As we see in the figure \ref{fig:HWPFUML}, the main entry and basic component of HWPF package is the HWPFDocument. Users can create an object of this class and use it to retrieve all the information that Apache POI can offer. The access to the document parts from HWPFDocument is done by specifying the range of the document you want to access. Rance is the class that specifies a range of characters in a document. There are predefined ranges that specifies a standard region in the document, such as header region, main body region, footnotes and so on. 
+
+We can see from the class diagram the dependencies in the class Range. A Range class contains all the classes that extends it. So by having a Range object we can iterate through document sections, to document paragraphs and then to character runs. Each of these components are pointing to a document text range with also some relevant properties depending from the object we are using. 
+
+Although the design of the Range component is useful, we can notice that also is quiet complex in our opinion, since while we are iterating through Ranges of a documents part, we have to perform checks to ensure the origin for the returned object. For example if we are iterating through the list of paragraphs in a specific range, we have to check whether the returned value is a paragraph or a list entry. This could have been avoided if they have taken different design decisions.
+
+For example to give a deeper understanding of how the component works, we present in listing \ref{lst:HwpfLst} how to retrieve all the text from the main body of a document. We can see that we can iterate through all different extensions of Ranges. Also, from the UML diagram we can see that we can also retrieve all the text from the first Range object defined. since it contains all the CharacterRuns that are contained in this section of the document we have retrieved. This adds usability value to the component but also introduces complexity for our research method which we will discuss in later chapter.
+
+\begin{lstlisting}[caption={Example on how to use Ranges and iterate through them to print all the text of a document in HWPF package},label={lst:HwpfLst}]
+FileInputStream file = new FileInputStream("file.doc");
+POIFSFileSystem fs = new POIFSFileSystem(file);
+
+HWPFDocument doc=new HWPFDocument(fs);
+
+Range mainTextboxRange = doc.getMainTextboxRange();
+numOfSections = mainTextboxRange.numSections();
+
+for(int i=1 ; i<=numOfSections < i++){
+	Section sec = mainTextboxRange.getSection(i);
+	numOfParagraphs = sec.numParagraphs();
+
+	for(int j=1 ; j<=numOfParagraphs ; j++){
+		Paragraph par = sec.getParagraph(j);
+		numOfChRuns = par.numCharacterRuns();
+
+		for(int k=1 ; k<=numOfChRuns ; k++){
+			CharacterRun chRun =p ar.getCharacterRun(k);
+			System.out.println(chRun.text());
+		}
+				
+	}
+
+}
+
+\end{lstlisting}
+
+
+\subsection{HSSF Package for Excel Documents}
+
+HSSF is the package responsible for accessing Excel 97-2003 file format from pure Java. HSSF, as XSSF which is responsible for Excel 2007 file format, is based on the component SS, which provides the basic functionality to process spreadsheet files. In this study we focused only to HSSF package, in order to give RASCAL the ability to import and manipulate Excel 97-2003 spreadsheets.
+
+\begin{figure}[center]
+\includegraphics[scale=0.45]{Figures/HSSFAbstractUML}
+\caption{Abstract UML Class Diagram of HSSF Package}
+\label{fig:HSSFUML}
+\end{figure}
+
+Although, HSSF basic functionality is based on the SS package, the eventmodel package, extends this functionality and specifies more detailed APIs to access information of spreadsheet files. In figure \ref{fig:HSSFUML} we present an abstract class diagram, from which we have hidden the properties and the functions from the classes. Our intention here is to provide thr reader with a clear view of what are the types that contain useful information for us in this package. We also have hidden some other components that doesn't add significant value to our viewpoint.
+
+As we can see from the diagram, the main port to retrieve information about a spreadsheet through the HSSF package is the HSSFWorkbook class. With that kind of object we can retrieve the sheets that are contained in a workbook, and from the sheets we can obtain the rows and finally the cells. All these classes are containing more details apart from the basic information such as the values.
+
+We will elaborate to the HSSFCell class since the valuable information of a spreadsheet is located in cells and we want to make clear how the information of a cell is stored in a HSSFCell object. In figure \ref{fig:HSSFCellUML} we see a class diagram that shows the HSSFCell class and its interconnections with other classes. Cell locations are represented in Apache POI with integers for column and rows, in contrast from what we are used to with MS Office Excel, which uses integer for the rows and characters for the columns.
+
+ If we notice from its parent interface Cell, there are six different cell types that are declared. In the HSSFCell class, in order to obtain the value of the cell, firstly we have to retrieve the type of the cell using the getCellType() function. After this, we can call the corresponding function to retrieve the value of the cell. It's worth to mention here a noticed limitation of Apache POI that the function responsible for retrieving the formulas, getCellFormula(), returns  the value as a string. The string is representing cell addresses in Excel format (i.e. A12) while the cell addressed in Apache POI are in numeric format. This introduces problems to directly relate a cell contained in formula with a cell object, and further in our ADT a Cell node with a cell address inside a formula string. 
+
+
+\begin{figure}[center]
+\includegraphics[scale=0.35]{Figures/HSSFCellUML}
+\caption{UML Class Diagram of HSSFCell Class}
+\label{fig:HSSFCellUML}
+\end{figure}
+
+
+\begin{lstlisting}[caption={Example on how to use Ranges and iterate through them to print all the text of a document in HWPF package},label={lst:HSSFLst}]
+FileInputStream file = new FileInputStream("file.doc");
+POIFSFileSystem fs = new POIFSFileSystem(file);
+HSSFWorkbook workbook = new HSSFWorkbook(fs);
+int numOfSheets = workbook.getNumberOfSheets();
+
+for(int i=0 ; i<numOfSheets ; i++){
+	HSSFSheet sheet = workbook.getSheetAt(0);
+	
+	Iterator<Row> rowsIt = sheet.iterator();
+		
+	while(rowsIt.hasNext()){
+		HSSFRow row = (HSSFRow)rowsIt.next();
+			
+		Iterator<Cell> cellsIt = row.cellIterator();
+			
+		while(cellsIt.hasNext()){
+			HSSFCell cell = (HSSFCell) cellsIt.next();
+			System.out.println("Row: "+cell.getRowIndex()+" Column: "+cell.getColumnIndex());
+				
+			switch(cell.getCellType()){
+				case Cell.CELL_TYPE_BLANK : System.out.println("");
+				case Cell.CELL_TYPE_BOOLEAN : System.out.println(cell.getBooleanCellValue());
+				case Cell.CELL_TYPE_ERROR : System.out.println(cell.getErrorCellValue());
+				case Cell.CELL_TYPE_FORMULA : System.out.println(cell.getCellFormula());
+				case Cell.CELL_TYPE_NUMERIC : System.out.println(cell.getNumericCellValue());
+				case Cell.CELL_TYPE_STRING : System.out.println(cell.getStringCellValue());
+			}
+		}
+			
+	}
+		
+}
+\end{lstlisting}
+
+In the listing \ref{lst:HSSFLst} we are presenting an sort example on how to print all the values that are contained in a HSSFWorkbook. Having in mind the class diagram of the HSSF Package we can see from the code the clarity and the usability of this package in contrast with HWPF. Also in the switch statement we can see what we have mentioned before about the required checking of types in order to retrieve the value of a Cell. After a couple of experimenting with the API we found out that we need to continuously perform checks on the cell type, otherwise we will have exception errors.
+
+\subsection{HSMF Package for Outlook Message Files}
+
+Like previous packages HSMF is the POI project that is responsible for the Outlook MSG format processing. A lot of information is exchanged through emails and message files are a valuable source to analyse for further information. We can see in figure\ref{fig:MAPIUML} and abstract class diagram of the HSMF package which basic class is MAPIMessage class. Through this class we can gather all the required information we need for further analyses that the Apache POI can provide us. 
+
+\begin{figure}[h]
+\includegraphics[scale=0.43]{Figures/MAPIAbstractUML}
+\caption{Abstract UML Class Diagram of HSSF Package}
+\label{fig:MAPIUML}
+\end{figure}
+
+Currently the HSMF package provides low level read access. The information is contained in Chunk objects which are further extended by other classes to realize different kind of information types like Recipient chunks, Properties chunks, attachment chunks and so on. Also, since the MAPIMessage class is of POIDocument type we can get the information that is provided through POIDocument class functions. Through our experimentation with MAPIMessage class and HSMF package in general, we found that it provides a user friendly way to get all the available information. One significant thing we noticed is that it also provides access to attachment objects which can also be MAPIMessage type too.
+
+
+
+
+\section{Data types}
+So we need to import all the data we can get from our source API, Apache POI. Information is stored in components and variables which are defined different in each language and we have to investigate if there is any inconsistency in the types and how are we going to map them. Every language has a type system which allows us to declare the type of a variable and to define new types. We describe here the difference in type systems between object oriented and functional programming languages and especially Java and Rascal. After, we show an example how we can migrate from one structure to another. 
+
+\subsection{Java Data Types}
+
+Java programming language is a strong typed language which means that every variable should have its type declared at compile time\cite{javalangspec}. Java types are divided into two categories : primitive types and reference types\cite{javalangspec}. Correspondingly these are the two categories of types that values of variables can have. There is also a special type, the null type.
+
+The category of primitive types in Java programming language contains all the types that are predefined in Java and have its own reserved keyword. In table \ref{tab:PrimitivesJava} we present the primitive types of Java type system. We can see that each type might be a boolean or numeric type. Because we are investigating about interfacing with another language we can notice that boolean or numeric types are common in most languages and this category will not expose a problem in the mapping of data types with another language.
+
+\begin{table}
+\parbox{.45\linewidth}{
+\centering
+    \begin{tabular}{c}
+    \hline
+     \textbf{Primitive Types}   \\ \hline
+    \textit{NumericType}       \\
+    boolean           \\ \hline
+     \textbf{NumericType }      \\ \hline
+     \textit{IntegralType}      \\
+     \textit{FloatingPointType} \\ \hline
+     \textbf{IntegralType}      \\ \hline
+    byte              \\
+    short             \\
+    int               \\
+    long              \\
+    char              \\ \hline
+     \textbf{FloatingPointType} \\ \hline
+    float             \\
+    double            \\
+    \end{tabular}
+        \caption{Primitive Java Data Types.}
+        \label{tab:PrimitivesJava}
+}
+\parbox{.45\linewidth}{
+    \begin{tabular}{c}
+    \hline
+    \textbf{Reference Types}                      \\ \hline
+    \textit{ClassOrInterfaceType }                \\
+    \textit{TypeVariable }                        \\
+    \textit{ArrayType}                            \\ \hline
+    \textbf{ClassOrIntefaceType}                  \\ \hline
+    \textit{ClassType}                            \\
+    \textit{InterfaceType }                       \\ \hline
+    \textbf{ClassOrInterfaceType}                 \\ \hline
+    \textit{TypeDeclSpecifier} TypeArguments(opt) \\ \hline
+    \textbf{TypeDeclSpecifier}                    \\ \hline
+    \textit{TypeName}                             \\
+    \textit{ClassOrInterfaceType} . Identifier    \\ \hline
+    \textbf{TypeName}                             \\ \hline
+    Identifier                           \\
+    \textit{TypeName}. Identifier                 \\ \hline
+    \textbf{TypeVariable}                        \\ \hline
+    Identifier                           \\ \hline
+    \textbf{ArrayType}                            \\ \hline
+    \textit{Type} []                              \\
+    ~                                    \\
+    \end{tabular}
+            \caption{Reference Java Data Types.}
+            \label{tab:ReferenceJava}
+            }
+\end{table}
+
+The category of reference types, contains every type that references to objects and all of them inherit the methods of the class Object. In this category there are three kinds of type : class, interface and array types. The class Object is the superclass of all classes and an object of this class can reference to any class, interface, array type or null. 
+
+%something about parametrized objects
+ In the table \ref{tab:ReferenceJava} we see these three different kinds of type as defined in \cite{javalangspec}. As we can see, a class or interface variable is declared by the type declaration specifier which can be followed by type arguments, which in this case is a parametrised type. A parametrized type is a composition of class or interface type and an list of type arguments, for example Class<A,B,C>. A type variable is an unqualified identifier which introduces generic functionality in Java. This means that a method or a type can operate on objects of various types and ensuring compile time safety \cite{javakati}. 
+
+%explain inheritance, subtyping, generaliztion, synthesis and stuff polymorphism...
+%also maybe an example of declaring a new data type
+
+\subsection{RASCAL Data Types}
+
+RASCAL is a static type based language. In Figure \ref{fig:rascalTypes} we see the predefined data types of RASCAL environment as they are defined in \cite{rascalstatic}. RASCAL provides a lot of different types that users can use to manipulate data. We can notice that all types are subtypes of value type. RASCAL beyond the common primitive types, supports also locations, relations, sets, lists, maps and node types and for every type corresponding functions are provided. In Table \ref{tab:PrimitivesJava} we can see how the type of a variable can be declared.
+
+\begin{figure}[h]
+\centering
+\includegraphics[scale=0.40]{Figures/RASCALTypes}
+\caption{RASCAL predefined types\cite{rascalstatic}.}
+\label{fig:rascalTypes}
+\end{figure}
+
+\begin{table}
+\centering
+    \begin{tabular}{l}
+    \hline
+    \textbf{Type}          \\ \hline
+    \textit{PrimitiveType} \\
+    TypeParameter \\
+    \textit{UserDefinedType}\\  \hline
+    \textbf{PrimitiveType} \\ \hline
+    int           \\
+    real         \\
+    bool          \\
+    str           \\
+    loc         \\ 
+    list[\textit{Type}+]   \\
+    set[\textit{Type}+]    \\
+    rel[\textit{Type}+]    \\
+    map[\textit{Type}+]    \\
+    tuple[\textit{Type}+]\\
+    datetime\\
+    date\\
+    time\\
+    node\\\hline
+    \textbf{UserDefinedType} \\ \hline
+    alias = \textit{Type}\\
+    ADT (\textit{Type}+)\\ \hline
+    \end{tabular}
+    \caption{Rascal data types.}
+    \label{tbl:RascalDataTypes}
+\end{table}
+
+In order to create a new type in RASCAL environment we can use ADTs and aliases. An alias is nothing more than a mechanism that allows s to rename an existing type in order to enhance readability and documentation of the code.  An ADT, specifies a hierarchical representation of data. It's a tree data structure that is formed by a set of alternative constructors which are declaretions of a form that a node can have. It is a common widely principle used in functional programming languages. 
+
+For example we can see in Listing \ref{lst:ADTCode}, an implementation in RASCAL of data type ATree. The given source code specifies a new data type named ATree which can be a leaf with an integer or a parent which has two ATree types as attributes. The identifiers leaf and parent declare the constructors of the nodes. Leaf constructor declares that the node can contain as attribute one integer and parent constructor declares that the node can contain two ATree as attributes. The operateor | declares that a variable of type ATree can be one of the specified constructors. By this way we can create new data types that are composed by predefined types of RASCAL or by types that we have created. We can notice that ADTs allow the significant attribute of recursion. In general, an algebraic type specifies a sum of one or more alternatives, where each alternative is a product of zero or more fields\cite{haskelhistory}. 
+
+\begin{lstlisting}[label=lst:ADTCode,caption=An ADT example declaring an ATree type.]
+data ATree = leaf(int N)      
+           | parent(ATree left, ATree right) ;
+\end{lstlisting}
+
+The significant benefits of ADTs in RASCAL and in functional programming languages in general are that they can be annotated, which means to be attached with additional information on each node, and also they are easily processed with visiting statements, which is one of the most significant functionalities in functional programming languages\cite{haskelhistory} and especially in RASCAL. Also, like many other languages, RASCAL provides generic programming concepts and the ability to have parametrized types.
+
+\textcolor{red} {parametrized types and generic concepts}
+
+\subsection{Mapping Java Types to RASCAL}
+
+In this section we will describe what are the differences between those two type systems that  we have described before and if there is a type mismatch, an inconsistency between two types. We have to search for every possible data type we might encounter in our project and to create a corresponding one in RASCAL. We divide the types in two categories : scalar types and composite types. Scalar types are those types whose values are not composed of aggregations of other values\cite{paradigms}. Composite types are the non-scalar types which will be further are divided in different categories, and are analysed later. We are focusing in a Java to RASCAL mapping, so we investigate the mapping from Java to RASCAL types. 
+
+Java type system which we discussed in previous section, contains types that are scalar, which means that their values are autonomous, and they don't need the existence of another type, so they don't depend on other types. Java scalar types are all the types that are presented in the Table \ref{tab:PrimitivesJava}. We can see there are actually two different type categories and the \textsl{boolean} type. The two categories are containing the integral types category, types that the values are an integer number and the floating point types category, types that the values represent a float or a double number. By looking the RASCALs predefined types in Table \ref{tbl:RascalDataTypes} we can notice that for every Java scalar type there is a related type in RASCAL. We can for example represent Java boolean type with RASCAL bool. In Table \ref{tbl:relRascalToJava} we can see the relation of RASCAL types to Java scalar types. We can see from the table that every Java scalar type can be represented in Rascal environment, which makes the scalar types one common point in data structures between these two programming paradigms.
+
+\begin{table}[h]
+\centering
+\begin{tabular}{cc}
+\hline
+\textbf{Rascal Type} & \textbf{Java Scalar Types}\\\hline
+bool & boolean\\
+int & int, long, short, byte, char\\
+real & float, double \\
+\end{tabular}
+\caption{Relation of Rascal types to Java Scalar Types}\label{tbl:relRascalToJava}
+\end{table}
+
+Beyond the scalar types, Java contains also types that are composite or compound\cite{coexistance} types, which means types that are consisted by aggregating other types using appropriate constructors\cite{paradigms}. There are categories to distinguish these types which are summarised above.
+
+\begin{itemize}
+\item Cartesian product, a collection of values with different type.
+\item Array, a collection of values with the same type.
+\item Disjoint Union, in contrast with Product, union type can contain either one from a set of alternative types.
+\item Recursive type, types that are defined by recursion.
+\end{itemize}
+
+
+
+A Cartesian Product type is a compound type that is formed by a set of finite number of properties and which have a different type. In Java programming language we can declare such kind of a type with a new class. Declaring classes in order declaring new types in Java is one of the basic concepts in Java. An example in Java can be seen in Listing \ref{lst:productJava}. The corresponding example in RASCAL can be seen in Listing \ref{lst:productRascal}. We can map a product type by defining a constructor for an ADT that will contain the collection of the values.  We can see from the given source codes, that if we ignore the syntactic details the notion in declaring such kind of compound types is quite similar. 
+
+\begin{lstlisting}[label=lst:productJava,caption=Declaration example of a Cartesian Product type in Java.]
+//type declaration
+public class Person {
+	String name;
+	String surname;
+	int age;
+	
+	Person(String name, String surname, int age){
+		this.name=name;
+		this.surname=surname;
+		this.age=age;
+	}
+}
+
+//value creation of this type
+Person steve=new Person("Steve","Martin",25);
+\end{lstlisting}
+
+\begin{lstlisting}[label=lst:productRascal,caption=Mapping example of a Cartesian Product type in RASCAL.]
+//type declaration
+data Person = person(str name, str surname,int age);
+
+//value creation of this type
+Person steve = person("Steve","Martin",25);
+\end{lstlisting}
+
+
+
+Although, beyond the declared properties that we can see in the class source code, there are more properties that might form the data structure of a Cartesian product type in Java programming paradigm. One concept of Java and object oriented languages in general is the subtyping, which defines an is-a relation between the supertype and the subtype, which in this case is the superclass and the subclass. A class can inherit attributes and behaviour from its parent class, which in our viewpoint, the type is also comprised by the types that are declared in the super class.
+
+Array type is the compound type that is formed from a number of elements of the same type. In Java programming language, there is already a predefined notion to capture this kind of type. An array type can have many dimensions and is a predeclared type in Java as we see in the Table \ref{tab:ReferenceJava}. In Listing \ref{lst:arrayJava} we present an example on how to declare an array variable. We can use RASCAL compound types as presented in Table \ref{tbl:RascalDataTypes} to store values of a Java array in RASCAL. As we can see from the Figure \ref{fig:rascalTypes} RASCAL does not provide directly array types. Although, it provides types that are in the same notion, they provide collection functionalities. The most appropriate type to map a Java array in RASCAL is list type, since it allows duplicates inside the list, and we can have the order of the values. As an example related to Listing \ref{lst:arrayJava} we present the corresponding RASCAL declaration in Listing \ref{lst:arrayRascal}.
+
+
+
+\begin{lstlisting}[label=lst:arrayJava,caption=Declaration example of an Array type in Java.]
+//value creation of this type
+int[] array;
+array=new int[10];
+\end{lstlisting}
+
+\begin{lstlisting}[label=lst:arrayRascal,caption=Mapping example of an Array Type in RASCAL.]
+//value creation of this type
+list[int] array=[];
+\end{lstlisting}
+
+
+%also talk about the generic types that it accepts.
+Beyond the standard array type in Java, there is also the Collections Framework in Java\cite{collections}, that is heavily used because it provides existing implementations for collection functionalities. An overview of the basic interfaces that the Collections framework provides can be seen in Table \ref{tbl:CollectionFramework}. Since this framework is used in Apache POI for organising data, we are focusing also in these types as they are predefined types in Java, in order to establish a mapping between these types and RASCAL types.
+ 
+ \begin{table}[h]
+ \centering
+ \begin{tabular}{lp{8cm}}
+\hline
+Collection & Description \\ \hline
+Set<E> & A collection that contains unique elements of the same type. \\
+List<E> & A collection that can contain ordered duplicate elements. \\
+Queue<E> & A collection that holds elements prior to processing. Typically ordered in FIFO manner. \\
+Dequeue<E> & A linear collection that works as double ended queue, with accessible both end points. \\
+Map<K,V> & A collection of mappings from keys to values. A Map can not contain duplicate keys.\\\hline
+ \end{tabular}
+ \label{tbl:CollectionFramework}
+ \caption{Basic Interfaces of Java Collection Framework.}
+ \end{table}
+ 
+ 
+We can notice from the Table \ref{tbl:CollectionFramework} that some of the types that are declared in the Collections framework can be directly mapped to RASCAL types. Although the Collection framework and RASCAL programming language may provide different operations to process these types,  our intention is to map the data structure. For Queue and Dequeue types we can use the list type of RASCAL, since both are ordered linear collections that can contain duplicates. In Listing \ref{lst:collectionCode} we present an example of these mappings. We see in this example the instantiation of an object of type List<Person> where Person is the type we declared in Listing \ref{lst:productJava}. The ArrayList is one implementation of the type List in the Collections Framework.  Correspondingly in Listing \ref{lst:collectionCodeRascal} we present the same declaration of a list that contains Person elements in RASCAL.
+
+\begin{lstlisting}[label=lst:collectionCode,caption=A list declaration in Java using the Collections Framework.]
+List<Person> persons=new ArrayList<Person>();
+\end{lstlisting}
+
+\begin{lstlisting}[label=lst:collectionCodeRascal,caption=A list declaration in RASCAL.]
+list[Person] persons=[];
+\end{lstlisting}
+
+
+% 
+A Disjoint Union type is a type that can be one from a set from alternative types. An ADT in functional languages can specify a union type with the usage of alternative constructors. In Java, although it is not directly called union types as in C language for example, a union type can be implemented with the usage of sub-typing. Abstraction in object oriented languages, gives us the primitive to have objects with more than one type and upcast or downcast objects. An object can be related to the superclass or one of the subclasses. In Listing \ref{lst:unionJava} we present an example with a union type, called Shape. An object of type Shape can either be a Circle or a Rectangle. To simulate this functionality in RASCAL and in functional languages in general we can use ADTs by declaring alternative constructors. The corresponding type in RASCAL can be seen in Listing \ref{lst:unionRascal}.
+
+\begin{lstlisting}[label=lst:unionJava,caption=Declaration example of a Disjoint Union type in Java.]
+//type declaration
+public abstract class Shape {}
+
+public class Circle extends Shape {
+	public final double radius;
+	
+	public Circle(double radius) {
+		this.radius = radius;
+	}
+}
+
+public class Rectangle extends Shape {
+	public final double width;
+	public final double height;
+	
+	public Rectangle(double width, double height) {
+		this.width = width;
+		this.height = height;
+	}
+}
+\end{lstlisting}
+
+\begin{lstlisting}[label=lst:unionRascal,caption=Mapping example of a Disjoint Union type in RASCAL.]
+//type declaration
+data Shape = circle(real radius)
+			| rectangle(real width, real height); 
+\end{lstlisting}
+
+
+A Recursive type is a compound type that can contain as a property one variable of the same type. In order to end the recursion, the language must have a special value, for example null which belongs to every recursive type\cite{paradigms}. In Listing \ref{lst:recJava} we see an example of a recursive type in Java. The recursiveness occurs in the type Plus which is an Expr type and contains as properties variables of Expr type.  We can see the corresponding declaration in Listing \ref{lst:recRascal}. The keywords \textsl{num} and \textsl{value} need to be escaped with \textbackslash in RASCAL environment in order to use them for new declarations.
+
+\begin{lstlisting}[label=lst:recJava,caption=A Recursive type declaration in Java.]
+public abstract class Expr {}
+
+public class Num extends Expr {
+	public final int value;
+	
+	public Num(int value) {
+		this.value = value;
+	}
+}
+
+public class Plus extends Expr {
+	public final Expr lExpr, rExpr;
+	
+	public Plus(Expr lExpr, Expr rExpr) {
+		this.lExpr = lExpr;
+		this.rExpr = rExpr;
+	}
+}
+\end{lstlisting}
+
+\begin{lstlisting}[label=lst:recRascal,caption=Mapping of a Recursive type in RASCAL.]
+data Expr = \num(int \value)
+		  | plus(Expr lExpr,Expr rExpr);
+\end{lstlisting}
+
+One problem that may lead to a structure mismatch is that in object oriented languages we may have a graph structure while in functional we will always have a tree structure. If modifiable values are allowed by the language, it is possible to create circular values. In purely functional languages, the values of a recursive type have always a tree structure\cite{paradigms}. For example as we can see in Listing \ref{lst:graphJava}, we have declared a type named Shape where it contains one property of type Shape. In RASCAL the corresponding example can be seen in Listing \ref{lst:graphRascal}. The problem in RASCAL is that we can never assign a value in a Shape variable.
+
+\begin{lstlisting}[label=lst:graphRascal,caption=Graph type in RASCAL.]
+
+data Shape = newShape(Shape aShape);
+\end{lstlisting}
+
+\begin{lstlisting}[label=lst:graphJava,caption=Graph type in Java.]
+public class Shape{
+	public Shape aShape;
+}
+\end{lstlisting}
+ %ADT WITH PARAMETRIZED TYPE????
+ 
+\subsection{Interfacing RASCAL with Java}
+
+Considering that we have described the differences between Java and RASCAL data types and we have declared the mapping relations between them, we have also to investigate how can we connect RASCAL and Java, how can we interface RASCAL with Java programs in order to exchange values and call functions. Since Apache POI deploys in Java environment and we have to call its methods from Java environment, a connector that facilitates the interfacing from RASCAL to Java is required.
+
+RASCAL provides us with the ability to directly call Java functions. Using the modifier \textsl{java} in front of a method, we can declare that the method body has been implemented in Java. The method should be annotated with an identifier that points where the function implementation is located. The component that serves as the medium between these two languages to exchange values is Pdb.values package\cite{pdbdoc} which is an API targeted at modelling source code facts and  is maintained by SWAT team. RASCAL functions that have their implementation in Java, can have as arguments and return, variables that have type that is recognised from Pdb.values package.
+
+
+\begin{table}[h]
+\centering
+\begin{tabular}{l}
+\hline \textbf{Value}\\ \hline
+IBool\\
+IConstructor\\
+IDateTime\\
+IExternalValue\\
+IInteger\\
+IList\\
+IMap\\
+INode\\
+INumber\\
+IRational\\
+IReal\\
+ISet\\
+ILocation\\
+ITuple\\
+IValue\\\hline
+\end{tabular}
+\label{tbl:Pdbvalues}
+\caption{Value types that are provided in Pdb.values package.}
+\end{table}
+
+Pdb.values contains components to represent source code facts by defining interfaces and implementations. The important thing here is that it declares a type system that is similar to RASCAL type system and also that RASCAL is interfaced with this package. This package also contains type declarations with implemented methods to create and manipulate the values that can be exchanged with RASCAL. The kind of value types that are defined in this package are summarised in Table \ref{tbl:Pdbvalues}. We can see from the table that every type of RASCAL can be represented with a Pdb.values type. Every type contained in the table extends the interface IValue. IExternalValue can be used to declare types that are not present in the Pdb.values type system such as function types that have implemented in RASCAL.
+
+In order to apply the type mappings we defined in the previous section, we have to use Pdb.values package. For every value in RASCAL that we may want to pass in a  Java implemented method, there must be a recognised type in Java. The basic components of Pdb.values are Type and TypeFactory. Type is the abstract class, father of all types that are declared and TypeFactory serves as the container of all types and allows useful operations such as to create new types. In one class that interfaces RASCAL with Java there must be only one TypeFactory object\cite{pdbdoc}. In order to create values from a specific type one can use the methods that are provided by the IValueFactory interface. IValueFactory contains methods to manipulate Java types and assign them to Pdb.values variables. Next, we are presenting examples on how we can apply the mappings using this package.
+
+Java Scalar types can be easily converted into Pdb.values and then returned to RASCAL. In Listing \ref{lst:scalarPdb} we see an example code in Java where we store values in Pdb.values variables. The IValueFactory object, since it's instantiated (which we avoided to present it) can provide us with useful methods to manipulate values like storing as we see in this example.
+
+\begin{lstlisting}[label=lst:scalarPdb,caption=Assignment of Java scalar values to Pdb.values variables.]
+private IValueFactory values;
+
+int anInteger=0;
+IInteger anIntegerPdb = values.integer(anInteger);
+
+boolean aBoolean=true;
+IBool anBoolean = values.bool(aBoolean);
+
+double aReal=2.3;
+IReal aReal= values.real(aReal);
+\end{lstlisting}
+
+
+ADTs can be constructed with an easily way as we can see in Listing \ref{lst:consPdb}. The TypeStore object is used to store declarations of ADTs, annotations and aliases. Firstly we define the Type, in our case \textsl{anADT}, and then we define its constructor which is describing the structure of the ADT. We can see also that there are two constructors created for the \textsl{anADT} type. We can use this way to represent disjoint union types. Also in the first constructor we can see that recursiveness appears in the last element of the type.
+
+\begin{lstlisting}[label=lst:consPdb,caption=Defining an ADT in Pdb.values package.]
+private static TypeFactory tf = TypeFactory.getInstance();
+private IValueFactory values;
+public static TypeStore typestore = new TypeStore(
+    org.rascalmpl.values.errors.Factory.getStore(), 
+    org.rascalmpl.values.locations.Factory.getStore());
+	  
+public static final Type anADT = tf.abstractDataType(typestore,"anADT");
+
+public static final Type  anADT_constructor=
+tf.constructor(typestore,anADT,"anADT_constructor",
+tf.integerType(), "anInteger",
+tf.boolType(), "aBoolean",
+anADT, "recursive"
+);
+
+public static final Type  anADT_constructor2=
+tf.constructor(typestore,anADT,"anADT_constructor",
+tf.integerType(), "anInteger",
+tf.boolType(), "aBoolean"
+);
+\end{lstlisting}
+
+Finally to store Java array types in Pdb.values we can use all the collections that this package offers and they are the same with RASCALs collection types. In Listing \ref{lst:arrayPdb} we see an example of storing a sequence of integers numbers from 0 to 20 in a IList object. The IListWriter object and generally all the writers that are offered by Pdb.vales, facilitate the processing and manipulation of collection types. Although, they are not an IValue object so they have to be converted to IValue types using the appropriate method, in this case the method done().
+
+\begin{lstlisting}[label=lst:arrayPdb,caption=An array type declaration using Pdb.values.]
+IList aListPdb = values.list(tf.integerType());
+IListWriter aListWritter = values.listWriter(tf.integerType());
+	
+for(int i=0 ; i<20; i++){
+		IInteger anInteger = values.integer(i);
+		aListWritter.append(anInteger);
+}
+
+aListPdb = aListWritter.done();
+\end{lstlisting}
+
+
+
+
+
+

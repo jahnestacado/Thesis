@@ -1,0 +1,49 @@
+\contentsline {chapter}{Acknowledgements}{i}{dummy.2}
+\vspace {1em}
+\contentsline {chapter}{{\relax \fontsize {24.88}{30}\selectfont \bfseries }{\hspace {20pt}\leavevmode {\color {gray75}|}\hspace {20pt}}{Figures}{\relax \fontsize {24.88}{30}\selectfont \bfseries }}{ii}{chapter*.3}
+\contentsline {chapter}{{\relax \fontsize {24.88}{30}\selectfont \bfseries }{\hspace {20pt}\leavevmode {\color {gray75}|}\hspace {20pt}}{Tables}{\relax \fontsize {24.88}{30}\selectfont \bfseries }}{v}{chapter*.5}
+\contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.6}
+\contentsline {section}{\numberline {1.1}Background}{1}{section.7}
+\contentsline {section}{\numberline {1.2}Problem Formulation}{2}{section.8}
+\contentsline {section}{\numberline {1.3}File Fragment Classification}{3}{section.9}
+\contentsline {section}{\numberline {1.4}Objectives}{3}{section.10}
+\contentsline {section}{\numberline {1.5}Algorithms Requirements}{3}{section.13}
+\contentsline {section}{\numberline {1.6}Methodology}{4}{section.17}
+\contentsline {chapter}{\numberline {2}Related Work}{6}{chapter.18}
+\contentsline {chapter}{\numberline {3}Experimental Setup}{8}{chapter.19}
+\contentsline {section}{\numberline {3.1}Byte Frequency Analysis(BFA) Algorithm}{8}{section.20}
+\contentsline {section}{\numberline {3.2}Data Set}{9}{section.21}
+\contentsline {chapter}{\numberline {4}Algorithm Development}{11}{chapter.24}
+\contentsline {section}{\numberline {4.1}Approach Description}{11}{section.25}
+\contentsline {section}{\numberline {4.2}BFA Variations}{12}{section.26}
+\contentsline {subsection}{\numberline {4.2.1}Variation 1 - Plain Text ASCII Subset}{12}{subsection.27}
+\contentsline {subsection}{\numberline {4.2.2}Variation 2 - Plain Text Concentration Categories}{12}{subsection.29}
+\contentsline {subsection}{\numberline {4.2.3}Variation 3 - Dominant Plain Text Concentration Categories}{14}{subsection.31}
+\contentsline {subsection}{\numberline {4.2.4}Variation 4 - Fragments above 75\% Plain Text Concentration classified as text}{15}{subsection.33}
+\contentsline {subsection}{\numberline {4.2.5}Optimal Variation for Text Fragment Classification}{16}{subsection.35}
+\contentsline {subsection}{\numberline {4.2.6}BFA Training - Complete ASCII Set VS. Plain Text }{16}{subsection.36}
+\contentsline {section}{\numberline {4.3}BFA Text Output Analysis}{18}{section.38}
+\contentsline {subsection}{\numberline {4.3.1}BFA Variation 1 Output}{18}{subsection.39}
+\contentsline {subsection}{\numberline {4.3.2}Individual Null Byte Frequency}{19}{subsection.41}
+\contentsline {subsection}{\numberline {4.3.3}Shannon Entropy}{20}{subsection.43}
+\contentsline {subsection}{\numberline {4.3.4}Plain Text Concentration Categories}{21}{subsection.45}
+\contentsline {section}{\numberline {4.4}Longest Common Subsequence}{21}{section.46}
+\contentsline {chapter}{\numberline {5}Algorithm Description}{24}{chapter.48}
+\contentsline {chapter}{\numberline {6}Results}{29}{chapter.53}
+\contentsline {section}{\numberline {6.1}BFA Scan - Text Fragment Classification}{30}{section.54}
+\contentsline {section}{\numberline {6.2}BFA Extension Algorithm Accuracy}{30}{section.56}
+\contentsline {section}{\numberline {6.3}Complete Algorithm Accuracy}{31}{section.58}
+\contentsline {chapter}{\numberline {7}Analysis}{32}{chapter.60}
+\contentsline {section}{\numberline {7.1}BFA performance}{32}{section.61}
+\contentsline {section}{\numberline {7.2}Overall Algorithm Performance}{33}{section.62}
+\contentsline {section}{\numberline {7.3}Algorithm Comparison}{34}{section.68}
+\contentsline {subsection}{\numberline {7.3.1}Accuracy Comparison}{35}{subsection.69}
+\contentsline {subsection}{\numberline {7.3.2}Execution Time Comparison}{35}{subsection.71}
+\contentsline {chapter}{\numberline {8}Discussion}{36}{chapter.72}
+\contentsline {chapter}{\numberline {9}Conclusions and Future Work}{38}{chapter.73}
+\contentsline {section}{\numberline {9.1}Conclusions}{38}{section.74}
+\contentsline {section}{\numberline {9.2}Future Work}{39}{section.75}
+\vspace {2em}
+\vspace {2em}
+\contentsline {chapter}{Bibliography}{40}{dummy.76}
+\contentsline {chapter}{Bibliography}{40}{appendix*.77}

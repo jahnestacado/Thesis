@@ -1,0 +1,64 @@
+% Chapter Template
+
+\chapter{Introduction} % Main chapter title
+
+\label{Chapter1} % Change X to a consecutive number; for referencing this chapter elsewhere, use \ref{ChapterX}
+
+\lhead{Chapter 1. \emph{Introduction}} % Change X to a consecutive number; this is for the header on each page - perhaps a shortened title
+
+%----------------------------------------------------------------------------------------
+%	SECTION 1
+%----------------------------------------------------------------------------------------
+In this chapter we present an overview of our study. We present the scope and our intentions for this study, what is the expected outcome, which approach we used to conduct our research and what are the elements of our domain. Further details will be discussed in later chapters.
+
+\section{Project Overview and Scope}
+
+Reusing existing software components by accessing their implementations through their Application Programming Interfaces(API) can reduce the cost of software development and maintenance \cite{Nguyen2010}. An existing solution can help developers to cut down the time and effort that a software needs to be built. Design, implementation and testing of a new behaviour is a process that can be avoided through reusability. Although sometimes, due to many factors like different programming paradigm, problematic implementation, bad design or poor testing, the required effort on transforming and refactoring the API to meet the expectations of the target language might be complex and expensive \cite{studyAPIxml}.
+
+In this project we will try to interface a behaviour implemented in an object oriented language from a functional language. Apache POI is an API implemented in Java with which we can import and manipulate MS Office documents with Java programming language. We will try to reuse Apache POI to import MS Office documents in RASCAL meta-programming language in order to reduce the time needed to implement a new one from scratch. 
+
+Since, RASCAL and Apache POI deploy in a different programming paradigm, we have to investigate how to interface the existing solution from object oriented programming with a functional language. What we expect as an outcome is a data structure in RASCAL that will contain all the information about a document that we can gather from Apache POI. Because further manipulation can be done through RASCAL tools we will focus on accessing Apache POI and gather all the data that we can get. 
+
+In order to do this, we use static source code analysis techniques to understand what are the data structures that contain information about MS Office files in Apache POI, how to interface RASCAL with Apache POI in order to get these data and how are we going to deal with the differences of data structures in these two different programming paradigms. Furthermore, in order to minimise the effort and the time needed, we use techniques from code generation-automation field to automate or semi-automate the mapping process.
+%-----------------------------------
+%	SUBSECTION 1
+%-----------------------------------
+\section{Problem}
+
+There are a lot of significant differences between these two programming paradigms which introduce problems. At first there is a difference in data types between object oriented and functional languages. In object oriented languages a class can represent a new data type. We can define new data types by defining classes with classes or primitive types as attributes. In functional programming we can create new data types by creating an Algebraic Data Type(ADT). An ADT is a tree structure defining a new type comprising by other ADTs or primitive types. Since we want to represent Apache POI data, we have to understand the original data structures and relate them to RASCAL data structures.
+
+Apache POI is our source API and Java is our source language. Our source API defines a data structure that prescribes information about a MS Office file. We have to analyse the source API in order to understand the data model that it carries and if it is hierarchical or not. By this way we can understand its structure. Can the information be retrieved from a root object or the information is spread among many components?
+
+Beside the data structure mismatch, functional programming has also other differences from object-oriented programming that need to be investigated. Among others we have to find a matching pattern to resolve sub-typing issues, class hierarchies, up-casting and down-casting objects, multi-inheritance and abstraction.
+
+Also, one of the complex things in Apache POI is that it is constituted from many different components, representing different tasks. There are components related to Word file extraction, or Excel file extraction and other components that are more abstract and interrelated to the others. We must understand this interrelations between the components in order to understand the structure and where the information is located.
+
+Furthermore, since we don't know the required effort and we want also to generalize this approach for future interfacing actions, we want to investigate if we can generate the mappings between the two languages automatically. If the required source code that is needed for interfacing RASCAL with an API can be generated, then a significant effort can be avoided when we have to face similar situations. Also, a general technique about mapping an object oriented to RASCAL data structure can be formalised.
+%-----------------------------------
+%	SUBSECTION 2
+%-----------------------------------
+
+
+%----------------------------------------------------------------------------------------
+%	SECTION 2
+%----------------------------------------------------------------------------------------
+
+\section{Research Method}
+First of all, we performed a literature study where we searched for relevant cases and practices. Although there is not a lot of work on this field, interfacing functional with object oriented languages, we have found quite similar cases which are providing information about API merging or migration, information about mapping and correspondence between object oriented and functional elements. Our primary sources are scientific papers but we will also experimented with the implementation of RASCAL and Apache POI to gain better knowledge about their differences.The preliminary knowledge that we acquired from this step is presented in Chapter \ref{Chapter2}.
+
+A big step in our problem is understanding the structure of the Apache POI API. We first performed static source code analysis on the API, to understand its structure, what is the data model that describes a MS Office file and what is required to retrieve the available information. We focused on each different component at a time, in order to keep separated the tasks. The approach we followed is discussed in Chapter \ref{Chapter3}.  
+
+Later, we investigated what information is required (classes, interfaces, attributes), what do we need from all the available information in order to create our corresponding ADT in RASCAL. The RASCAL ADT representing a MS Office file contains all the required information which we manually decided to include in our implementation.
+
+After this, we searched how to interface RASCAL with Java and how to automatically create the interfacing component and generate the required source code. In this step we used source code generation by using the outcome of the static code analysis step. Also we evaluated the outcome of this approach by conducting a replication of the study done by F\'{e}lienne Hermans \cite{Feliene1}. The case study us presented in Chapter \ref{Chapter5} 
+
+\section{Expected Results}
+We generally focused to find a methodology to map an object oriented data structure to a functional ADT and to contribute to this area with a methodology that describes how to automatically or semi-automatically interface an object oriented API  with the functional language RASCAL.
+We focused especially on providing RASCAL with the ability to import MS Office files and represent them in ADT manner. Our intention on manipulating MS Office files, is that a lot of information is hidden inside these kind of documents such as Excel sheets, Word documents \cite{signifWord} and etc. By providing to developers with an approach to handle this kind of information, we will facilitate the extraction of knowledge contained in these documents and to perform various kinds of analyses. Information about a program can be found in a software requirements specification document, or even in an informal Excel sheet. A piece of source code, a function for example, might be correlated with a requirement, or a constraint in such kind of documents. Beside source code analysis, this feature will make RASCAL approachable from other Computer Science fields, like Information Retrieval for example.
+
+
+
+
+
+
+

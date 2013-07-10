@@ -1,0 +1,330 @@
+
+@InProceedings{AMMSE11,
+  author =      {Jeroen van den Bos and Mark Hills and Paul Klint and Tijs van der Storm and
+  Jurgen J. Vinju},
+  title =      {Rascal: From Algebraic Specification to Meta-Programming},
+  booktitle = {Proceedings of the 2nd Workshop on Algebraic Methods in
+  Model-Based Software Engineering (AMMSE'11)},
+  year =      {2011},
+  editor =      {Francisco Dur{\'a}n and Vlad Rusu},
+  number =      {56},
+  series =      {EPTCS}
+}
+
+@INPROCEEDINGS{rascalOrigin, 
+author={Klint, P. and van der Storm, T. and Vinju, J.}, 
+booktitle={Source Code Analysis and Manipulation, 2009. SCAM '09. Ninth IEEE International Working Conference on}, 
+title={RASCAL: A Domain Specific Language for Source Code Analysis and Manipulation}, 
+year={2009}, 
+pages={168-177}, 
+keywords={object-oriented languages;program diagnostics;software maintenance;RASCAL;ad hoc integration;automated software engineering tool;complex software refactoring;conceptual-syntactic-semantic-technical level;domain specific language;impedance mismatch;source code analysis;source code manipulation;Domain specific languages;Impedance;Informatics;Java;Libraries;Logic programming;Pattern matching;Scalability;Software engineering;Storms;meta-programming;source code analysis;source code manipulation;transformation}, 
+doi={10.1109/SCAM.2009.28},}
+
+@techreport{SEN-1111,
+publnr       = {18531},
+author       = {van der Storm, T.},
+title        = {The {Rascal} {Language} {Workbench}},
+type         = {CWI Technical Report},
+origin       = {cwi},
+institution  = {CWI},
+series       = {Software Engineering [SEN]},
+pages        = {1 - 28},
+year         = {2011},
+month        = {May},
+number       = {SEN-1111},
+publisher    = {CWI},
+issn         = {1386-369X},
+size         = {28p.},
+group        = {SEN1},
+language     = {en},
+project      = {NWO Project 1:[Domain Specific Languages: A Big Future for Small Programs , 612-001-011]},
+abstract     = {Rascal is a programming language for source code analysis and transformation. This means
+that typically
+ the input of a Rascal program is a program in some programming language, and
+the output is often yet another program. So
+ Rascal is a meta programming language. Source code
+is thus primary object of manipulation in Rascal.
+Many of the use cases
+ that Rascal is designed to address, follow the Extract-Analyze-
+SYnthesize, or EASY paradigm (shown in Figure 1.1). Meta
+ programs often start by extracting
+information (facts) from the input program. This is the extraction phase. An example
+ could
+be the call-graph of a program. Then, this extracted information is often subject to analysis:
+derived facts are
+ computed, the information is enriched. For the call graph, a simple analysis
+is determining the root or leaf routines in
+ the a source program by analysing the extracted
+call-graph. Another analysis could be concerned by identifying routines
+ that are never called
+(dead code). Finally, the meta program will synthesize some kind of result. This can be transformed
+source
+ code (e.g., removal of dead code from the input program), a report (e.g., statistics
+on the number of root and leaf routines),
+ or a visualization (e.g., a graphical depiction of the
+call-graph). Of course, these phases are not strictly sequential:
+ there may be feedback loops.
+Some analysis leads to new extraction, synthesis of a result may lead to new analyses and
+ so
+on. Rascal has elaborated features to support each of the phases of the EASY paradigm fully
+integrated in the language.
+Naturally,
+ the implementation of domain specific languages (DSLs), or more generally, modeldriven
+engineering (MDE) fits the EASY
+ paradigm very well. When implementing a DSL compiler
+or interpreter the input is, of course, DSL source code. Extraction
+ could, for instance,
+include the derivation of an AST from the concrete syntax tree. Another extracted model could
+be
+ a graph-like structure representing the input in a more abstract way, or a performance model.
+Such abstractions are input
+ to analyses such as constraint checking or type checking, verification,
+quality-of-service analysis etc. Finally, synthesis
+ covers tasks such as graphical visualization,
+code generation, and optimization. To conclude, in the context of Rascal,
+ we see DSL implementation
+as an instance of source code analysis and transformation.},
+url          = {http://oai.cwi.nl/oai/asset/18531/18531D.pdf},
+}
+
+@misc{POILIC,
+  author = {Apache POI},
+  title = {Apache POI Licence},
+  howpublished = {\url{http://www.apache.org/licenses}},
+  note = {Accessed: 08/03/2013}
+}
+
+@misc{POI,
+  author = {Andrew C. Oliver, Glen Stampoultzis, Avik Sengupta, Rainer Klute, David Fisher},
+  title = {Apache POI},
+  howpublished = {\url{http://poi.apache.org}},
+  note = {Accessed: 08/03/2013}
+}
+
+@inproceedings{signifWord,
+ author = {Forward, Andrew and Lethbridge, Timothy C.},
+ title = {The relevance of software documentation, tools and technologies: a survey},
+ booktitle = {Proceedings of the 2002 ACM symposium on Document engineering},
+ series = {DocEng '02},
+ year = {2002},
+ isbn = {1-58113-594-7},
+ location = {McLean, Virginia, USA},
+ pages = {26--33},
+ numpages = {8},
+ url = {http://doi.acm.org/10.1145/585058.585065},
+ doi = {10.1145/585058.585065},
+ acmid = {585065},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+ keywords = {documentation relevance, documentation survey, documentation technologies, program comprehension, software documentation, software engineering, software maintenance},
+} 
+
+@inproceedings{graphapproach,
+ author = {Nguyen, Hoan Anh and Nguyen, Tung Thanh and Wilson,Jr., Gary and Nguyen, Anh Tuan and Kim, Miryung and Nguyen, Tien N.},
+ title = {A graph-based approach to API usage adaptation},
+ booktitle = {Proceedings of the ACM international conference on Object oriented programming systems languages and applications},
+ series = {OOPSLA '10},
+ year = {2010},
+ isbn = {978-1-4503-0203-6},
+ location = {Reno/Tahoe, Nevada, USA},
+ pages = {302--321},
+ numpages = {20},
+ url = {http://doi.acm.org/10.1145/1869459.1869486},
+ doi = {10.1145/1869459.1869486},
+ acmid = {1869486},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+ keywords = {API evolution, API usage adaptation, API usage model, program differencing, software evolution},
+} 
+
+
+@article{Nguyen2010,
+annote = {Maybe  i can use this to understand the structure of POI},
+author = {Nguyen, HA and Nguyen, TT and Jr, Gary Wilson},
+file = {:ufs/gma/.local/share/data/Mendeley Ltd./Mendeley Desktop/Downloaded/Nguyen, Nguyen, Jr - 2010 - A graph-based approach to API usage adaptation.pdf:pdf},
+isbn = {9781450302036},
+journal = {ACM Sigplan \ldots},
+keywords = {api,api usage adaptation,api usage model,evolution,program differencing,software evolution},
+pages = {302--321},
+title = {{A graph-based approach to API usage adaptation}},
+url = {http://dl.acm.org/citation.cfm?id=1869486},
+year = {2010}
+}
+
+@inproceedings{studyAPIxml,
+ author = {Bartolomei, Thiago Tonelli and Czarnecki, Krzysztof and L\"{a}mmel, Ralf and van der Storm, Tijs},
+ title = {Study of an API migration for two XML APIs},
+ booktitle = {Proceedings of the Second international conference on Software Language Engineering},
+ series = {SLE'09},
+ year = {2010},
+ isbn = {3-642-12106-3, 978-3-642-12106-7},
+ location = {Denver, CO},
+ pages = {42--61},
+ numpages = {20},
+ url = {http://dx.doi.org/10.1007/978-3-642-12107-4_5},
+ doi = {10.1007/978-3-642-12107-4_5},
+ acmid = {2127914},
+ publisher = {Springer-Verlag},
+ address = {Berlin, Heidelberg},
+} 
+
+@inproceedings{haskelhistory,
+ author = {Hudak, Paul and Hughes, John and Peyton Jones, Simon and Wadler, Philip},
+ title = {A history of Haskell: being lazy with class},
+ booktitle = {Proceedings of the third ACM SIGPLAN conference on History of programming languages},
+ series = {HOPL III},
+ year = {2007},
+ isbn = {978-1-59593-766-7},
+ location = {San Diego, California},
+ pages = {12-1--12-55},
+ url = {http://doi.acm.org/10.1145/1238844.1238856},
+ doi = {10.1145/1238844.1238856},
+ acmid = {1238856},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+} 
+
+@incollection{haskellmap,
+year={2005},
+isbn={978-3-540-23727-3},
+booktitle={Implementation of Functional Languages},
+volume={3145},
+series={Lecture Notes in Computer Science},
+editor={Trinder, Phil and Michaelson, GregJ. and Peña, Ricardo},
+doi={10.1007/978-3-540-27861-0_2},
+title={Interfacing Haskell with Object-Oriented Languages},
+url={http://dx.doi.org/10.1007/978-3-540-27861-0_2},
+publisher={Springer Berlin Heidelberg},
+author={Pang, AndréT.H. and Chakravarty, ManuelM.T.},
+pages={20-35}
+}
+
+@ARTICLE{ducasse,
+author={Ducasse, S. and Pollet, D.},
+journal={Software Engineering, IEEE Transactions on}, title={Software Architecture Reconstruction: A Process-Oriented Taxonomy},
+year={2009},
+volume={35},
+number={4},
+pages={573-591},
+keywords={software architecture;software maintenance;software packages;process-oriented taxonomy;software architecture reconstruction;software development;Software architecture reconstruction.},
+doi={10.1109/TSE.2009.19},
+ISSN={0098-5589},}
+
+@Misc{apachecomp,
+howpublished = {\url{http://poi.apache.org/overview.html}},
+note = {Accessed: 03/04/2013},
+title = {Apache POI - Component Overview},
+author = {Andrew C. Oliver, Rainer Klute, David Fisher}
+}
+
+@inproceedings{feliene1,
+  author    = {Felienne Hermans and
+               Martin Pinzger and
+               Arie van Deursen},
+  title     = {Detecting code smells in spreadsheet formulas},
+  booktitle = {ICSM},
+  year      = {2012},
+  pages     = {409-418},
+  ee        = {http://doi.ieeecomputersociety.org/10.1109/ICSM.2012.6405300},
+  crossref  = {DBLP:conf/icsm/2012},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@Book{visualization,
+ALTauthor = {Stephan Diehl},
+ALTeditor = {editor},
+title = {Software Visualization: Visualizing the Structure, Behaviour, and Evolution of Software},
+publisher = {Springer},
+year = {2007},
+OPTkey = {key},
+OPTvolume = {volume},
+OPTnumber = {number},
+OPTseries = {series},
+OPTaddress = {address},
+OPTedition = {edition},
+OPTmonth = {month},
+OPTnote = {note},
+OPTannote = {annote},
+}
+
+@INPROCEEDINGS{eusesCorpus,
+    author = {Marc Fisher Ii and Gregg Rothermel},
+    title = {The EUSES Spreadsheet Corpus: A Shared Resource for Supporting Experimentation with Spreadsheet Dependability Mechanisms},
+    booktitle = {In 1st Workshop on End-User Software Engineering},
+    year = {2005},
+    pages = {47--51}
+}
+
+@book{javalangspec,
+ author = {Gosling, James and Joy, Bill and Steele, Guy and Bracha, Gilad},
+ title = {Java(TM) Language Specification, The (3rd Edition) (Java (Addison-Wesley))},
+ year = {2005},
+ isbn = {0321246780},
+ publisher = {Addison-Wesley Professional},
+} 
+
+@Misc{rascalstatic,
+howpublished = {\url{http://tutor.rascal-mpl.org/Rascal/Rascal.html#/Rascal/Concepts/StaticTyping/StaticTyping.html}},
+note = {Accessed: 30/06/2013},
+title = {Rascal Concepts Static Typing},
+author = {}
+}
+
+@Book{paradigms, 
+ALTauthor = Gabbrielli, Maurizio, Martini, Simone},
+ALTeditor = {editor},
+title = {Programming Languages: Principles and Paradigms},
+publisher = {Springer},
+year = {2010},
+isbn = {978-1-84882-913-8},
+OPTvolume = {volume},
+OPTnumber = {number},
+OPTseries = {series},
+OPTaddress = {address},
+OPTedition = {edition},
+OPTmonth = {month},
+OPTnote = {note},
+OPTannote = {annote},
+}
+
+@article{coexistance,
+ author = {Gehlot, Vijay and Way, Thomas and Klassner, Frank},
+ title = {Coexistence of functional and object-oriented paradigms},
+ journal = {J. Comput. Sci. Coll.},
+ issue_date = {January 2012},
+ volume = {27},
+ number = {3},
+ month = jan,
+ year = {2012},
+ issn = {1937-4771},
+ pages = {122--129},
+ numpages = {8},
+ url = {http://dl.acm.org/citation.cfm?id=2038772.2038798},
+ acmid = {2038798},
+ publisher = {Consortium for Computing Sciences in Colleges},
+ address = {USA},
+} 
+
+
+@Misc{collections,
+howpublished = {\url{http://docs.oracle.com/javase/tutorial/collections/interfaces/index.html}},
+note = {Accessed: 30/06/2013},
+title = {Lesson: Interfaces (The Java Tutorials > Collections) },
+author = {}
+}
+
+
+@Misc{pdbdoc,
+howpublished = {\url{https://github.com/impulse-org/pdb.values/tree/master/doc}},
+note = {Accessed: 30/06/2013},
+title = {Github repository of Pdb.values },
+author = {}
+}
+
+@Misc{javakati,
+howpublished = {\url{http://docs.oracle.com/javase/1.5.0/docs/guide/language/index.html}},
+note = {Accessed: 30/06/2013},
+title = {Java Programming Language},
+author = {}
+}
+ 

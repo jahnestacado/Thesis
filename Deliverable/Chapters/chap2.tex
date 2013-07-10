@@ -1,0 +1,24 @@
+\chapter{Related Work}
+
+
+Karresand and Shahmehri~\cite{roc} introduced a new algorithm that uses a metric called Rate-of-Change (ROC). They define the rate of change of a byte content as the difference of the ASCII values of consecutive bytes. Although this technique yields good classification rates for jpeg files (99\% true positives), mainly because of their 0xFF00 metadata tags, for other files types the false positive rates are extremely high ( e.g for zip and portable executable(PE) files near 70\% false positives rates).
+
+Veenman\cite{Veenman} used a combination of the BFA\cite{MacDaniel} with Shannon entropy and Kolmogorov complexity measures to classify fragments that were 4096 bytes in size. He used a corpus of 450mb comprised of 11 different file types. He managed to achieve high detection rates(99\%) for jpeg and html files. However, results for the other file types weren't so good, achieving an overall acurracy of 45\%. Additionally, the corpus that he used is not big enough to produce statistically significant results. Moreover, the big size of the fragments that Veenman used is not convenient enough for a real forensic case.
+
+Calhoun  and Coles~\cite{Calhoun} used a set of techniques like byte frequency of ASCII codes and Shannon entropy, linear discriminant analysis and prediction with longest common substrings and subsequences along with many other common statistical metrics. Their corpus was comprised of gif, pdf, jpeg and bmp files.
+Although they achieved a high average rate of correct prediction of 88.3\%, their testing set was comprised only of 50 fragments per file type. The fragments size that were used in their experiment was of 512 and 896 bytes. Moreover, since they don't give information about the lengths of the file type representative strings  that were used, we don't know how expensive longest common subsequence technique can be. 
+
+Axelsson\cite{Axelsson} used a corpus of 28 different file types and applied the k-nearest-neighbour classification technique with Nearest Compression Distance(NCD) as the distance metric between file fragments. The results are unremarkable, achieving an average accuracy of around 34\%. It was observed that this approach achieved higher accuracy for fragments with high entropy.
+
+%Gopal, Yang, Salomatin and Carbonell\cite{Gopal} used several statistical classification methods, such as support vector machines with n-gram feature vectors, and k-nearest-neighbours with cosine similarity as the distance metric. They combined these techniques with several commercial off-the-shelf solutions (e.g Outside- In, Libmagic, DROID and TrID) in classifying files under various scenarios. Many important information are not reported for this research such as the classifiers performance for each file type. It is known that they achieved an accuracy of 33\% using the macro-averaged F1 measure [25].
+
+Li et al.\cite{ngram} used the N-Gram Analysis to create representative fileprints for file types. The fileprints was based on a centroid which combined the mean and the standard deviation of byte frequencies. More specifically, they focused on 1-Gram Analysis of the ASCII byte values, representing a file as a 256-element histogram. In order to compare an unknown byte stream with a fileprint they used the Mahalanobis distance function. When they applied this technique in full files they achieved success rates of 60-90\%. Morever by using only the first 20 bytes o files they managed to achieve an accuracy of 99\%, but this was due to the fact that these 20 bytes mainly contained header data("magic numbers").
+
+
+Fitzgerald, Mathews, Morris and Zhulyn\cite{Fitz} investigated whether techniques from natural language processing could be applied successfully to file fragment classification. They used the macro-averaged F1 metric in a set of 24 file types. They managed to achieve an average prediction accuracy of 49.1\% on 24 file types out performing Axelssons (34\% for 28 file types) and Veenmans (45\% for 11 file types) results.
+
+Lastly, Shahi\cite{Ashim} tested 4 different classification algorithms in the same corpus, in order to compare their performance. His corpus was comprised of 10 different file types. The algorithms used were the BFA\cite{MacDaniel}, the N-Gram Analysis\cite{ngram}, the Rate of Change\cite{roc} and the algorithm of Conti et al.~\cite{Conti}. The results show that the average overall accuracy of the aforementioned techniques is around 30\%. Moreover he benchmarked their performance in terms of execution time and found out that the N-Gram Analysis is the fastest among them, with BFA coming second, third the Rate of Change and fourth the algorithm of Conti et al.
+
+
+
+

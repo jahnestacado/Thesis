@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2012.10.30)  9 JUL 2013 23:02
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2012.10.30)  10 JUL 2013 00:53
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -948,12 +948,9 @@ Package tocbibind Info: The document has chapter divisions on input line 50.
 
 Package tocbibind Note: Using chapter style headings, unless overridden.
 
-) (/usr/share/texlive/texmf-dist/tex/latex/caption/subcaption.sty
-Package: subcaption 2012/01/12 v1.1d Sub-captions (AR)
-\c@subfigure=\count143
-\c@subtable=\count144
 )
-(./thesis.aux (./front.aux) (./chapter01.aux) (./chap2.aux) (./chap3.aux)
+\c@subfigure=\count143
+ (./thesis.aux (./front.aux) (./chapter01.aux) (./chap2.aux) (./chap3.aux)
 (./chap4.aux
 
 LaTeX Warning: Label `fig:1a' multiply defined.
@@ -1038,16 +1035,16 @@ File: t1futs.fd 2004/03/02 Fontinst v1.926 font definitions for T1/futs.
 )
 (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count145
+\scratchcounter=\count144
 \scratchdimen=\dimen162
 \scratchbox=\box36
-\nofMPsegments=\count146
-\nofMParguments=\count147
+\nofMPsegments=\count145
+\nofMParguments=\count146
 \everyMPshowfont=\toks32
-\MPscratchCnt=\count148
+\MPscratchCnt=\count147
 \MPscratchDim=\dimen163
-\MPnumerator=\count149
-\makeMPintoPDFobject=\count150
+\MPnumerator=\count148
+\makeMPintoPDFobject=\count149
 \everyMPtoPDFconversion=\toks33
 ) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
@@ -1106,7 +1103,7 @@ Package: nameref 2010/04/30 v2.40 Cross-referencing by name of section
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
-\c@section@level=\count151
+\c@section@level=\count150
 )
 LaTeX Info: Redefining \ref on input line 42.
 LaTeX Info: Redefining \pageref on input line 42.
@@ -1120,7 +1117,7 @@ Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: float package is loaded.
 Package caption Info: listings package is loaded.
 Package caption Info: End \AtBeginDocument code.
-\c@lstlisting=\count152
+\c@lstlisting=\count151
 \openout2 = `front.aux'.
 
  (./front.tex
@@ -1255,6 +1252,40 @@ Overfull \hbox (20.69516pt too wide) in paragraph at lines 75--77
  []
 
 [18] [19] (./bfas_output_table.tex) [20] (./indi_null_figures.tex
+
+! LaTeX Error: Environment subfigure undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.2   \begin{subfigure}
+                       [b]{.5\linewidth}
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Missing number, treated as zero.
+<to be read again> 
+                   }
+l.2   \begin{subfigure}[b]{.5\linewidth}
+                                        
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   }
+l.2   \begin{subfigure}[b]{.5\linewidth}
+                                        
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
 <figures/null_bytes/Indi_Null_Bytes_pdf.png, id=423, 698.61pt x 473.77pt>
 File: figures/null_bytes/Indi_Null_Bytes_pdf.png Graphic file (type png)
 
@@ -1263,9 +1294,52 @@ Package pdftex.def Info: figures/null_bytes/Indi_Null_Bytes_pdf.png used on inp
 ut line 4.
 (pdftex.def)             Requested size: 251.4994pt x 170.55707pt.
 
-Overfull \hbox (15.4838pt too wide) in paragraph at lines 4--5
- [][]
- []
+
+! LaTeX Error: \begin{figure} on input line 1 ended by \end{subfigure}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.7   \end{subfigure}
+                     %
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! LaTeX Error: Environment subfigure undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.8   \begin{subfigure}
+                       [b]{.5\linewidth}
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Missing number, treated as zero.
+<to be read again> 
+                   }
+l.8   \begin{subfigure}[b]{.5\linewidth}
+                                        
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   }
+l.8   \begin{subfigure}[b]{.5\linewidth}
+                                        
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
 
 <figures/null_bytes/Indi_Null_Bytes_xls.png, id=425, 698.61pt x 473.77pt>
 File: figures/null_bytes/Indi_Null_Bytes_xls.png Graphic file (type png)
@@ -1275,9 +1349,61 @@ Package pdftex.def Info: figures/null_bytes/Indi_Null_Bytes_xls.png used on inp
 ut line 10.
 (pdftex.def)             Requested size: 251.4994pt x 170.55707pt.
 
-Overfull \hbox (15.4838pt too wide) in paragraph at lines 10--11
-[][]  
- []
+! Undefined control sequence.
+l.11     \subcaption
+                    {Xls distribution}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: \begin{figure} on input line 1 ended by \end{subfigure}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.13   \end{subfigure}
+                      
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! LaTeX Error: Environment subfigure undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.15    \begin{subfigure}
+                         [b]{.5\linewidth}
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Missing number, treated as zero.
+<to be read again> 
+                   }
+l.15    \begin{subfigure}[b]{.5\linewidth}
+                                          
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   }
+l.15    \begin{subfigure}[b]{.5\linewidth}
+                                          
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
 
 <figures/null_bytes/Indi_Null_Bytes_doc.png, id=426, 698.61pt x 473.77pt>
 File: figures/null_bytes/Indi_Null_Bytes_doc.png Graphic file (type png)
@@ -1287,9 +1413,52 @@ Package pdftex.def Info: figures/null_bytes/Indi_Null_Bytes_doc.png used on inp
 ut line 17.
 (pdftex.def)             Requested size: 251.4994pt x 170.55707pt.
 
-Overfull \hbox (15.4838pt too wide) in paragraph at lines 17--18
- [][]
- []
+
+! LaTeX Error: \begin{figure} on input line 1 ended by \end{subfigure}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.20   \end{subfigure}
+                      %
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! LaTeX Error: Environment subfigure undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.21   \begin{subfigure}
+                        [b]{.5\linewidth}
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Missing number, treated as zero.
+<to be read again> 
+                   }
+l.21   \begin{subfigure}[b]{.5\linewidth}
+                                         
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   }
+l.21   \begin{subfigure}[b]{.5\linewidth}
+                                         
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
 
 <figures/null_bytes/Indi_Null_Bytes_text.png, id=427, 698.61pt x 473.77pt>
 File: figures/null_bytes/Indi_Null_Bytes_text.png Graphic file (type png)
@@ -1299,17 +1468,119 @@ Package pdftex.def Info: figures/null_bytes/Indi_Null_Bytes_text.png used on in
 put line 23.
 (pdftex.def)             Requested size: 251.4994pt x 170.55707pt.
 
-Overfull \hbox (15.4838pt too wide) in paragraph at lines 23--24
-[][]  
- []
+! Undefined control sequence.
+l.24     \subcaption
+                    {Text distribution}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: \begin{figure} on input line 1 ended by \end{subfigure}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.26   \end{subfigure}
+                      
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+LaTeX Warning: Float too large for page by 108.42468pt on input line 32.
 
 ) [21] (./entropy_figures.tex
+
+! LaTeX Error: Environment subfigure undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.2   \begin{subfigure}
+                       [b]{.5\linewidth}
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Missing number, treated as zero.
+<to be read again> 
+                   }
+l.2   \begin{subfigure}[b]{.5\linewidth}
+                                        
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   }
+l.2   \begin{subfigure}[b]{.5\linewidth}
+                                        
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
 <figures/entropy/Entropy_pdf.png, id=437, 698.61pt x 473.77pt>
 File: figures/entropy/Entropy_pdf.png Graphic file (type png)
 
 <use figures/entropy/Entropy_pdf.png>
 Package pdftex.def Info: figures/entropy/Entropy_pdf.png used on input line 4.
 (pdftex.def)             Requested size: 223.55977pt x 151.6095pt.
+
+
+! LaTeX Error: \begin{figure} on input line 1 ended by \end{subfigure}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.7   \end{subfigure}
+                     %
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! LaTeX Error: Environment subfigure undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.8   \begin{subfigure}
+                       [b]{.5\linewidth}
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Missing number, treated as zero.
+<to be read again> 
+                   }
+l.8   \begin{subfigure}[b]{.5\linewidth}
+                                        
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   }
+l.8   \begin{subfigure}[b]{.5\linewidth}
+                                        
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
 
 <figures/entropy/Entropy_xls.png, id=438, 698.61pt x 473.77pt>
 File: figures/entropy/Entropy_xls.png Graphic file (type png)
@@ -1319,6 +1590,62 @@ Package pdftex.def Info: figures/entropy/Entropy_xls.png used on input line 10.
 
 (pdftex.def)             Requested size: 223.55977pt x 151.6095pt.
 
+! Undefined control sequence.
+l.11     \subcaption
+                    {Xls distribution}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: \begin{figure} on input line 1 ended by \end{subfigure}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.13   \end{subfigure}
+                      
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! LaTeX Error: Environment subfigure undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.15    \begin{subfigure}
+                         [b]{.5\linewidth}
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Missing number, treated as zero.
+<to be read again> 
+                   }
+l.15    \begin{subfigure}[b]{.5\linewidth}
+                                          
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   }
+l.15    \begin{subfigure}[b]{.5\linewidth}
+                                          
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
 <figures/entropy/Entropy_doc.png, id=439, 698.61pt x 473.77pt>
 File: figures/entropy/Entropy_doc.png Graphic file (type png)
 
@@ -1327,6 +1654,53 @@ Package pdftex.def Info: figures/entropy/Entropy_doc.png used on input line 17.
 
 (pdftex.def)             Requested size: 223.55977pt x 151.6095pt.
 
+
+! LaTeX Error: \begin{figure} on input line 1 ended by \end{subfigure}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.20   \end{subfigure}
+                      %
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! LaTeX Error: Environment subfigure undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.21   \begin{subfigure}
+                        [b]{.5\linewidth}
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Missing number, treated as zero.
+<to be read again> 
+                   }
+l.21   \begin{subfigure}[b]{.5\linewidth}
+                                         
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   }
+l.21   \begin{subfigure}[b]{.5\linewidth}
+                                         
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
 <figures/entropy/Entropy_text.png, id=440, 698.61pt x 473.77pt>
 File: figures/entropy/Entropy_text.png Graphic file (type png)
 
@@ -1334,17 +1708,48 @@ File: figures/entropy/Entropy_text.png Graphic file (type png)
 Package pdftex.def Info: figures/entropy/Entropy_text.png used on input line 23
 .
 (pdftex.def)             Requested size: 223.55977pt x 151.6095pt.
-) [22 <./figures/null_bytes/Indi_Null_Bytes_pdf.png> <./figures/null_bytes/Indi
-_Null_Bytes_xls.png> <./figures/null_bytes/Indi_Null_Bytes_doc.png> <./figures/
-null_bytes/Indi_Null_Bytes_text.png>]
-[23 <./figures/entropy/Entropy_pdf.png> <./figures/entropy/Entropy_xls.png> <./
-figures/entropy/Entropy_doc.png> <./figures/entropy/Entropy_text.png>]
-(./lcs_results_table.tex) [24]) [25]
+
+! Undefined control sequence.
+l.24     \subcaption
+                    {Text distribution}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: \begin{figure} on input line 1 ended by \end{subfigure}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.26   \end{subfigure}
+                      
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+LaTeX Warning: Float too large for page by 32.6344pt on input line 32.
+
+) [22] [23 <./figures/null_bytes/Indi_Null_Bytes_pdf.png> <./figures/null_bytes
+/Indi_Null_Bytes_xls.png> <./figures/null_bytes/Indi_Null_Bytes_doc.png> <./fig
+ures/null_bytes/Indi_Null_Bytes_text.png>] [24 <./figures/entropy/Entropy_pdf.p
+ng> <./figures/entropy/Entropy_xls.png> <./figures/entropy/Entropy_doc.png> <./
+figures/entropy/Entropy_text.png>] (./lcs_results_table.tex
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+) [25
+
+]) [26]
 \openout2 = `chap6.aux'.
 
  (./chap6.tex
 Chapter 5.
-[26
+[27
 
 
 
@@ -1376,7 +1781,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 35--38
 
  []
 
-[27]
+[28]
 Underfull \hbox (badness 10000) in paragraph at lines 71--73
 
  []
@@ -1391,12 +1796,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 82--84
 
  []
 
-[28]
+[29]
 
 LaTeX Warning: Command \textless invalid in math mode on input line 112.
 
-[29] (./flowchart_figure.tex
-<figures/flowchart.png, id=499, 576.1525pt x 1061.9675pt>
+[30] (./flowchart_figure.tex
+<figures/flowchart.png, id=503, 576.1525pt x 1061.9675pt>
 File: figures/flowchart.png Graphic file (type png)
 
 <use figures/flowchart.png>
@@ -1406,31 +1811,31 @@ Package pdftex.def Info: figures/flowchart.png used on input line 3.
 
 LaTeX Warning: Float too large for page by 61.16447pt on input line 5.
 
-)) [30 <./figures/flowchart.png>]
+)) [31 <./figures/flowchart.png>]
 \openout2 = `chap7.aux'.
 
  (./chap7.tex
 Chapter 6.
-[31
+[32
 
 
 
 ] (./bfa_final_text_class.tex) (./final_results_table.tex)
-(./complete_accuracy_table.tex [32])) [33]
+(./complete_accuracy_table.tex [33])) [34]
 \openout2 = `chap8.aux'.
 
  (./chap8.tex
 Chapter 7.
 
-LaTeX Warning: Reference `sec:7.3' on page 34 undefined on input line 2.
+LaTeX Warning: Reference `sec:7.3' on page 35 undefined on input line 2.
 
 
-LaTeX Warning: Citation `Shahi' on page 34 undefined on input line 2.
+LaTeX Warning: Citation `Shahi' on page 35 undefined on input line 2.
 
 
-LaTeX Warning: Reference `data set' on page 34 undefined on input line 9.
+LaTeX Warning: Reference `data set' on page 35 undefined on input line 9.
 
-[34
+[35
 
 
 
@@ -1444,31 +1849,31 @@ Overfull \hbox (29.99998pt too wide) in paragraph at lines 21--34
 $[]$$[]$ 
  []
 
-[35] (./overall_results_table.tex)
+[36] (./overall_results_table.tex)
 Overfull \hbox (17.81589pt too wide) in paragraph at lines 64--65
 []\T1/futs/m/n/10.95 Among the al-go-rithms that we com-pare are the Byte Fre-q
 uency Anal-y-sis algorithm[[]], the n-Gram Analysis[[]],
  []
 
-[36] (./alg_comparison_table.tex)) [37] [38]
+[37] (./alg_comparison_table.tex) [38]) [39]
 \openout2 = `chap9.aux'.
 
  (./chap9.tex
 Chapter 8.
-[39
+[40
 
 
 
-]) [40]
+]) [41]
 \openout2 = `chap10.aux'.
 
  (./chap10.tex
 Chapter 9.
-[41
+[42
 
 
 
-]) [42]
+]) [43]
 \openout2 = `appendix.aux'.
 
  (./appendix.tex
@@ -1482,13 +1887,13 @@ LaTeX Warning: No positions in optional float specifier.
 LaTeX Warning: No positions in optional float specifier.
                Default added (so using `!tbp') on input line 92.
 
-)) [43
+)) [44
 
 
 
-] [44] [45]
+] [45] [46]
 Chapter 11.
-(./ref.tex [46
+(./ref.tex [47
 
 
 ]pdfTeX warning (ext4): destination with the same identifier (name{cite.Garfink
@@ -1496,13 +1901,17 @@ el}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.50 \bibitem{Garfinkel}
-                         [47])
+                         [48])
+
+Package caption Warning: Unused \captionsetup[subfigure] on input line 29.
+See the caption package documentation for explanation.
+
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 81.
- [48]
+[49]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 81.
- (./thesis.aux (./front.aux)
-(./chapter01.aux) (./chap2.aux) (./chap3.aux) (./chap4.aux) (./chap6.aux)
-(./chap7.aux) (./chap8.aux) (./chap9.aux) (./chap10.aux) (./appendix.aux))
+ (./thesis.aux (./front.aux) (./chapter01.aux) (./chap2.aux) (./chap3.aux)
+(./chap4.aux) (./chap6.aux) (./chap7.aux) (./chap8.aux) (./chap9.aux)
+(./chap10.aux) (./appendix.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 81.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 81.
 Package rerunfilecheck Info: File `thesis.out' has not changed.
@@ -1517,13 +1926,13 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 81.
  ) 
 Here is how much of TeX's memory you used:
- 12332 strings out of 495059
- 177225 string characters out of 3182029
- 328396 words of memory out of 3000000
- 14978 multiletter control sequences out of 15000+200000
+ 12290 strings out of 495059
+ 176495 string characters out of 3182029
+ 327702 words of memory out of 3000000
+ 14937 multiletter control sequences out of 15000+200000
  120410 words of font info for 117 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
- 41i,13n,38p,1490b,490s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 41i,13n,38p,1490b,458s stack positions out of 5000i,500n,10000p,200000b,50000s
 pdfTeX warning (dest): name{table.7.2} has been referenced but does not exist
 , replaced by a fixed one
 
@@ -1591,10 +2000,10 @@ fonts/type1/public/fourier/fourier-ms.pfb></usr/share/texlive/texmf-dist/fonts/
 type1/adobe/utopia/putb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/adobe/
 utopia/putr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/adobe/utopia/putr8
 a.pfb></usr/share/texlive/texmf-dist/fonts/type1/adobe/utopia/putri8a.pfb>
-Output written on thesis.pdf (50 pages, 302460 bytes).
+Output written on thesis.pdf (51 pages, 303268 bytes).
 PDF statistics:
- 681 PDF objects out of 1000 (max. 8388607)
- 597 compressed objects within 6 object streams
- 148 named destinations out of 1000 (max. 500000)
+ 685 PDF objects out of 1000 (max. 8388607)
+ 600 compressed objects within 6 object streams
+ 149 named destinations out of 1000 (max. 500000)
  403 words of extra memory for PDF output out of 10000 (max. 10000000)
 

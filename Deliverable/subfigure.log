@@ -1,0 +1,427 @@
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=latex 2012.10.30)  10 JUL 2013 01:05
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**subfigure.dtx
+(./subfigure.dtx
+LaTeX2e <2011/06/27>
+Babel <v3.8m> and hyphenation patterns for english, dumylang, nohyphenation, lo
+aded.
+File: subfigure.dtx 
+(/usr/share/texlive/texmf-dist/tex/latex/base/ltxdoc.cls
+Document Class: ltxdoc 2007/11/11 v2.0u Standard LaTeX documentation class
+(/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
+(/usr/share/texlive/texmf-dist/tex/latex/base/size10.clo
+File: size10.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@section=\count80
+\c@subsection=\count81
+\c@subsubsection=\count82
+\c@paragraph=\count83
+\c@subparagraph=\count84
+\c@figure=\count85
+\c@table=\count86
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+(/usr/share/texlive/texmf-dist/tex/latex/base/doc.sty
+Package: doc 2010/02/04 v2.1e Standard LaTeX documentation package (FMi)
+\c@StandardModuleDepth=\count87
+\guard@level=\count88
+\MacrocodeTopsep=\skip43
+\MacroIndent=\dimen103
+\macro@cnt=\count89
+\MacroTopsep=\skip44
+\index@excludelist=\toks14
+
+(/usr/share/texlive/texmf-dist/tex/latex/tools/multicol.sty
+Package: multicol 2011/06/27 v1.7a multicolumn formatting (FMi)
+\c@tracingmulticols=\count90
+\mult@box=\box26
+\multicol@leftmargin=\dimen104
+\c@unbalance=\count91
+\c@collectmore=\count92
+\doublecol@number=\count93
+\multicoltolerance=\count94
+\multicolpretolerance=\count95
+\full@width=\dimen105
+\page@free=\dimen106
+\premulticols=\dimen107
+\postmulticols=\dimen108
+\multicolsep=\skip45
+\multicolbaselineskip=\skip46
+\partial@page=\box27
+\last@line=\box28
+\mult@rightbox=\box29
+\mult@grightbox=\box30
+\mult@gfirstbox=\box31
+\mult@firstbox=\box32
+\@tempa=\box33
+\@tempa=\box34
+\@tempa=\box35
+\@tempa=\box36
+\@tempa=\box37
+\@tempa=\box38
+\@tempa=\box39
+\@tempa=\box40
+\@tempa=\box41
+\@tempa=\box42
+\@tempa=\box43
+\@tempa=\box44
+\@tempa=\box45
+\@tempa=\box46
+\@tempa=\box47
+\@tempa=\box48
+\@tempa=\box49
+\c@columnbadness=\count96
+\c@finalcolumnbadness=\count97
+\last@try=\dimen109
+\multicolovershoot=\dimen110
+\multicolundershoot=\dimen111
+\mult@nat@firstbox=\box50
+\colbreak@box=\box51
+\multicol@sort@counter=\count98
+)
+\IndexMin=\dimen112
+\c@IndexColumns=\count99
+\GlossaryMin=\dimen113
+\c@GlossaryColumns=\count100
+\check@sum=\count101
+\bslash@cnt=\count102
+\wrong@table=\toks15
+\c@CodelineNo=\count103
+))
+(/usr/share/texlive/texmf-dist/tex/latex/subfigure/subfigure.sty
+Package: subfigure 2002/03/15 v2.1.5 subfigure package
+\subfigtopskip=\skip47
+\subfigcapskip=\skip48
+\subfigcaptopadj=\dimen114
+\subfigbottomskip=\skip49
+\subfigcapmargin=\dimen115
+\subfiglabelskip=\skip50
+\c@subfigure=\count104
+\c@lofdepth=\count105
+\c@subtable=\count106
+\c@lotdepth=\count107
+
+****************************************
+* Local config file subfigure.cfg used *
+****************************************
+(/usr/share/texlive/texmf-dist/tex/latex/subfigure/subfigure.cfg)
+\subfig@top=\skip51
+\subfig@bottom=\skip52
+)
+
+LaTeX Warning: You have requested, on input line 49, version
+               `2005/04/29' of package subfigure,
+               but only version
+               `2002/03/15 v2.1.5 subfigure package'
+               is available.
+
+(./subfigure.aux)
+\openout1 = `subfigure.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 56.
+LaTeX Font Info:    ... okay on input line 56.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 56.
+LaTeX Font Info:    ... okay on input line 56.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 56.
+LaTeX Font Info:    ... okay on input line 56.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 56.
+LaTeX Font Info:    ... okay on input line 56.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 56.
+LaTeX Font Info:    ... okay on input line 56.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 56.
+LaTeX Font Info:    ... okay on input line 56.
+Package doc Info: Made | a short reference for \verb on input line 56.
+ (./subfigure.dtx
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <17.28> on input line 234.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 234.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 234.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 234.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 234.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <9> on input line 238.
+ [1
+
+] (./subfigure.toc
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 3.
+)
+\tf@toc=\write3
+\openout3 = `subfigure.toc'.
+
+ [2] (./subfigure.lot)
+\tf@lot=\write4
+\openout4 = `subfigure.lot'.
+
+
+(./subfigure.lof
+
+LaTeX Warning: Reference `fig:format-01' on page 7 undefined on input line 4.
+
+
+LaTeX Warning: Reference `fig:format-14' on page 7 undefined on input line 4.
+
+
+LaTeX Warning: Reference `fig:format-01' on page 7 undefined on input line 4.
+
+
+LaTeX Warning: Reference `fig:format-14' on page 7 undefined on input line 4.
+
+[3])
+\tf@lof=\write5
+\openout5 = `subfigure.lof'.
+
+ [4] [5]
+
+LaTeX Warning: Marginpar on page 6 moved.
+
+Package doc Info: Deleted | as a short reference for \verb(*) on input line 397
+.
+
+Overfull \hbox (27.25194pt too wide) in paragraph at lines 476--477
+ [][] 
+ []
+
+Package doc Info: Made | a short reference for \verb on input line 478.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 492.
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
+File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <9> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 492.
+
+Overfull \hbox (18.01712pt too wide) in paragraph at lines 485--513
+ [][] 
+ []
+
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <8> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 521.
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 533.
+[6] [7]
+Underfull \hbox (badness 10000) in paragraph at lines 745--763
+
+ []
+
+LaTeX Font Info:    Font shape `OT1/cmss/m/it' in size <8> not available
+(Font)              Font shape `OT1/cmss/m/sl' tried instead on input line 780.
+
+
+LaTeX Font Warning: Font shape `OT1/cmss/m/sc' in size <8> not available
+(Font)              Font shape `OT1/cmr/m/sc' tried instead on input line 785.
+
+[8] [9] [10] [11]
+Underfull \hbox (badness 1014) in paragraph at lines 839--839
+[]\OT1/cmr/m/n/8 (b) Sec-ond long, long, long,
+ []
+
+
+Underfull \hbox (badness 1014) in paragraph at lines 858--858
+[]\OT1/cmr/m/n/8 (b) Sec-ond long, long, long,
+ []
+
+[12]
+Package doc Info: Deleted | as a short reference for \verb(*) on input line 916
+.
+Package doc Info: Made / a short reference for \verb on input line 917.
+
+Overfull \hbox (1.10973pt too wide) detected at line 940
+\OT1/cmr/m/n/10 0.33 em plus 0.07 em
+ []
+
+Package doc Info: Deleted / as a short reference for \verb(*) on input line 945
+.
+Package doc Info: Made | a short reference for \verb on input line 946.
+[13] [14] [15]
+Underfull \hbox (badness 10000) in paragraph at lines 1144--1144
+[]\OT1/cmr/m/n/8 (b) Sec-ond
+ []
+
+[16]
+
+LaTeX Warning: Marginpar on page 17 moved.
+
+
+LaTeX Warning: Reference `sub@fig:ex3-a' on page 17 undefined on input line 133
+9.
+
+
+LaTeX Warning: Reference `sub@fig:ex3-b' on page 17 undefined on input line 133
+9.
+
+
+LaTeX Warning: Reference `sub@fig:ex3-c' on page 17 undefined on input line 133
+9.
+
+
+LaTeX Warning: Reference `sub@fig:ex3-d' on page 17 undefined on input line 133
+9.
+
+
+LaTeX Warning: Reference `sub@fig:ex3-a' on page 17 undefined on input line 133
+9.
+
+
+LaTeX Warning: Reference `sub@fig:ex3-b' on page 17 undefined on input line 133
+9.
+
+
+LaTeX Warning: Reference `sub@fig:ex3-c' on page 17 undefined on input line 133
+9.
+
+
+LaTeX Warning: Reference `sub@fig:ex3-d' on page 17 undefined on input line 133
+9.
+
+
+LaTeX Warning: Reference `sub@fig:ex3-c' on page 17 undefined on input line 133
+9.
+
+[17] [18]
+
+LaTeX Warning: Reference `sub@fig:layout-D' on page 19 undefined on input line 
+1423.
+
+[19]
+\tempbox=\box52
+\tempdima=\dimen116
+\tempdimb=\dimen117
+
+Overfull \hbox (0.79958pt too wide) detected at line 1524
+ []
+ []
+
+
+Overfull \hbox (0.79958pt too wide) detected at line 1524
+ []
+ []
+
+
+LaTeX Warning: Float too large for page by 8.89017pt on input line 1638.
+
+
+LaTeX Warning: Marginpar on page 20 moved.
+
+[20] [21]
+
+LaTeX Warning: Marginpar on page 22 moved.
+
+[22]
+
+LaTeX Warning: Marginpar on page 23 moved.
+
+
+LaTeX Warning: Marginpar on page 23 moved.
+
+
+LaTeX Warning: Marginpar on page 23 moved.
+
+[23] [24] [25] [26]
+Package doc Info: Deleted | as a short reference for \verb(*) on input line 205
+2.
+Package doc Info: Made | a short reference for \verb on input line 2062.
+Package doc Info: Deleted | as a short reference for \verb(*) on input line 208
+2.
+ [27]
+Overfull \hbox (2.1304pt too wide) in paragraph at lines 2084--2084
+[]\OT1/cmss/m/n/10 nosubfigure\OT1/cmr/m/n/10 , 
+ []
+
+Package doc Info: Made | a short reference for \verb on input line 2097.
+
+Underfull \hbox (badness 10000) in paragraph at lines 2083--2098
+
+ []
+
+
+LaTeX Warning: Marginpar on page 28 moved.
+
+
+LaTeX Warning: Marginpar on page 28 moved.
+
+
+LaTeX Warning: Marginpar on page 28 moved.
+
+[28]
+LaTeX Font Info:    Font shape `OT1/cmtt/bx/n' in size <10> not available
+(Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 2193.
+
+\subfigbox=\box53
+
+
+LaTeX Warning: Reference `sub@fig:verbone' on page 29 undefined on input line 2
+271.
+
+
+LaTeX Warning: Reference `sub@fig:verbtwo' on page 29 undefined on input line 2
+271.
+
+
+LaTeX Warning: Reference `sub@fig:verbone' on page 29 undefined on input line 2
+271.
+
+
+LaTeX Warning: Reference `sub@fig:verbtwo' on page 29 undefined on input line 2
+271.
+
+[29] [30] [31]
+Package doc Info: Deleted | as a short reference for \verb(*) on input line 256
+0.
+Package doc Info: Made / a short reference for \verb on input line 2561.
+
+Overfull \hbox (61.21913pt too wide) in paragraph at lines 2574--2638
+[][]  
+ []
+
+Package doc Info: Deleted / as a short reference for \verb(*) on input line 264
+0.
+Package doc Info: Made | a short reference for \verb on input line 2641.
+[32] [33] [34] [35] [36] [37] [38] [39] [40] [41] [42] [43] [44] [45] [46]
+[47]
+LaTeX Font Info:    Font shape `OT1/cmss/m/it' in size <10> not available
+(Font)              Font shape `OT1/cmss/m/sl' tried instead on input line 3938
+.
+
+Underfull \hbox (badness 5787) in paragraph at lines 3938--3938
+[]\OT1/cmr/m/n/10 Harald Axel Som-mer-feldt, \OT1/cmr/m/it/10 The \OT1/cmss/m/s
+l/10 cap-tion \OT1/cmr/m/it/10 Pack-age\OT1/cmr/m/n/10 , Ver-sion 2.0(beta),
+ []
+
+
+Underfull \hbox (badness 1400) in paragraph at lines 3938--3938
+[]\OT1/cmr/m/n/10 Anselm Ling-nau, \OT1/cmr/m/it/10 An Im-proved En-vi-ron-ment
+ for Floats. \OT1/cmr/m/n/10 Ver-sion 1.3d,
+ []
+
+*******************
+* Checksum passed *
+*******************
+) [48] (./subfigure.aux)
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 955 strings out of 495060
+ 12051 string characters out of 3182052
+ 91358 words of memory out of 3000000
+ 4159 multiletter control sequences out of 15000+200000
+ 16917 words of font info for 58 fonts, out of 3000000 for 9000
+ 14 hyphenation exceptions out of 8191
+ 30i,12n,27p,837b,574s stack positions out of 5000i,500n,10000p,200000b,50000s
+
+Output written on subfigure.dvi (48 pages, 171528 bytes).

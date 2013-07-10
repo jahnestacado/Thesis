@@ -1,0 +1,729 @@
+% Appendix Template
+
+\chapter{Generated RASCAL ADTs } % Main appendix title
+
+\label{AppendixB} % Change X to a consecutive letter; for referencing this appendix elsewhere, use \ref{AppendixX}
+
+\lhead{Appendix B. \emph{Generated RASCAL ADT's}} % Change X to a consecutive letter; this is for the header on each page - perhaps a shortened title
+
+\begin{lstlisting}[label=lst:wordInterface,caption=The generated ADT corresponding to HWPF data structure.]
+module generatedAPIs::WordInterface
+
+public data Bookmarks = Bookmarks_comp(int getBookmarksCount,
+list[Bookmark] getBookmark
+);
+
+
+public data DocumentSummaryInformation = DocumentSummaryInformation_comp(int getSlideCount,
+int getMMClipCount,
+int getLineCount,
+int getFormat,
+list[Property] getProperties,
+int getNoteCount,
+int getOSVersion,
+str getManager,
+str getCategory
+);
+
+
+public data BorderCode = BorderCode_comp(int getLineWidth,
+int getBorderType,
+bool isFrame,
+int getSpace,
+bool isShadow,
+int getColor
+);
+
+
+public data TableCellDescriptor = TableCellDescriptor_comp(bool isFRotateFont,
+int getWCellSpacingRight,
+int getFtsCellPaddingLeft,
+int getWCellPaddingLeft,
+int getWCellPaddingRight,
+int getFtsCellPaddingRight,
+int getFtsWidth,
+bool isFBackward,
+BorderCode getBrcBottom,
+int getFtsCellPaddingBottom,
+bool isFFitText,
+int getFtsCellSpacingRight,
+int getFtsCellSpacingLeft,
+int getWCellSpacingBottom,
+bool isFVertical,
+bool isFFirstMerged,
+int getWCellSpacingTop,
+BorderCode getBrcLeft,
+bool isFVertMerge,
+int getFtsCellSpacingBottom,
+int getVertAlign,
+int getFtsCellPaddingTop,
+int getWCellPaddingTop,
+int getWCellSpacingLeft,
+bool isFNoWrap,
+int getRgf,
+str toString,
+bool isFVertRestart,
+int getWCellPaddingBottom,
+bool isFMerged,
+int getFtsCellSpacingTop,
+BorderCode getBrcTop,
+BorderCode getBrcRight,
+int getWWidth
+);
+
+
+public data SavedByTable = SavedByTable_comp(list[SavedByEntry] getEntries
+);
+
+
+public data Paragraph = Paragraph_comp(int getFirstLineIndent,
+bool isVertical,
+HWPFList getList,
+bool isEmbeddedCellMark,
+bool isSideBySide,
+bool pageBreakBefore,
+Table getTable,
+int getTableLevel,
+int getSpacingAfter,
+bool isWidowControlled,
+BorderCode getBarBorder,
+int getTabStopsNumber,
+str text,
+list[CharacterRun] getCharacterRun,
+LineSpacingDescriptor getLineSpacing,
+int getSpacingBefore,
+int getLvl,
+bool keepOnPage,
+bool isLineNotNumbered,
+bool keepWithNext,
+bool isTableRowEnd,
+BorderCode getLeftBorder,
+list[Section] getSection,
+int getFontAlignment,
+int getIndentFromRight,
+bool isKinsoku,
+int getIndentFromLeft,
+bool isWordWrapped,
+int getIlvl,
+bool isAutoHyphenated,
+bool isInTable,
+BorderCode getTopBorder,
+int getJustification,
+BorderCode getBottomBorder,
+ShadingDescriptor getShading,
+bool isBackward,
+bool isInList,
+int getStyleIndex,
+list[int] getTabStopsPositions,
+int getIlfo,
+BorderCode getRightBorder
+);
+
+
+public data Table = Table_comp(int numRows,
+list[TableRow] getRow,
+int getTableLevel
+);
+
+
+public data Range = Range_comp(list[Paragraph] getParagraph
+);
+
+
+public data HWPFDocument = HWPFDocument_comp(OfficeDrawings getOfficeDrawingsHeaders,
+list[Notes] getFootnotes,
+SummaryInformation getSummaryInformation,
+RevisionMarkAuthorTable getRevisionMarkAuthorTable,
+Range getFootnoteRange,
+Range getRange,
+OfficeDrawings getOfficeDrawingsMain,
+Bookmarks getBookmarks,
+Range getCommentsRange,
+list[Notes] getEndnotes,
+DocumentSummaryInformation getDocumentSummaryInformation,
+Range getEndnoteRange,
+SavedByTable getSavedByTable,
+Range getHeaderStoryRange,
+Fields getFields,
+PicturesTable getPicturesTable,
+Range getMainTextboxRange
+);
+
+
+public data TableRow = TableRow_comp(bool cantSplit,
+list[TableCell] getCell,
+int \type,
+int getGapHalf,
+int getRowHeight,
+int numCells,
+bool isTableHeader,
+int getRowJustification
+);
+
+
+public data TableCell = TableCell_comp(int getLeftEdge,
+bool isVertical,
+int getWidth,
+bool isRotateFont,
+bool isFirstVerticallyMerged,
+bool isVerticallyMerged,
+TableCellDescriptor getDescriptor,
+str text,
+bool isBackward,
+bool isMerged,
+bool usesUnicode,
+bool isFirstMerged
+);
+
+
+public data LineSpacingDescriptor = LineSpacingDescriptor_comp(int toInt
+);
+
+
+public data Colorref = Colorref_comp(int getValue,
+bool isEmpty
+);
+
+
+public data Section = Section_comp(int getMarginRight,
+int getMarginTop,
+int getMarginLeft,
+int getPageHeight,
+int getDistanceBetweenColumns,
+int getPageWidth,
+bool isColumnsEvenlySpaced,
+str text,
+int getNumColumns,
+int getMarginBottom
+);
+
+
+public data SavedByEntry = SavedByEntry_comp(str getSaveLocation,
+str getUserName
+);
+
+
+public data RevisionMarkAuthorTable = RevisionMarkAuthorTable_comp(list[str] getEntries
+);
+
+
+public data HWPFList = HWPFList_comp(int getLsid
+);
+
+
+public data OfficeDrawing = OfficeDrawing_comp(int getRectangleTop,
+list[int] getPictureData,
+int getRectangleLeft,
+int getRectangleRight,
+int getRectangleBottom,
+int getShapeId
+);
+
+
+public data Picture = Picture_comp(int getHorizontalScalingFactor,
+int getHeight,
+int getStartOffset,
+int getWidth,
+str getDescription,
+str getMimeType,
+int getSize,
+str suggestFullFileName,
+int getVerticalScalingFactor,
+list[int] getRawContent,
+str suggestFileExtension
+);
+
+
+public data Field = Field_comp(bool isNested,
+int getType,
+bool isHasSep,
+bool isZombieEmbed,
+bool isResultDirty,
+bool hasSeparator,
+bool isLocked,
+bool isPrivateResult,
+bool isResultEdited
+);
+
+
+public data SummaryInformation = SummaryInformation_comp(list[int] getThumbnail,
+str getAuthor,
+datetime getLastSaveDateTime,
+str getRevNumber,
+datetime getLastPrinted,
+str getTitle,
+str getKeywords,
+int getFormat,
+int getWordCount,
+str getLastAuthor,
+list[Property] getProperties,
+str getApplicationName,
+int getPageCount,
+datetime getCreateDateTime,
+str getComments,
+int getOSVersion,
+int getSecurity,
+int getEditTime,
+str getTemplate,
+str getSubject
+);
+
+
+public data Fields = Fields_comp(list[Field] getFields
+);
+
+
+public data Bookmark = Bookmark_comp(int getStart,
+str getName,
+int getEnd
+);
+
+
+public data ShadingDescriptor = ShadingDescriptor_comp(int hashCode,
+str toString,
+int getIpat,
+bool equals,
+Colorref getCvFore,
+Colorref getCvBack
+);
+
+
+public data CharacterRun = CharacterRun_comp(int getLanguageCode,
+bool isMarkedDeleted,
+int getSubSuperScriptIndex,
+int getCharacterSpacing,
+bool isBold,
+bool isHighlighted,
+bool isImprinted,
+bool isDoubleStrikeThrough,
+bool isSymbol,
+str text,
+bool isObj,
+bool isCapitalized,
+bool isData,
+bool isSmallCaps,
+int getFontSize,
+bool isItalic,
+int getVerticalOffset,
+list[str] getDropDownListValues,
+bool isShadowed,
+int getPicOffset,
+bool isVanished,
+bool isOutlined,
+str getSymbolCharacter,
+BorderCode getBorder,
+bool isMarkedInserted,
+int getObjOffset,
+bool isStrikeThrough,
+int getDropDownListDefaultItemIndex,
+int getColor,
+bool isEmbossed,
+str getFontName,
+int getUnderlineCode,
+bool isSpecialCharacter
+);
+
+
+public data OfficeDrawings = OfficeDrawings_comp(list[OfficeDrawing] getOfficeDrawings
+);
+
+
+public data Notes = Notes_comp(int getNoteTextEndOffset,
+int getNoteIndexByAnchorPosition,
+int getNoteTextStartOffset,
+int getNoteAnchorPosition,
+int getNotesCount
+);
+
+
+public data Property = Property_comp(str getValue,
+int getID,
+int getType
+);
+
+
+public data PicturesTable = PicturesTable_comp(list[Picture] getAllPictures
+);
+
+@javaClass{generatedAPIs.WordInterface}
+public java HWPFDocument getHWPFDocumentTree(loc file);
+		   
+\end{lstlisting}
+
+\begin{lstlisting}[label=lst:excelInterface,caption=The generated ADT corresponding to HSSF data structure.]
+module generatedAPIs::ExcelInterface
+
+public data RichTextString = RichTextString_conc(str getString
+);
+
+
+public data HSSFPatternFormatting = HSSFPatternFormatting_conc(int getFillBackgroundColor,
+int getFillForegroundColor,
+int getFillPattern
+);
+
+
+public data HSSFConditionalFormattingRule = HSSFConditionalFormattingRule_conc(HSSFFontFormatting getFontFormatting,
+int getConditionType,
+int getComparisonOperation,
+HSSFPatternFormatting getPatternFormatting,
+str getFormula2,
+str getFormula1,
+HSSFBorderFormatting getBorderFormatting
+);
+
+
+public data HSSFWorkbook = HSSFWorkbook_conc(SummaryInformation getSummaryInformation,
+bool isWriteProtected,
+DocumentSummaryInformation getDocumentSummaryInformation,
+bool isHidden,
+list[HSSFPictureData] getAllPictures,
+int getNumberOfFonts,
+int getNumberOfSheets,
+list[HSSFSheet] getSheetAt
+);
+
+
+public data HSSFSheet = HSSFSheet_conc(
+HSSFPatriarch getDrawingPatriarch,
+bool getHorizontallyCenter,
+int getNumMergedRegions,
+bool getFitToPage,
+int getDefaultRowHeight,
+bool isDisplayRowColHeadings,
+bool isDisplayZeros,
+bool getAlternateExpression,
+int getPhysicalNumberOfRows,
+int getFirstRowNum,
+list[Row] iterator,
+PaneInformation getPaneInformation,
+bool getAlternateFormula,
+bool isPrintGridlines,
+str getSheetName,
+bool isDisplayFormulas,
+bool isDisplayGridlines,
+bool getVerticallyCenter,
+HSSFPrintSetup getPrintSetup,
+bool getDialog,
+bool getForceFormulaRecalculation,
+HSSFSheetConditionalFormatting getSheetConditionalFormatting,
+bool isRightToLeft,
+real getDefaultRowHeightInPoints,
+bool getObjectProtect,
+int getLastRowNum,
+bool getScenarioProtect,
+list[real] getMargin,
+int getTopRow,
+list[int] getColumnBreaks,
+int getDefaultColumnWidth,
+bool getDisplayGuts,
+bool getProtect,
+bool isGridsPrinted,
+int getPassword,
+bool getAutobreaks
+);
+
+
+public data HSSFSheetConditionalFormatting = HSSFSheetConditionalFormatting_conc(int getNumConditionalFormattings,
+list[HSSFConditionalFormatting getConditionalFormattingAt]
+);
+
+
+public data Property = Property_conc(str getValue,
+int getID,
+int getType
+);
+
+
+public data Row = Row_conc(bool getZeroHeight,
+real getHeightInPoints,
+int getHeight,
+int getLastCellNum,
+int getFirstCellNum,
+list[Cell] cellIterator,
+bool isFormatted,
+int getRowNum,
+int getPhysicalNumberOfCells
+);
+
+
+public data HSSFPictureData = HSSFPictureData_conc(list[int] getData,
+int getFormat,
+str suggestFileExtension,
+str getMimeType
+);
+
+
+public data CellStyle = CellStyle_conc(bool getLocked,
+int getTopBorderColor,
+int getBottomBorderColor,
+int getDataFormat,
+bool getWrapText,
+int getRotation,
+int getAlignment,
+int getBorderBottom,
+int getIndention,
+int getFillForegroundColor,
+int getFillBackgroundColor,
+str getDataFormatString,
+int getIndex,
+int getBorderRight,
+int getLeftBorderColor,
+bool getHidden,
+int getVerticalAlignment,
+int getFillPattern,
+int getBorderTop,
+int getRightBorderColor,
+int getFontIndex,
+int getBorderLeft
+);
+
+
+public data PaneInformation = PaneInformation_conc(int getVerticalSplitLeftColumn,
+int getHorizontalSplitPosition,
+int getVerticalSplitPosition,
+int getHorizontalSplitTopRow,
+bool isFreezePane
+);
+
+
+public data HSSFBorderFormatting = HSSFBorderFormatting_conc(int getLeftBorderColor,
+int getBorderRight,
+bool isBackwardDiagonalOn,
+int getTopBorderColor,
+int getBottomBorderColor,
+int getBorderDiagonal,
+bool isForwardDiagonalOn,
+int getBorderTop,
+int getRightBorderColor,
+int getDiagonalBorderColor,
+int getBorderBottom,
+int getBorderLeft
+);
+
+
+public data HSSFConditionalFormatting = HSSFConditionalFormatting_conc(list[CellRangeAddress] getFormattingRanges,
+int getNumberOfRules,
+list[HSSFConditionalFormattingRule] getRule
+);
+
+
+public data HSSFShape = HSSFShape_conc(int countOfAllChildren,
+int getLineWidth,
+int getLineStyleColor,
+bool isFlipVertical,
+bool isNoFill,
+int getFillColor,
+int getRotationDegree,
+int getLineStyle,
+bool isFlipHorizontal
+);
+
+
+public data SummaryInformation = SummaryInformation_conc(list[int] getThumbnail,
+str getAuthor,
+datetime getLastSaveDateTime,
+str getRevNumber,
+datetime getLastPrinted,
+str getTitle,
+str getKeywords,
+int getFormat,
+int getWordCount,
+str getLastAuthor,
+list[Property] getProperties,
+str getApplicationName,
+int getPageCount,
+datetime getCreateDateTime,
+str getComments,
+int getOSVersion,
+int getSecurity,
+int getEditTime,
+str getTemplate,
+str getSubject
+);
+
+
+public data HSSFPrintSetup = HSSFPrintSetup_conc(int getHResolution,
+bool getLandscape,
+real getHeaderMargin,
+bool getUsePage,
+int getPaperSize,
+bool getValidSettings,
+real getFooterMargin,
+bool getNotes,
+int getFitWidth,
+int getOptions,
+int getFitHeight,
+bool getNoOrientation,
+bool getLeftToRight,
+int getPageStart,
+bool getNoColor,
+int getScale,
+bool getDraft,
+int getVResolution,
+int getCopies
+);
+
+
+public data HSSFFontFormatting = HSSFFontFormatting_conc(bool isFontCancellationModified,
+bool isUnderlineTypeModified,
+int getFontWeight,
+bool isFontStyleModified,
+bool isFontShadowModified,
+bool isEscapementTypeModified,
+int getFontColorIndex,
+bool isBold,
+bool isShadowOn,
+int getUnderlineType,
+int getEscapementType,
+bool isOutlineOn,
+int getFontHeight,
+bool isFontOutlineModified,
+bool isStruckout,
+bool isFontWeightModified,
+bool isItalic
+);
+
+
+public data DocumentSummaryInformation = DocumentSummaryInformation_conc(int getSlideCount,
+int getMMClipCount,
+int getLineCount,
+int getFormat,
+list[Property] getProperties,
+int getNoteCount,
+int getOSVersion,
+str getManager,
+str getCategory
+);
+
+
+public data HSSFPatriarch = HSSFPatriarch_conc(int countOfAllChildren,
+int getX2,
+list[HSSFShape] iterator,
+int getY1,
+int getX1,
+int getY2
+);
+
+
+public data Comment = Comment_conc(RichTextString getString,
+str getAuthor,
+bool isVisible
+);
+
+
+public data CellRangeAddress = CellRangeAddress_conc(str formatAsString,
+int getNumberOfCells
+);
+
+
+public data Cell = Cell_conc(str getStringCellValue,
+str getCellFormula,
+real getNumericCellValue,
+int getCellType,
+Hyperlink getHyperlink,
+int getErrorCellValue,
+datetime getDateCellValue,
+Comment getCellComment,
+int getRowIndex,
+bool getBooleanCellValue,
+CellStyle getCellStyle,
+bool isPartOfArrayFormulaGroup,
+RichTextString getRichStringCellValue,
+int getCachedFormulaResultType,
+int getColumnIndex
+);
+//Cell Types 0:numeric,1:string, 2:formula, 3:blank, 4:boolean, 5:error
+
+
+public data Hyperlink = Hyperlink_conc(str getLabel,
+str getAddress,
+int getLastRow,
+int getType,
+int getFirstColumn,
+int getFirstRow,
+int getLastColumn
+);
+
+
+@javaClass{generatedAPIs.ExcelInterface}
+public java HSSFWorkbook getHSSFWorkbookTree(loc file);
+		   
+\end{lstlisting}
+
+\begin{lstlisting}[label=lst:mapiInterface,caption=The generated ADT corresponding to HSMF data structure.]
+module generatedAPIs::MAPIInterface
+
+public data Property = Property_comp(str getValue,
+int getID,
+int getType
+);
+
+
+public data DocumentSummaryInformation = DocumentSummaryInformation_comp(int getSlideCount,
+int getMMClipCount,
+int getLineCount,
+int getFormat,
+list[Property] getProperties,
+int getNoteCount,
+int getOSVersion,
+str getManager,
+str getCategory
+);
+
+
+public data SummaryInformation = SummaryInformation_comp(list[int] getThumbnail,
+str getAuthor,
+datetime getLastSaveDateTime,
+str getRevNumber,
+datetime getLastPrinted,
+str getTitle,
+str getKeywords,
+int getFormat,
+int getWordCount,
+str getLastAuthor,
+list[Property] getProperties,
+str getApplicationName,
+int getPageCount,
+datetime getCreateDateTime,
+str getComments,
+int getOSVersion,
+int getSecurity,
+int getEditTime,
+str getTemplate,
+str getSubject
+);
+
+
+public data AttachmentChunks = AttachmentChunks_comp(MAPIMessage getEmbeddedMessage,
+list[int] getEmbeddedAttachmentObject
+);
+
+
+public data MAPIMessage = MAPIMessage_comp(list[str] getRecipientEmailAddressList,
+str getRecipientEmailAddress,
+str getHmtlBody,
+list[str] getHeaders,
+list[AttachmentChunks] getAttachmentFiles,
+str getDisplayBCC,
+str getDisplayFrom,
+str getSubject,
+str getConversationTopic,
+str getRtfBody,
+DocumentSummaryInformation getDocumentSummaryInformation,
+str getDisplayCC,
+SummaryInformation getSummaryInformation,
+str getRecipientNames,
+str getTextBody,
+list[str] getRecipientNamesList,
+str getDisplayTo,
+str getMessageClass,
+bool has7BitEncodingStrings,
+datetime getMessageDate,
+str getHtmlBody
+);
+
+
+@javaClass{generatedAPIs.MAPIInterface}
+public java MAPIMessage getMAPIMessageTree(loc file);
+\end{lstlisting}

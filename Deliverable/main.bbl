@@ -1,0 +1,143 @@
+\begin{thebibliography}{19}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[ras()]{rascalstatic}
+Rascal concepts static typing.
+\newblock
+  \url{http://tutor.rascal-mpl.org/Rascal/Rascal.html#/Rascal/Concepts/StaticTyping/StaticTyping.html}.
+\newblock Accessed: 30/06/2013.
+
+\bibitem[Hermans et~al.(2012)Hermans, Pinzger, and van Deursen]{feliene1}
+Felienne Hermans, Martin Pinzger, and Arie van Deursen.
+\newblock Detecting code smells in spreadsheet formulas.
+\newblock In \emph{ICSM}, pages 409--418, 2012.
+
+\bibitem[Nguyen et~al.(2010{\natexlab{a}})Nguyen, Nguyen, and Jr]{Nguyen2010}
+HA~Nguyen, TT~Nguyen, and Gary~Wilson Jr.
+\newblock {A graph-based approach to API usage adaptation}.
+\newblock \emph{ACM Sigplan \ldots}, pages 302--321, 2010{\natexlab{a}}.
+\newblock URL \url{http://dl.acm.org/citation.cfm?id=1869486}.
+
+\bibitem[Bartolomei et~al.(2010)Bartolomei, Czarnecki, L\"{a}mmel, and van~der
+  Storm]{studyAPIxml}
+Thiago~Tonelli Bartolomei, Krzysztof Czarnecki, Ralf L\"{a}mmel, and Tijs
+  van~der Storm.
+\newblock Study of an api migration for two xml apis.
+\newblock In \emph{Proceedings of the Second international conference on
+  Software Language Engineering}, SLE'09, pages 42--61, Berlin, Heidelberg,
+  2010. Springer-Verlag.
+\newblock ISBN 3-642-12106-3, 978-3-642-12106-7.
+\newblock \doi{10.1007/978-3-642-12107-4_5}.
+\newblock URL \url{http://dx.doi.org/10.1007/978-3-642-12107-4_5}.
+
+\bibitem[Forward and Lethbridge(2002)]{signifWord}
+Andrew Forward and Timothy~C. Lethbridge.
+\newblock The relevance of software documentation, tools and technologies: a
+  survey.
+\newblock In \emph{Proceedings of the 2002 ACM symposium on Document
+  engineering}, DocEng '02, pages 26--33, New York, NY, USA, 2002. ACM.
+\newblock ISBN 1-58113-594-7.
+\newblock \doi{10.1145/585058.585065}.
+\newblock URL \url{http://doi.acm.org/10.1145/585058.585065}.
+
+\bibitem[van~der Storm(2011)]{SEN-1111}
+T.~van~der Storm.
+\newblock The {Rascal} {Language} {Workbench}.
+\newblock CWI Technical Report SEN-1111, CWI, May 2011.
+\newblock URL \url{http://oai.cwi.nl/oai/asset/18531/18531D.pdf}.
+
+\bibitem[Klint et~al.(2009)Klint, van~der Storm, and Vinju]{rascalOrigin}
+P.~Klint, T.~van~der Storm, and J.~Vinju.
+\newblock Rascal: A domain specific language for source code analysis and
+  manipulation.
+\newblock In \emph{Source Code Analysis and Manipulation, 2009. SCAM '09. Ninth
+  IEEE International Working Conference on}, pages 168--177, 2009.
+\newblock \doi{10.1109/SCAM.2009.28}.
+
+\bibitem[vis(2007)]{visualization}
+\emph{Software Visualization: Visualizing the Structure, Behaviour, and
+  Evolution of Software}.
+\newblock Springer, 2007.
+
+\bibitem[Andrew C.~Oliver()]{POI}
+Avik Sengupta Rainer Klute David~Fisher Andrew C.~Oliver, Glen~Stampoultzis.
+\newblock Apache poi.
+\newblock \url{http://poi.apache.org}.
+\newblock Accessed: 08/03/2013.
+
+\bibitem[POI()]{POILIC}
+Apache POI.
+\newblock Apache poi licence.
+\newblock \url{http://www.apache.org/licenses}.
+\newblock Accessed: 08/03/2013.
+
+\bibitem[Gosling et~al.(2005)Gosling, Joy, Steele, and Bracha]{javalangspec}
+James Gosling, Bill Joy, Guy Steele, and Gilad Bracha.
+\newblock \emph{Java(TM) Language Specification, The (3rd Edition) (Java
+  (Addison-Wesley))}.
+\newblock Addison-Wesley Professional, 2005.
+\newblock ISBN 0321246780.
+
+\bibitem[jav()]{javakati}
+Java programming language.
+\newblock
+  \url{http://docs.oracle.com/javase/1.5.0/docs/guide/language/index.html}.
+\newblock Accessed: 30/06/2013.
+
+\bibitem[Hudak et~al.(2007)Hudak, Hughes, Peyton~Jones, and
+  Wadler]{haskelhistory}
+Paul Hudak, John Hughes, Simon Peyton~Jones, and Philip Wadler.
+\newblock A history of haskell: being lazy with class.
+\newblock In \emph{Proceedings of the third ACM SIGPLAN conference on History
+  of programming languages}, HOPL III, pages 12--1--12--55, New York, NY, USA,
+  2007. ACM.
+\newblock ISBN 978-1-59593-766-7.
+\newblock \doi{10.1145/1238844.1238856}.
+\newblock URL \url{http://doi.acm.org/10.1145/1238844.1238856}.
+
+\bibitem[par()]{paradigms}
+
+
+\bibitem[Gehlot et~al.(2012)Gehlot, Way, and Klassner]{coexistance}
+Vijay Gehlot, Thomas Way, and Frank Klassner.
+\newblock Coexistence of functional and object-oriented paradigms.
+\newblock \emph{J. Comput. Sci. Coll.}, 27\penalty0 (3):\penalty0 122--129,
+  January 2012.
+\newblock ISSN 1937-4771.
+\newblock URL \url{http://dl.acm.org/citation.cfm?id=2038772.2038798}.
+
+\bibitem[col()]{collections}
+Lesson: Interfaces (the java tutorials > collections).
+\newblock
+  \url{http://docs.oracle.com/javase/tutorial/collections/interfaces/index.html}.
+\newblock Accessed: 30/06/2013.
+
+\bibitem[pdb()]{pdbdoc}
+Github repository of pdb.values.
+\newblock \url{https://github.com/impulse-org/pdb.values/tree/master/doc}.
+\newblock Accessed: 30/06/2013.
+
+\bibitem[Nguyen et~al.(2010{\natexlab{b}})Nguyen, Nguyen, Wilson, Nguyen, Kim,
+  and Nguyen]{graphapproach}
+Hoan~Anh Nguyen, Tung~Thanh Nguyen, Gary Wilson, Jr., Anh~Tuan Nguyen, Miryung
+  Kim, and Tien~N. Nguyen.
+\newblock A graph-based approach to api usage adaptation.
+\newblock In \emph{Proceedings of the ACM international conference on Object
+  oriented programming systems languages and applications}, OOPSLA '10, pages
+  302--321, New York, NY, USA, 2010{\natexlab{b}}. ACM.
+\newblock ISBN 978-1-4503-0203-6.
+\newblock \doi{10.1145/1869459.1869486}.
+\newblock URL \url{http://doi.acm.org/10.1145/1869459.1869486}.
+
+\bibitem[Ii and Rothermel(2005)]{eusesCorpus}
+Marc~Fisher Ii and Gregg Rothermel.
+\newblock The euses spreadsheet corpus: A shared resource for supporting
+  experimentation with spreadsheet dependability mechanisms.
+\newblock In \emph{In 1st Workshop on End-User Software Engineering}, pages
+  47--51, 2005.
+
+\end{thebibliography}

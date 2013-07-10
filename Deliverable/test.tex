@@ -1,0 +1,47 @@
+\documentclass[11pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{hyperref}
+
+\begin{document}
+  \listoffigures
+
+  \begin{figure}[!p]
+    \centering
+    \begin{subfigure}[b]{0.75\linewidth}
+      \rule{\linewidth}{0.75\linewidth}
+      \caption{First sub-figure}
+      \label{subfig-1:dummy}
+    \end{subfigure}
+
+    \medskip
+    \begin{subfigure}[b]{0.75\linewidth}
+      \rule{\linewidth}{0.75\linewidth}
+      \caption{First sub-figure}
+      \label{subfig-2:dummy}
+    \end{subfigure}
+    \caption{Dummy figure}
+    \label{fig:dummy}
+  \end{figure}
+
+  \begin{figure}[!p]
+    \ContinuedFloat
+    \captionsetup{list=no}
+    \centering
+    \begin{subfigure}[b]{0.75\linewidth}
+      \rule{\linewidth}{0.75\linewidth}
+      \caption{First sub-figure}
+      \label{subfig-3:dummy}
+    \end{subfigure}
+
+    \medskip
+    \begin{subfigure}[b]{0.75\linewidth}
+      \rule{\linewidth}{0.75\linewidth}
+      \caption{First sub-figure}
+      \label{subfig-4:dummy}
+    \end{subfigure}
+    \caption{Dummy figure (cont.)}
+    \label{fig:dummy-cont}
+  \end{figure}
+\end{document}

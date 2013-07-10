@@ -1,0 +1,40 @@
+This is BibTeX, Version 0.99dThe top-level auxiliary file: main.aux
+Case mismatch error between cite keys Feliene1 and feliene1
+---line 41 of file main.aux
+ : \citation{Feliene1
+ :                   }
+I'm skipping whatever remains of this command
+The style file: unsrtnat.bst
+Database file #1: Bibliography.bib
+"," immediately follows a field name---line 274 of file Bibliography.bib
+ : altauthor = Gabbrielli, Maurizio
+ :                                 , Martini, Simone},
+I'm skipping whatever remains of this entry
+A bad cross reference---entry "feliene1"
+refers to entry "DBLP:conf/icsm/2012", which doesn't exist
+Warning--I didn't find a database entry for "DBLP:conf/icsm/2012"
+Too many commas in name 1 of "Andrew C. Oliver, Glen Stampoultzis, Avik Sengupta, Rainer Klute, David Fisher" for entry POI
+while executing---line 1233 of file unsrtnat.bst
+Too many commas in name 1 of "Andrew C. Oliver, Glen Stampoultzis, Avik Sengupta, Rainer Klute, David Fisher" for entry POI
+while executing---line 1233 of file unsrtnat.bst
+Warning--empty year in rascalstatic
+Warning--empty author and editor in visualization
+Too many commas in name 1 of "Andrew C. Oliver, Glen Stampoultzis, Avik Sengupta, Rainer Klute, David Fisher" for entry POI
+while executing---line 1315 of file unsrtnat.bst
+Too many commas in name 1 of "Andrew C. Oliver, Glen Stampoultzis, Avik Sengupta, Rainer Klute, David Fisher" for entry POI
+while executing---line 1315 of file unsrtnat.bst
+Too many commas in name 1 of "Andrew C. Oliver, Glen Stampoultzis, Avik Sengupta, Rainer Klute, David Fisher" for entry POI
+while executing---line 1315 of file unsrtnat.bst
+Too many commas in name 1 of "Andrew C. Oliver, Glen Stampoultzis, Avik Sengupta, Rainer Klute, David Fisher" for entry POI
+while executing---line 1315 of file unsrtnat.bst
+Warning--empty year in POI
+Warning--empty year in POILIC
+Warning--empty year in javakati
+Warning--empty author and editor in paradigms
+Warning--empty title in paradigms
+Warning--empty publisher in paradigms
+Warning--empty year in paradigms
+Warning--empty year in paradigms
+Warning--empty year in collections
+Warning--empty year in pdbdoc
+(There were 9 error messages)

@@ -1,0 +1,74 @@
+% Appendix A
+
+\chapter{RASCAL ADT for representing Java source code facts} % Main appendix title
+
+\label{AppendixA} % For referencing this appendix elsewhere, use \ref{AppendixA}
+
+\lhead{Appendix A. \emph{Java facts}} % This is for the header on each page - perhaps a shortened title
+
+\begin{lstlisting}[caption={RASCAL data model to represent Java source code facts},label={lst:javaFacts}]
+data Entity = entity(list[Id] id);
+
+data Id = 
+       package(str name)
+     | class(str name)
+     | class(str name, list[Entity] params)
+     | interface(str name)
+     | interface(str name, list[Entity] params)
+     | anonymousClass(int nr)
+     | enum(str name)
+        
+     | method(str name, list[Entity] params, Entity returnType)
+     | constr(list[Entity] params)
+     | initializer()
+     | initializer(int nr)
+
+     | field(str name)
+     | parameter(str name)
+     | variable(str name, int id)
+     | enumConstant(str name)
+     
+     | primitive(PrimitiveType primType)
+     | array(Entity elementType)
+     
+     | typeParameter(str name)
+     | wildcard()
+     | wildcard(Bound bound)
+     | captureof(Entity wildCard)
+     ;
+
+public Entity Object = entity([package("java"), package("lang"), class("Object")]);
+
+data PrimitiveType = 
+       byte()
+     | short()
+     | \int()        
+     | long()
+     | float()
+     | double()
+     | char()
+     | boolean()
+     | \void()       
+     | null()
+     ;
+
+data Bound = 
+       extends(Entity extended)
+     | super(Entity super)
+     ;
+
+data Modifier = 
+       \public()     
+     | protected()
+     | \private()    
+     | static()
+     | abstract()
+     | final()
+     | native()
+     | synchronized()
+     | transient()
+     | volatile()
+     | strictfp()
+     | deprecated() 
+     ;
+\end{lstlisting}
